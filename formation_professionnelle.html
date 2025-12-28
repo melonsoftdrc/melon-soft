@@ -5,21 +5,22 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Formation Professionnelle - Melon-Soft</title>
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
+
     <!-- Material Symbols -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
+
     <!-- Configuration Tailwind -->
     <script src="assets/js/tailwind-config.js"></script>
-    
+
     <!-- CSS Custom -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -28,177 +29,620 @@
     <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
         <!-- Navbar -->
         <header class="navbar">
-    <div class="navbar-container">
-        <div class="flex items-center gap-4">
-            <!-- Logo -->
-            <img src="assets/images/logo.png" alt="Melon-Soft Logo" class="navbar-logo" />
-        </div>
-        
-        <nav class="navbar-nav">
-            <a href="index.html" class="navbar-link">Accueil</a>
-            <div class="group relative flex h-full items-center">
-                <a href="#" class="navbar-link flex items-center gap-1">
-                    Nos Services
-                    <span class="material-symbols-outlined text-[20px] transition-transform group-hover:-rotate-180">expand_more</span>
-                </a>
-                <div class="absolute left-0 top-full pt-4 w-[280px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
-                    <div class="flex flex-col rounded-xl border border-gray-100 bg-white p-2 shadow-xl shadow-gray-200/50 dark:border-gray-700 dark:bg-surface-dark dark:shadow-black/50">
-                        <a href="developpement_informatique.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                            Développement Informatique
+            <div class="navbar-container">
+                <div class="flex items-center gap-4">
+                    <!-- Logo -->
+                    <img src="assets/images/logo.png" alt="Melon-Soft Logo" class="navbar-logo" />
+                </div>
+
+                <nav class="navbar-nav">
+                    <a href="index.html" class="navbar-link">Accueil</a>
+                    <div class="group relative flex h-full items-center">
+                        <a href="#" class="navbar-link flex items-center gap-1">
+                            Nos Services
+                            <span
+                                class="material-symbols-outlined text-[20px] transition-transform group-hover:-rotate-180">expand_more</span>
                         </a>
-                        <a href="formation_professionnelle.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                            Formation Professionnelle
-                        </a>
-                    <a href="communication_numerique.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                        Communication Numérique
-                    </a>
-                        <a href="services_techniques.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                            Services Techniques
-                        </a>
-                        <a href="solutions_de_securite.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                            Solutions de Sécurité
-                        </a>
+                        <div
+                            class="absolute left-0 top-full pt-4 w-[280px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
+                            <div
+                                class="flex flex-col rounded-xl border border-gray-100 bg-white p-2 shadow-xl shadow-gray-200/50 dark:border-gray-700 dark:bg-surface-dark dark:shadow-black/50">
+                                <a href="developpement_informatique.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Développement Informatique
+                                </a>
+                                <a href="formation_professionnelle.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Formation Professionnelle
+                                </a>
+                                <a href="communication_numerique.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Communication Numérique
+                                </a>
+                                <a href="services_techniques.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Services Techniques
+                                </a>
+                                <a href="solutions_de_securite.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Solutions de Sécurité
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="portfolio.html" class="navbar-link">Portfolio</a>
+                    <a href="apropos.html" class="navbar-link">À Propos</a>
+                    <a href="carrieres.html" class="navbar-link">Carrières</a>
+                </nav>
+
+                <div class="flex items-center gap-4">
+                    <button class="navbar-button" onclick="window.location.href='nous_contacter.html'">
+                        <span>Nous Contacter</span>
+                    </button>
+                    <button class="lg:hidden p-2 text-text-dark dark:text-white" onclick="toggleMobileMenu()">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu Mobile (caché par défaut) -->
+            <div id="mobile-menu"
+                class="hidden lg:hidden bg-white dark:bg-surface-dark border-t border-gray-200 dark:border-gray-700">
+                <div class="px-4 py-3 space-y-3">
+                    <a href="index.html" class="block navbar-link py-2">Accueil</a>
+                    <div>
+                        <button class="navbar-link py-2 w-full text-left" onclick="toggleMobileSubmenu('services')">
+                            Nos Services
+                            <span class="material-symbols-outlined text-sm">expand_more</span>
+                        </button>
+                        <div id="services-submenu" class="hidden pl-4 space-y-2">
+                            <a href="developpement_informatique.html"
+                                class="block navbar-link py-1 text-sm">Développement Informatique</a>
+                            <a href="formation_professionnelle.html" class="block navbar-link py-1 text-sm">Formation
+                                Professionnelle</a>
+                            <a href="communication_numerique.html" class="block navbar-link py-1 text-sm">Communication Numérique</a>
+                            <a href="services_techniques.html" class="block navbar-link py-1 text-sm">Services
+                                Techniques</a>
+                            <a href="solutions_de_securite.html" class="block navbar-link py-1 text-sm">Solutions de
+                                Sécurité</a>
+                        </div>
+                    </div>
+                    <a href="portfolio.html" class="block navbar-link py-2">Portfolio</a>
+                    <a href="apropos.html" class="block navbar-link py-2">À Propos</a>
+                    <a href="carrieres.html" class="block navbar-link py-2">Carrières</a>
+                    <button class="navbar-button w-full" onclick="window.location.href='nous_contacter.html'">Nous
+                        Contacter</button>
+                </div>
+            </div>
+        </header>
+
+        <script>
+            // Fonctions pour le menu mobile
+            function toggleMobileMenu() {
+                const menu = document.getElementById('mobile-menu');
+                menu.classList.toggle('hidden');
+            }
+
+            function toggleMobileSubmenu(submenuId) {
+                const submenu = document.getElementById(submenuId);
+                submenu.classList.toggle('hidden');
+            }
+
+            // Fermer le menu mobile quand on clique en dehors
+            document.addEventListener('click', function (event) {
+                const menu = document.getElementById('mobile-menu');
+                const menuButton = event.target.closest('button[onclick="toggleMobileMenu()"]');
+
+                if (!menu.contains(event.target) && !menuButton && !menu.classList.contains('hidden')) {
+                    menu.classList.add('hidden');
+                }
+            });
+        </script>
+
+
+        <!-- Main Content -->
+        <main class="flex-1">
+            <!-- Hero Section -->
+            <section class="relative bg-white dark:bg-[#1a202c] overflow-hidden">
+                <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+                    <div class="flex flex-col lg:flex-row gap-12 items-center">
+                        <!-- Text Content -->
+                        <div class="flex flex-col gap-6 lg:w-1/2">
+                            <div class="flex flex-col gap-3">
+                                <span
+                                    class="text-primary font-bold tracking-wider text-sm uppercase">Melon-Academia</span>
+                                <h1
+                                    class="text-[#111318] dark:text-white text-4xl lg:text-5xl font-black leading-tight tracking-tight">
+                                    Accélérez votre carrière dans le numérique
+                                </h1>
+                                <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                                    Des formations pratiques et certifiantes en développement logiciel, design et
+                                    gestion de
+                                    projets, conçues pour le marché de l'emploi en RDC.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-4 mt-2">
+                                <button
+                                    class="rounded-lg h-12 px-6 bg-primary text-white text-base font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30">
+                                    Voir les programmes
+                                </button>
+                                <button
+                                    class="rounded-lg h-12 px-6 bg-gray-100 dark:bg-gray-800 text-[#111318] dark:text-white text-base font-bold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors border border-gray-200 dark:border-gray-700">
+                                    Télécharger la brochure
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Image Content -->
+                        <div class="lg:w-1/2 w-full">
+                            <div
+                                class="relative rounded-2xl overflow-hidden shadow-2xl aspect-video lg:aspect-[4/3] bg-gray-200">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay z-10">
+                                </div>
+                                <div class="w-full h-full bg-cover bg-center"
+                                    data-alt="Group of students working collaboratively on laptops in a modern tech office environment"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCuDzDeNZUFn-Nu4TeWIWiPx45HjFWauo-aekzor9dQPV-VoY40PXHIR3wawsOCzrItx0w5dV0SH21okR1v9HXmjUUAq4V9rJ7D5uFw1MTfjpZ4QkEmID7jobbCpVgEw9fZtdmvJO7QoGQ5n15XgEUAqjx9ujUQy6SA7qH4qZSlQNxLHFNKYwK6M-WQQ1f7X1onxlU98l7lIL4SflDyYencoZLbvkM6OP8LAGO47yNAI4pMxPWD1JBa_siXRBfDSgnGI_4n15awNQE");'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Course Catalog Section -->
+            <section class="py-16 bg-[#f6f6f8] dark:bg-[#101622]">
+                <div class="max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
+                    <div class="text-center max-w-2xl mx-auto">
+                        <h2 class="text-[#111318] dark:text-white text-3xl font-bold leading-tight mb-4">Nos Programmes
+                            de
+                            Formation</h2>
+                        <p class="text-gray-600 dark:text-gray-400 text-base">
+                            Choisissez parmi nos parcours spécialisés pour acquérir les compétences les plus demandées
+                            aujourd'hui.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Card 1 -->
+                        <div
+                            class="group flex flex-col p-6 bg-white dark:bg-[#1f2937] rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all">
+                            <div
+                                class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-[28px]">description</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-[#111318] dark:text-white mb-2">Bureautique Avancée</h3>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm mb-4 flex-grow">Maîtrisez la suite Office
+                                (Word, Excel, PowerPoint) pour une productivité optimale au bureau.</p>
+                            <a class="text-primary text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all"
+                                href="#">
+                                En savoir plus <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                        <!-- Card 2 -->
+                        <div
+                            class="group flex flex-col p-6 bg-white dark:bg-[#1f2937] rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all">
+                            <div
+                                class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-[28px]">language</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-[#111318] dark:text-white mb-2">Développement Web</h3>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm mb-4 flex-grow">Créez des sites web
+                                modernes
+                                et réactifs avec HTML, CSS, React et les technologies actuelles.</p>
+                            <a class="text-primary text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all"
+                                href="#">
+                                En savoir plus <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                        <!-- Card 3 -->
+                        <div
+                            class="group flex flex-col p-6 bg-white dark:bg-[#1f2937] rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all">
+                            <div
+                                class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-[28px]">code</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-[#111318] dark:text-white mb-2">Programmation</h3>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm mb-4 flex-grow">Apprenez les langages
+                                fondamentaux comme Python, Java et C# pour développer des applications robustes.</p>
+                            <a class="text-primary text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all"
+                                href="#">
+                                En savoir plus <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                        <!-- Card 4 -->
+                        <div
+                            class="group flex flex-col p-6 bg-white dark:bg-[#1f2937] rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all">
+                            <div
+                                class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-[28px]">view_kanban</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-[#111318] dark:text-white mb-2">Gestion de Projets IT</h3>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm mb-4 flex-grow">Pilotez des équipes et
+                                des
+                                projets technologiques avec les méthodologies Agile et Scrum.</p>
+                            <a class="text-primary text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all"
+                                href="#">
+                                En savoir plus <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                        <!-- Card 5 -->
+                        <div
+                            class="group flex flex-col p-6 bg-white dark:bg-[#1f2937] rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all">
+                            <div
+                                class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-[28px]">design_services</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-[#111318] dark:text-white mb-2">Infographie &amp; Design
+                            </h3>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm mb-4 flex-grow">Exprimez votre créativité
+                                via
+                                Photoshop, Illustrator et les principes fondamentaux de l'UI Design.</p>
+                            <a class="text-primary text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all"
+                                href="#">
+                                En savoir plus <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                        <!-- Card 6 (Bonus/Custom) -->
+                        <div
+                            class="group flex flex-col p-6 bg-gradient-to-br from-primary to-blue-800 rounded-xl border border-transparent shadow-md hover:shadow-lg transition-all text-white">
+                            <div
+                                class="size-12 rounded-lg bg-white/20 flex items-center justify-center mb-4 text-white">
+                                <span class="material-symbols-outlined text-[28px]">school</span>
+                            </div>
+                            <h3 class="text-lg font-bold mb-2">Sur mesure</h3>
+                            <p class="text-blue-100 text-sm mb-4 flex-grow">Vous êtes une entreprise ? Nous concevons
+                                des
+                                programmes de formation adaptés aux besoins de votre équipe.</p>
+                            <a class="text-white text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all"
+                                href="#">
+                                Contactez-nous <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Methodology Section -->
+            <section class="py-16 bg-white dark:bg-[#1a202c]">
+                <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col md:flex-row gap-12 items-center">
+                        <div class="md:w-1/2">
+                            <div
+                                class="w-full aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100 relative">
+                                <div class="absolute inset-0 bg-primary/10"></div>
+                                <div class="w-full h-full bg-cover bg-center"
+                                    data-alt="Instructor pointing at a whiteboard explaining concepts to engaged students"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD6O6lAl83qltxG5deRSIQx0duz3X0vB1o3NXZQZOnUDzPPkIBqdhhXsJ4f3jt6_oxN6k_PrYDNRWUwUEhuZucHJfNOBEfnufyDit09v86AizNDf-b6JQWzxER8_cfjFGNL8HuVbQ1qS7hKW2NxzBgBHiv9Blpes--EPnoTbDW3p3H0zpFdHLM73ZbhCa6k_SVxTuYQdXK_4Hk1wwRBBLgXtZyzO75eZSNQq9FqH3tDMM2Jv8NYHr6d_MII8rEfeITu3I70ocQurZY");'>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 flex flex-col gap-8">
+                            <div>
+                                <h2 class="text-[#111318] dark:text-white text-3xl font-bold leading-tight mb-4">Notre
+                                    Approche Pédagogique</h2>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Chez Melon-Academia, nous croyons en l'apprentissage par la pratique. Nos cursus
+                                    sont
+                                    conçus pour réduire le fossé entre la théorie universitaire et la réalité
+                                    professionnelle.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-6">
+                                <!-- Step 1 -->
+                                <div class="flex gap-4">
+                                    <div
+                                        class="flex-shrink-0 size-12 rounded-full bg-blue-100 dark:bg-blue-900/40 text-primary flex items-center justify-center">
+                                        <span class="material-symbols-outlined">menu_book</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-bold text-[#111318] dark:text-white">Fondamentaux
+                                            Solides
+                                        </h3>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Des cours structurés
+                                            pour
+                                            comprendre les concepts clés et les meilleures pratiques.</p>
+                                    </div>
+                                </div>
+                                <!-- Step 2 -->
+                                <div class="flex gap-4">
+                                    <div
+                                        class="flex-shrink-0 size-12 rounded-full bg-blue-100 dark:bg-blue-900/40 text-primary flex items-center justify-center">
+                                        <span class="material-symbols-outlined">computer</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-bold text-[#111318] dark:text-white">Projets Réels</h3>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Application immédiate
+                                            des
+                                            connaissances sur des projets concrets et défis de codage.</p>
+                                    </div>
+                                </div>
+                                <!-- Step 3 -->
+                                <div class="flex gap-4">
+                                    <div
+                                        class="flex-shrink-0 size-12 rounded-full bg-blue-100 dark:bg-blue-900/40 text-primary flex items-center justify-center">
+                                        <span class="material-symbols-outlined">verified</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-bold text-[#111318] dark:text-white">Mentorat &amp;
+                                            Certification</h3>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Suivi personnalisé par
+                                            des
+                                            experts et obtention d'un certificat reconnu.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonials -->
+            <section class="py-16 bg-[#f6f6f8] dark:bg-[#101622]">
+                <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-center text-[#111318] dark:text-white text-3xl font-bold mb-12">Ce que disent nos
+                        anciens élèves</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Testimonial 1 -->
+                        <div
+                            class="bg-white dark:bg-[#1f2937] p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col">
+                            <div class="flex items-center gap-1 text-yellow-400 mb-4">
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed italic mb-6">
+                                "J'ai commencé sans aucune connaissance en code. Après la formation en Développement
+                                Web,
+                                j'ai décroché mon premier stage en seulement 3 mois."
+                            </p>
+                            <div class="mt-auto flex items-center gap-3">
+                                <div class="size-10 rounded-full bg-gray-300 bg-cover bg-center"
+                                    data-alt="Portrait of Sarah K., a smiling young woman"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHtFIbrr_l1bMYx1y_inA8wstEloWh_4ZSFbLnuOPhcH3j6poSxZQVP8Yfj7efeffAEARosycZBXBqWPqj9RzzCXgsSusCBLd7tU1Ih_C9PjjEhhkHHIaAlgQmqZp-HzKQKiHa9VGGEEwRMQm-IVUaqZlhddp3dIdl5GzzejcZHSfvGQa8pU1uLObB_bjaTWPQqA03FeRvKHEbz7rQxZiNW5alF5jTpqlb1jXbyeHe7bcRwMIknKTXDBHE0aDl28DFfqbFrfYS9eU");'>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-[#111318] dark:text-white">Sarah K.</p>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400">Développeuse Frontend</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div
+                            class="bg-white dark:bg-[#1f2937] p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col">
+                            <div class="flex items-center gap-1 text-yellow-400 mb-4">
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed italic mb-6">
+                                "Les modules de gestion de projet m'ont aidé à structurer mon travail. L'approche Agile
+                                est
+                                exactement ce que les entreprises recherchent aujourd'hui."
+                            </p>
+                            <div class="mt-auto flex items-center gap-3">
+                                <div class="size-10 rounded-full bg-gray-300 bg-cover bg-center"
+                                    data-alt="Portrait of Michel T., a professional man in a suit"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBf3tII2Wp5Y2Ps4M7qf0NDWBJQI7mxFIRPja78DGnr8EWtLDC5G-A4X3S0obXDbK_LO80T14yrF1M5vcoP2uXdDIzjGW4wYcXnvQklo79jCprH7UBd4udG3q4XrTZMfWPcq68AWOnETze-icvUPp4N_QAE2VTo99He3bQd_F8KDLp2j6YE9EIC0D8YSL-WG5SryWksqlCZZUTkrYQ-OCnn5WGRYg55ghJwDwrejj4Z6AdN3Pan8BQ81dzq5KmK5aC5rUQK8zdpwg0");'>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-[#111318] dark:text-white">Michel T.</p>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400">Chef de Projet Junior</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div
+                            class="bg-white dark:bg-[#1f2937] p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col">
+                            <div class="flex items-center gap-1 text-yellow-400 mb-4">
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star_half</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed italic mb-6">
+                                "L'ambiance est top et les formateurs sont vraiment à l'écoute. J'ai adoré le module
+                                d'Infographie, c'était très créatif et technique à la fois."
+                            </p>
+                            <div class="mt-auto flex items-center gap-3">
+                                <div class="size-10 rounded-full bg-gray-300 bg-cover bg-center"
+                                    data-alt="Portrait of Patrick M., a young man wearing glasses"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD0mbxurT24MBo9QuaeWeWN89eZHTUixf8Au6jipax_UYfKo28sYq2HTZLGnV2eILaNN2prh_miLKUlUTsGUs9Mk1HOctFfYT7Z8Dcpg-rzS-L88L-c6MnO9_NlZ5aAWMLv5_45gQayZ2P9NYZ70R5Cn1Zkt8jKEpF6Nv0_TVJqUL7Xx6mMG7rHjqy5mSFO9zYnOqkLHjpwlcdi_BzbaRI-b8drhT22cD2tx1gGL0X2Zk6CQZV1jXxJqBltTLYtP0ckxk7pqWv2OG4");'>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-[#111318] dark:text-white">Patrick M.</p>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400">Designer Graphique</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Practical Info & Calendar -->
+            <section class="py-16 bg-white dark:bg-[#1a202c]">
+                <div class="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <!-- Calendar List -->
+                        <div>
+                            <h2 class="text-[#111318] dark:text-white text-2xl font-bold mb-6 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary">calendar_month</span> Prochaines
+                                Sessions
+                            </h2>
+                            <div class="flex flex-col gap-4">
+                                <div
+                                    class="flex items-center justify-between p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition-colors bg-[#f9fafb] dark:bg-[#2d3748]">
+                                    <div>
+                                        <p class="font-bold text-[#111318] dark:text-white">Développement Web (Intensif)
+                                        </p>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">Kinshasa - Présentiel</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="block text-primary font-bold">15 Octobre</span>
+                                        <span class="text-xs text-gray-500">Inscriptions ouvertes</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center justify-between p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition-colors bg-[#f9fafb] dark:bg-[#2d3748]">
+                                    <div>
+                                        <p class="font-bold text-[#111318] dark:text-white">Bureautique &amp;
+                                            Productivité
+                                        </p>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">En ligne (Zoom)</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="block text-primary font-bold">01 Novembre</span>
+                                        <span class="text-xs text-gray-500">Plus que 5 places</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center justify-between p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition-colors bg-[#f9fafb] dark:bg-[#2d3748]">
+                                    <div>
+                                        <p class="font-bold text-[#111318] dark:text-white">Infographie Start</p>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">Kinshasa - Présentiel</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="block text-primary font-bold">10 Novembre</span>
+                                        <span class="text-xs text-gray-500">Inscriptions ouvertes</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="inline-flex items-center gap-2 text-primary font-bold mt-6 hover:underline"
+                                href="#">
+                                Voir tout le calendrier <span
+                                    class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                        <!-- Pricing / Contact Card -->
+                        <div
+                            class="bg-primary/5 dark:bg-primary/10 p-8 rounded-2xl border border-primary/20 flex flex-col justify-center">
+                            <h3 class="text-xl font-bold text-[#111318] dark:text-white mb-2">Investissez en vous-même
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm mb-6">
+                                Nos tarifs sont adaptés au marché local et incluent tout le matériel pédagogique
+                                nécessaire.
+                                Possibilité de payer en tranches.
+                            </p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center gap-2 text-sm text-[#111318] dark:text-white">
+                                    <span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                                    Support de cours PDF inclus
+                                </li>
+                                <li class="flex items-center gap-2 text-sm text-[#111318] dark:text-white">
+                                    <span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                                    Accès au laboratoire informatique
+                                </li>
+                                <li class="flex items-center gap-2 text-sm text-[#111318] dark:text-white">
+                                    <span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                                    Certificat de fin de formation
+                                </li>
+                            </ul>
+                            <button
+                                class="w-full rounded-lg h-12 bg-primary text-white font-bold hover:bg-blue-700 transition-colors shadow-md">
+                                Demander les tarifs
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to Action -->
+            <section class="py-20 bg-primary text-white text-center">
+                <div class="max-w-3xl mx-auto px-4">
+                    <h2 class="text-3xl lg:text-4xl font-black mb-6 tracking-tight">Prêt à changer d'avenir ?</h2>
+                    <p class="text-blue-100 text-lg mb-10">
+                        Ne manquez pas l'opportunité de vous former avec les meilleurs experts de la RDC. Les places
+                        sont
+                        limitées pour garantir la qualité.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button
+                            class="rounded-lg h-12 px-8 bg-white text-primary text-base font-bold hover:bg-gray-100 transition-colors">
+                            S'inscrire maintenant
+                        </button>
+                        <button
+                            class="rounded-lg h-12 px-8 bg-transparent border-2 border-white text-white text-base font-bold hover:bg-white/10 transition-colors">
+                            Contacter un conseiller
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Top footer -->
+                <div class="footer-grid">
+                    <!-- Logo & description -->
+                    <div class="flex flex-col gap-5">
+                        <div class="flex items-center">
+                            <img src="assets/images/logo1.png" alt="Melon-Soft Logo" class="footer-logo" />
+                        </div>
+                        <p class="footer-description">
+                            Votre partenaire de confiance pour la transformation numérique en RDC. Développement,
+                            Formation et Conseil.
+                        </p>
+                    </div>
+
+                    <!-- Links 1 -->
+                    <div class="flex flex-col gap-4">
+                        <h3 class="footer-heading">Entreprise</h3>
+                        <a href="apropos.html" class="footer-link">À Propos</a>
+                        <a href="carrieres.html" class="footer-link">Carrières</a>
+                        <a href="nous_contacter.html" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Blog</a>
+                    </div>
+
+                    <!-- Links 2 -->
+                    <div class="flex flex-col gap-4">
+                        <h3 class="footer-heading">Services</h3>
+                        <a href="developpement_informatique.html" class="footer-link">Développement Web</a>
+                        <a href="formation_professionnelle.html" class="footer-link">Formation</a>
+                        <a href="communication_numerique.html" class="footer-link">Communication</a>
+                        <a href="services_techniques.html" class="footer-link">Support IT</a>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="flex flex-col gap-4">
+                        <h3 class="footer-heading">Suivez-nous</h3>
+                        <div class="flex items-center gap-4">
+                            <a href="#" class="footer-social-link">
+                                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468 2.9c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom footer -->
+                <div class="footer-bottom">
+                    <p class="footer-copyright">
+                        © 2025 Melon-Soft RDC. Tous droits réservés.
+                    </p>
+                    <div class="flex gap-6">
+                        <a href="#" class="footer-legal-link">Confidentialité</a>
+                        <a href="#" class="footer-legal-link">Mentions Légales</a>
                     </div>
                 </div>
             </div>
-            <a href="portfolio.html" class="navbar-link">Portfolio</a>
-            <a href="apropos.html" class="navbar-link">À Propos</a>
-            <a href="carrieres.html" class="navbar-link">Carrières</a>
-        </nav>
-        
-        <div class="flex items-center gap-4">
-            <button class="navbar-button" onclick="window.location.href='nous_contacter.html'">
-                <span>Nous Contacter</span>
-            </button>
-            <button class="lg:hidden p-2 text-text-dark dark:text-white" onclick="toggleMobileMenu()">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-        </div>
+        </footer>
     </div>
-    
-    <!-- Menu Mobile (caché par défaut) -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-surface-dark border-t border-gray-200 dark:border-gray-700">
-        <div class="px-4 py-3 space-y-3">
-            <a href="index.html" class="block navbar-link py-2">Accueil</a>
-            <div>
-                <button class="navbar-link py-2 w-full text-left" onclick="toggleMobileSubmenu('services-submenu')">
-                    Nos Services
-                    <span class="material-symbols-outlined text-sm">expand_more</span>
-                </button>
-                <div id="services-submenu" class="hidden pl-4 space-y-2">
-                    <a href="developpement_informatique.html" class="block navbar-link py-1 text-sm">Développement Informatique</a>
-                    <a href="formation_professionnelle.html" class="block navbar-link py-1 text-sm">Formation Professionnelle</a>
-                    <a href="communication_numerique.html" class="block navbar-link py-1 text-sm">Communication Numérique</a>
-                    <a href="services_techniques.html" class="block navbar-link py-1 text-sm">Services Techniques</a>
-                    <a href="solutions_de_securite.html" class="block navbar-link py-1 text-sm">Solutions de Sécurité</a>
-                </div>
-            </div>
-            <a href="portfolio.html" class="block navbar-link py-2">Portfolio</a>
-            <a href="apropos.html" class="block navbar-link py-2">À Propos</a>
-            <a href="carrieres.html" class="block navbar-link py-2">Carrières</a>
-            <button class="navbar-button w-full" onclick="window.location.href='nous_contacter.html'">Nous Contacter</button>
-        </div>
-    </div>
-</header>
-
-        
-        <!-- Main Content -->
-        <main class="flex-1">
-            <section class="flex flex-col items-center justify-center bg-white dark:bg-background-dark px-4 py-20 lg:px-20"><h1 class="text-3xl font-black text-text-dark dark:text-white">Formation Professionnelle - Melon-Soft</h1></section>
-        </main>
-        
-        <!-- Footer -->
-        <footer class="bg-[#0B0F19] text-white py-16 px-4 md:px-10 lg:px-20 relative font-display">
-    <div class="max-w-[1280px] mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-            <!-- Column 1 -->
-            <div class="flex flex-col gap-6">
-                <div class="flex items-center gap-3">
-                    <img src="assets/images/logo1.png" alt="Melon-Soft Logo" class="w-10 h-10 object-contain rounded" />
-                    <span class="font-black text-xl tracking-tight text-white uppercase">Melon-Soft</span>
-                </div>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Partenaire clé de la numérisation informatique en République Démocratique du Congo. Nous transformons vos idées en solutions technologiques d'excellence.
-                </p>
-                <div class="flex gap-3">
-                    <!-- Facebook -->
-                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="Facebook">
-                        <span class="font-bold font-sans">f</span>
-                    </a>
-                    <!-- X -->
-                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="X">
-                        <span class="font-bold font-sans">x</span>
-                    </a>
-                    <!-- LinkedIn -->
-                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="LinkedIn">
-                        <span class="font-bold font-sans">in</span>
-                    </a>
-                    <!-- Instagram -->
-                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="Instagram">
-                        <span class="material-symbols-outlined text-lg">photo_camera</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Column 2 -->
-            <div class="flex flex-col gap-6">
-                <h3 class="font-bold text-lg text-white">Liens Rapides</h3>
-                <nav class="flex flex-col gap-4">
-                    <a href="nos_services.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Nos Services</a>
-                    <a href="apropos.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Notre Histoire</a>
-                    <a href="#" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Melon-Academia</a>
-                    <a href="apropos.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">L'Équipe</a>
-                </nav>
-            </div>
-
-            <!-- Column 3 -->
-            <div class="flex flex-col gap-6">
-                <h3 class="font-bold text-lg text-white">Services</h3>
-                <nav class="flex flex-col gap-4">
-                    <a href="developpement_informatique.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Développement Web</a>
-                    <a href="developpement_informatique.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Applications Mobiles</a>
-                    <a href="solutions_de_securite.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Sécurité Réseaux</a>
-                    <a href="communication_numerique.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Infographie Pro</a>
-                </nav>
-            </div>
-
-            <!-- Column 4 -->
-            <div class="flex flex-col gap-6">
-                <h3 class="font-bold text-lg text-white">Abonnez-vous</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Recevez nos actualités et conseils technologiques directement dans votre boîte mail.
-                </p>
-                <form class="flex w-full" onsubmit="event.preventDefault();">
-                    <input type="email" placeholder="Votre e-mail" class="flex-1 bg-[#1A1F2E] border-none rounded-l-lg px-4 py-3 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-[#FFD700] outline-none">
-                    <button type="submit" class="bg-[#FFD700] text-[#0B0F19] font-bold px-6 py-3 rounded-r-lg hover:bg-[#E5C100] transition-colors text-sm">
-                        OK
-                    </button>
-                </form>
-            </div>
-        </div>
-
-        <!-- Bottom Bar -->
-        <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 relative">
-            <p class="text-gray-500 text-xs text-center md:text-left">
-                © 2025 Melon-Soft Sarl. Tous droits réservés. Kinshasa, RDC.
-            </p>
-            <div class="flex gap-6">
-                <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Confidentialité</a>
-                <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Mentions Légales</a>
-            </div>
-            
-            <!-- Back to top button (positioned absolutely to the right on large screens) -->
-            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 z-50 md:absolute md:bottom-auto md:right-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 bg-[#FFD700] rounded-full flex items-center justify-center text-[#0B0F19] hover:bg-[#E5C100] transition-all shadow-lg" aria-label="Haut de page">
-                <span class="material-symbols-outlined">arrow_upward</span>
-            </button>
-        </div>
-    </div>
-</footer>
-
-    </div>
-
-    <!-- JavaScript -->
-    <script src="assets/js/main.js?v=1"></script>
 </body>
 
 </html>

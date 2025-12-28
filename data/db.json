@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 1,
-    "updatedAt": "2025-12-27T01:40:47.245Z"
+    "updatedAt": "2025-12-28T01:50:00.000Z"
   },
   "blogPosts": [
     {
@@ -69,6 +69,110 @@
         "Back-office"
       ],
       "featured": false
+    }
+  ],
+  "services": [
+    {
+      "id": "srv_web",
+      "title": "Développement Web",
+      "description": "Sites vitrines, plateformes e-commerce et applications web progressives (PWA) optimisés pour le SEO et la conversion.",
+      "icon": "language",
+      "features": ["Sites Institutionnels", "Boutiques en ligne", "Intranets Sécurisés"]
+    },
+    {
+      "id": "srv_mobile",
+      "title": "Applications Mobiles",
+      "description": "Solutions natives iOS & Android ou hybrides pour connecter votre entreprise à vos clients où qu'ils soient.",
+      "icon": "smartphone",
+      "features": ["iOS & Android Natif", "React Native / Flutter", "UX/UI Mobile First"]
+    },
+    {
+      "id": "srv_desktop",
+      "title": "Logiciels de Bureau",
+      "description": "Outils de gestion robustes (ERP, CRM) pour automatiser vos processus métiers et gagner en productivité.",
+      "icon": "desktop_windows",
+      "features": ["Gestion Commerciale (CRM)", "ERP sur mesure", "Logiciels de Caisse (POS)"]
+    },
+    {
+      "id": "srv_infographie",
+      "title": "Infographie Professionnelle",
+      "description": "Création de supports visuels percutants qui définissent votre identité. Logos, chartes graphiques, flyers, affiches et publicités.",
+      "icon": "palette",
+      "features": ["Logos & Identité Visuelle", "Supports Marketing", "Design UI/UX"]
+    },
+    {
+      "id": "srv_community",
+      "title": "Community Management",
+      "description": "Gestion active de vos réseaux sociaux (Facebook, LinkedIn, Instagram, X). Nous créons du contenu engageant et modérons vos communautés.",
+      "icon": "groups",
+      "features": ["Gestion Réseaux Sociaux", "Création de Contenu", "Modération & Engagement"]
+    },
+    {
+      "id": "srv_marketing",
+      "title": "Marketing Digital & Ads",
+      "description": "Stratégies de campagnes publicitaires ciblées (Google Ads, Facebook Ads) pour maximiser votre ROI.",
+      "icon": "ads_click",
+      "features": ["Campagnes Publicitaires", "SEO / SEA", "Analyse de Données"]
+    },
+    {
+      "id": "srv_video",
+      "title": "Vidéosurveillance",
+      "description": "Caméras IP/HD intelligentes avec reconnaissance faciale et vision nocturne. Consultez vos flux en direct depuis n'importe où.",
+      "icon": "videocam",
+      "features": ["Caméras IP HD", "Vision Nocturne", "Accès à Distance"]
+    },
+    {
+      "id": "srv_access",
+      "title": "Contrôle d'Accès",
+      "description": "Gestion stricte des entrées et sorties. Solutions biométriques, badges RFID cryptés et interphones connectés.",
+      "icon": "lock_person",
+      "features": ["Biométrie", "Badges RFID", "Interphones Connectés"]
+    },
+    {
+      "id": "srv_network",
+      "title": "Réseaux & Internet",
+      "description": "Câblage, Wi‑Fi, routeurs, VLAN, optimisation des performances et sécurisation des accès.",
+      "icon": "lan",
+      "features": ["Installation Réseau", "Wi-Fi Entreprise", "Sécurisation"]
+    },
+    {
+      "id": "srv_support",
+      "title": "Postes & Support",
+      "description": "Installation, configuration, mises à jour, dépannage et assistance utilisateurs (sur site ou à distance).",
+      "icon": "computer",
+      "features": ["Assistance Utilisateurs", "Maintenance Matérielle", "Dépannage à Distance"]
+    }
+  ],
+  "trainings": [
+    {
+      "id": "train_office",
+      "title": "Bureautique Avancée",
+      "description": "Maîtrisez la suite Office (Word, Excel, PowerPoint) pour une productivité optimale au bureau.",
+      "icon": "description"
+    },
+    {
+      "id": "train_web",
+      "title": "Développement Web",
+      "description": "Créez des sites web modernes et réactifs avec HTML, CSS, React et les technologies actuelles.",
+      "icon": "language"
+    },
+    {
+      "id": "train_prog",
+      "title": "Programmation",
+      "description": "Apprenez les langages fondamentaux comme Python, Java et C# pour développer des applications robustes.",
+      "icon": "code"
+    },
+    {
+      "id": "train_pm",
+      "title": "Gestion de Projets IT",
+      "description": "Pilotez des équipes et des projets technologiques avec les méthodologies Agile et Scrum.",
+      "icon": "view_kanban"
+    },
+    {
+      "id": "train_design",
+      "title": "Infographie & Design",
+      "description": "Exprimez votre créativité via Photoshop, Illustrator et les principes fondamentaux de l'UI Design.",
+      "icon": "design_services"
     }
   ],
   "faqs": [
