@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Solutions de Sécurité - Melon-Soft</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Configuration Tailwind -->
+    <script src="assets/js/tailwind-config.js"></script>
+    
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-dark antialiased">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Navbar -->
+        <header class="navbar">
+    <div class="navbar-container">
+        <div class="flex items-center gap-4">
+            <!-- Logo -->
+            <img src="assets/images/logo.png" alt="Melon-Soft Logo" class="navbar-logo" />
+        </div>
+        
+        <nav class="navbar-nav">
+            <a href="index.html" class="navbar-link">Accueil</a>
+            <div class="group relative flex h-full items-center">
+                <a href="#" class="navbar-link flex items-center gap-1">
+                    Nos Services
+                    <span class="material-symbols-outlined text-[20px] transition-transform group-hover:-rotate-180">expand_more</span>
+                </a>
+                <div class="absolute left-0 top-full pt-4 w-[280px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
+                    <div class="flex flex-col rounded-xl border border-gray-100 bg-white p-2 shadow-xl shadow-gray-200/50 dark:border-gray-700 dark:bg-surface-dark dark:shadow-black/50">
+                        <a href="developpement_informatique.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                            Développement Informatique
+                        </a>
+                        <a href="formation_professionnelle.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                            Formation Professionnelle
+                        </a>
+                    <a href="communication_numerique.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                        Communication Numérique
+                    </a>
+                        <a href="services_techniques.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                            Services Techniques
+                        </a>
+                        <a href="solutions_de_securite.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                            Solutions de Sécurité
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="portfolio.html" class="navbar-link">Portfolio</a>
+            <a href="apropos.html" class="navbar-link">À Propos</a>
+            <a href="carrieres.html" class="navbar-link">Carrières</a>
+        </nav>
+        
+        <div class="flex items-center gap-4">
+            <button class="navbar-button" onclick="window.location.href='nous_contacter.html'">
+                <span>Nous Contacter</span>
+            </button>
+            <button class="lg:hidden p-2 text-text-dark dark:text-white" onclick="toggleMobileMenu()">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Menu Mobile (caché par défaut) -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-surface-dark border-t border-gray-200 dark:border-gray-700">
+        <div class="px-4 py-3 space-y-3">
+            <a href="index.html" class="block navbar-link py-2">Accueil</a>
+            <div>
+                <button class="navbar-link py-2 w-full text-left" onclick="toggleMobileSubmenu('services-submenu')">
+                    Nos Services
+                    <span class="material-symbols-outlined text-sm">expand_more</span>
+                </button>
+                <div id="services-submenu" class="hidden pl-4 space-y-2">
+                    <a href="developpement_informatique.html" class="block navbar-link py-1 text-sm">Développement Informatique</a>
+                    <a href="formation_professionnelle.html" class="block navbar-link py-1 text-sm">Formation Professionnelle</a>
+                    <a href="communication_numerique.html" class="block navbar-link py-1 text-sm">Communication Numérique</a>
+                    <a href="services_techniques.html" class="block navbar-link py-1 text-sm">Services Techniques</a>
+                    <a href="solutions_de_securite.html" class="block navbar-link py-1 text-sm">Solutions de Sécurité</a>
+                </div>
+            </div>
+            <a href="portfolio.html" class="block navbar-link py-2">Portfolio</a>
+            <a href="apropos.html" class="block navbar-link py-2">À Propos</a>
+            <a href="carrieres.html" class="block navbar-link py-2">Carrières</a>
+            <button class="navbar-button w-full" onclick="window.location.href='nous_contacter.html'">Nous Contacter</button>
+        </div>
+    </div>
+</header>
+
+        
+        <!-- Main Content -->
+        <main class="flex-1">
+            
+            <div class="flex flex-col">
+                <div class="@container">
+                    <div class="@[480px]:p-4 max-w-[1280px] mx-auto w-full">
+                        <div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-center px-4 pb-10 pt-20 @[480px]:px-16"
+                            data-alt="Modern security monitoring in a sleek office building with blue overlay"
+                            style='background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(17, 82, 212, 0.4) 100%), url("assets/images/graphique.jpg");'
+                            data-animate>
+                            <div class="flex flex-col gap-2 text-left max-w-[720px]">
+                                <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] drop-shadow-md">
+                                    Solutions Globales de Sécurité
+                                </h1>
+                                <h2 class="text-gray-100 text-lg font-normal leading-relaxed @[480px]:text-xl @[480px]:font-normal @[480px]:leading-relaxed mt-2 drop-shadow-sm">
+                                    Protégez votre entreprise avec nos systèmes de surveillance intelligente et de contrôle d'accès de nouvelle génération en RDC.
+                                </h2>
+                            </div>
+                            <div class="flex gap-4 mt-4">
+                                <button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary hover:bg-blue-700 text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors shadow-lg shadow-primary/30">
+                                    <span class="truncate">Demander un Devis</span>
+                                </button>
+                                <button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors">
+                                    <span class="truncate">Nos Services</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center py-5 px-4 md:px-10 lg:px-20 bg-white dark:bg-background-dark">
+                <div class="flex flex-col max-w-[1280px] w-full mx-auto">
+                    <div class="flex flex-col gap-10 px-4 py-10 @container">
+                        <div class="flex flex-col gap-4 text-center items-center" data-animate>
+                            <h2 class="text-[#111318] dark:text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                Une protection sans compromis
+                            </h2>
+                            <p class="text-[#616f89] dark:text-gray-400 text-lg font-normal leading-normal max-w-[720px]">
+                                Melon-Soft combine matériel de pointe et logiciels intelligents pour une sécurité proactive 24/7.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+                            <div class="flex flex-col gap-4 rounded-xl border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-gray-800 p-8 shadow-sm hover:shadow-md transition-shadow group" data-animate>
+                                <div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-[32px]">videocam</span>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <h3 class="text-[#111318] dark:text-white text-xl font-bold leading-tight">Vidéosurveillance</h3>
+                                    <p class="text-[#616f89] dark:text-gray-400 text-base font-normal leading-relaxed">
+                                        Caméras IP/HD intelligentes avec reconnaissance faciale et vision nocturne. Consultez vos flux en direct depuis n'importe où.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-4 rounded-xl border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-gray-800 p-8 shadow-sm hover:shadow-md transition-shadow group" data-animate>
+                                <div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-[32px]">visibility</span>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <h3 class="text-[#111318] dark:text-white text-xl font-bold leading-tight">Télésurveillance</h3>
+                                    <p class="text-[#616f89] dark:text-gray-400 text-base font-normal leading-relaxed">
+                                        Supervision professionnelle à distance 24h/24 et 7j/7. Déclenchement instantané d'alertes intrusion et intervention rapide.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-4 rounded-xl border border-[#dbdfe6] dark:border-gray-700 bg-white dark:bg-gray-800 p-8 shadow-sm hover:shadow-md transition-shadow group" data-animate>
+                                <div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-[32px]">lock_person</span>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <h3 class="text-[#111318] dark:text-white text-xl font-bold leading-tight">Contrôle d'Accès</h3>
+                                    <p class="text-[#616f89] dark:text-gray-400 text-base font-normal leading-relaxed">
+                                        Gestion stricte des entrées et sorties. Solutions biométriques, badges RFID cryptés et interphones connectés.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full bg-background-light dark:bg-[#151c2b] py-16 px-4 md:px-10 lg:px-20" data-animate>
+                <div class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center gap-12">
+                    <div class="flex-1 flex flex-col gap-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 w-fit">
+                            <span class="material-symbols-outlined text-primary text-sm">smart_display</span>
+                            <span class="text-primary text-sm font-bold uppercase tracking-wider">Vidéosurveillance Intelligente</span>
+                        </div>
+                        <h3 class="text-[#111318] dark:text-white text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em]">
+                            Ne manquez aucun détail avec nos solutions HD
+                        </h3>
+                        <p class="text-[#616f89] dark:text-gray-300 text-lg leading-relaxed">
+                            Nos systèmes de caméras ne se contentent pas d'enregistrer. Ils analysent, détectent et vous informent en temps réel.
+                        </p>
+                        <ul class="flex flex-col gap-4 mt-2">
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-green-600 mt-1">check_circle</span>
+                                <div>
+                                    <h4 class="font-bold text-[#111318] dark:text-white">Détection de Mouvement IA</h4>
+                                    <p class="text-sm text-[#616f89] dark:text-gray-400">Ignorez les fausses alertes (animaux, vent) et concentrez-vous sur les menaces réelles.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-green-600 mt-1">check_circle</span>
+                                <div>
+                                    <h4 class="font-bold text-[#111318] dark:text-white">Enregistrement Cloud &amp; Local</h4>
+                                    <p class="text-sm text-[#616f89] dark:text-gray-400">Stockage sécurisé et redondant pour garantir l'intégrité de vos preuves.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-green-600 mt-1">check_circle</span>
+                                <div>
+                                    <h4 class="font-bold text-[#111318] dark:text-white">Vision Nocturne Avancée</h4>
+                                    <p class="text-sm text-[#616f89] dark:text-gray-400">Technologie infrarouge et couleur en basse lumière pour une clarté 24h/24.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-1 w-full h-full">
+                        <div class="relative w-full aspect-video md:aspect-square max-h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                            <img alt="Security camera footage on multiple monitors in a dark control room"
+                                class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCkprZNa5wPSsNXsE7fE0j5yn1c-UXzHXTPeC5u5EJyfZhkM2K7fxF1_KfkDNiuYON4vJUCafb8ijqAjI5QbWivUJBHNTXbiX5kUR-Tdb1xzVXg20PgIPkKiNiQKNbJljO1g0PwDLAZWHfa708Drm9MAdIR15Hg3OWP4EuNmK3IOPcSgPP2gheazvzYq2bYd_A0VWMuSwNAIBx51u5wL4U1anla_Wt_4pSADYRDG5tjbwpSEJSwWveF-R3VJKBqC6ShmK2-lhWNY8" />
+                            <div class="absolute bottom-6 left-6 right-6 p-4 bg-white/90 dark:bg-gray-900/90 backdrop-blur rounded-lg shadow-lg border-l-4 border-primary">
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">phone_iphone</span>
+                                    <p class="text-sm font-semibold text-[#111318] dark:text-white">Application Mobile Incluse : Gardez un œil sur vos locaux depuis votre smartphone.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full bg-white dark:bg-background-dark py-16 px-4 md:px-10 lg:px-20 border-t border-gray-100 dark:border-gray-800" data-animate>
+                <div class="max-w-[1280px] mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
+                    <div class="flex-1 flex flex-col gap-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 w-fit">
+                            <span class="material-symbols-outlined text-primary text-sm">badge</span>
+                            <span class="text-primary text-sm font-bold uppercase tracking-wider">Contrôle d'Accès Sécurisé</span>
+                        </div>
+                        <h3 class="text-[#111318] dark:text-white text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em]">
+                            Gérez les flux de personnes avec précision
+                        </h3>
+                        <p class="text-[#616f89] dark:text-gray-300 text-lg leading-relaxed">
+                            De la simple porte de bureau aux complexes industriels, définissez qui entre où et quand.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                            <div class="p-4 rounded-lg bg-background-light dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+                                <span class="material-symbols-outlined text-primary mb-2 text-3xl">fingerprint</span>
+                                <h4 class="font-bold text-[#111318] dark:text-white mb-1">Biométrie</h4>
+                                <p class="text-sm text-[#616f89] dark:text-gray-400">Empreintes digitales et reconnaissance faciale pour une sécurité infalsifiable.</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-background-light dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+                                <span class="material-symbols-outlined text-primary mb-2 text-3xl">credit_card</span>
+                                <h4 class="font-bold text-[#111318] dark:text-white mb-1">Badges RFID</h4>
+                                <p class="text-sm text-[#616f89] dark:text-gray-400">Cartes cryptées faciles à gérer et à révoquer en cas de perte.</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-background-light dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+                                <span class="material-symbols-outlined text-primary mb-2 text-3xl">dialpad</span>
+                                <h4 class="font-bold text-[#111318] dark:text-white mb-1">Digicodes</h4>
+                                <p class="text-sm text-[#616f89] dark:text-gray-400">Solutions robustes pour les zones à fort passage.</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-background-light dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+                                <span class="material-symbols-outlined text-primary mb-2 text-3xl">nest_doorbell_visitor</span>
+                                <h4 class="font-bold text-[#111318] dark:text-white mb-1">Interphones IP</h4>
+                                <p class="text-sm text-[#616f89] dark:text-gray-400">Voir et parler aux visiteurs avant d'ouvrir, même à distance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 w-full h-full">
+                        <div class="relative w-full aspect-video md:aspect-square max-h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                            <img alt="Close up of a modern biometric fingerprint scanner on a glass door"
+                                class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTWtQCRxTALQtBUikyFgXKfHqnizVV-0uI2bYsTXf-K9WausQ12dx7DfKNHXGgFJMxPxfAVrpCp06KYLeW8hqGBcAGDTMUdNlLemj3Yttyk6ExwUGcJUgbfLT_1VuOtYJBauPkXn5k0uz4ombjSRK-rHFZsX8CIbGlgchWVPizl-gQl5ua8fiDBqre5Q-piC01DqbZ8EDDPtwR32ufy9-m7j7GaHSvlDAB4FUzaniSD9GG1-4SpVeBiavgrx72fCCLtgJukzCyUZw" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-primary py-16 px-4 md:px-10 lg:px-20 text-white" data-animate>
+                <div class="max-w-[1280px] mx-auto text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Votre tranquillité d'esprit est notre priorité</h2>
+                    <p class="text-blue-100 max-w-2xl mx-auto">Nous déployons des solutions éprouvées, adaptées aux défis spécifiques de sécurité en RDC, pour les entreprises comme pour les particuliers.</p>
+                </div>
+                <div class="max-w-[960px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="flex flex-col gap-2">
+                        <span class="text-4xl md:text-5xl font-black">24/7</span>
+                        <span class="text-sm md:text-base text-blue-100 font-medium">Surveillance active</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-4xl md:text-5xl font-black">99%</span>
+                        <span class="text-sm md:text-base text-blue-100 font-medium">Temps de disponibilité</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-4xl md:text-5xl font-black">&lt;5min</span>
+                        <span class="text-sm md:text-base text-blue-100 font-medium">Réactivité alertes</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-4xl md:text-5xl font-black">100+</span>
+                        <span class="text-sm md:text-base text-blue-100 font-medium">Sites sécurisés</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full bg-background-light dark:bg-[#151c2b] py-16 px-4 md:px-10 lg:px-20" data-animate>
+                <div class="max-w-[960px] mx-auto">
+                    <h2 class="text-[#111318] dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em] pb-8 text-center">
+                        Questions fréquentes sur nos installations
+                    </h2>
+                    <div class="flex flex-col gap-4">
+                        <details class="group bg-white dark:bg-gray-800 rounded-lg shadow-sm open:shadow-md transition-all duration-300">
+                            <summary class="flex cursor-pointer items-center justify-between p-6 list-none text-[#111318] dark:text-white font-bold text-lg">
+                                <span>L'installation nécessite-t-elle de gros travaux ?</span>
+                                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div class="px-6 pb-6 text-[#616f89] dark:text-gray-400 leading-relaxed">
+                                Non, la plupart de nos équipements utilisent des technologies sans fil ou le câblage réseau existant (PoE), minimisant ainsi les perturbations dans vos locaux.
+                            </div>
+                        </details>
+                        <details class="group bg-white dark:bg-gray-800 rounded-lg shadow-sm open:shadow-md transition-all duration-300">
+                            <summary class="flex cursor-pointer items-center justify-between p-6 list-none text-[#111318] dark:text-white font-bold text-lg">
+                                <span>Que se passe-t-il en cas de coupure de courant ?</span>
+                                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div class="px-6 pb-6 text-[#616f89] dark:text-gray-400 leading-relaxed">
+                                Tous nos systèmes critiques sont équipés de batteries de secours (UPS) garantissant une autonomie continue. Pour les sites sensibles, nous proposons des solutions avec alimentation solaire ou générateurs dédiés.
+                            </div>
+                        </details>
+                        <details class="group bg-white dark:bg-gray-800 rounded-lg shadow-sm open:shadow-md transition-all duration-300">
+                            <summary class="flex cursor-pointer items-center justify-between p-6 list-none text-[#111318] dark:text-white font-bold text-lg">
+                                <span>Les données sont-elles sécurisées ?</span>
+                                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div class="px-6 pb-6 text-[#616f89] dark:text-gray-400 leading-relaxed">
+                                Absolument. Melon-Soft applique des protocoles de cryptage de niveau bancaire pour le stockage et la transmission des données vidéo et des accès. Vous seul détenez les clés.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+    
+        </main>
+        
+        <!-- Footer -->
+        <footer class="bg-[#0B0F19] text-white py-16 px-4 md:px-10 lg:px-20 relative font-display">
+    <div class="max-w-[1280px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+            <!-- Column 1 -->
+            <div class="flex flex-col gap-6">
+                <div class="flex items-center gap-3">
+                    <img src="assets/images/logo1.png" alt="Melon-Soft Logo" class="w-10 h-10 object-contain rounded" />
+                    <span class="font-black text-xl tracking-tight text-white uppercase">Melon-Soft</span>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Partenaire clé de la numérisation informatique en République Démocratique du Congo. Nous transformons vos idées en solutions technologiques d'excellence.
+                </p>
+                <div class="flex gap-3">
+                    <!-- Facebook -->
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="Facebook">
+                        <span class="font-bold font-sans">f</span>
+                    </a>
+                    <!-- X -->
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="X">
+                        <span class="font-bold font-sans">x</span>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="LinkedIn">
+                        <span class="font-bold font-sans">in</span>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="Instagram">
+                        <span class="material-symbols-outlined text-lg">photo_camera</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="flex flex-col gap-6">
+                <h3 class="font-bold text-lg text-white">Liens Rapides</h3>
+                <nav class="flex flex-col gap-4">
+                    <a href="nos_services.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Nos Services</a>
+                    <a href="apropos.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Notre Histoire</a>
+                    <a href="#" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Melon-Academia</a>
+                    <a href="apropos.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">L'Équipe</a>
+                </nav>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="flex flex-col gap-6">
+                <h3 class="font-bold text-lg text-white">Services</h3>
+                <nav class="flex flex-col gap-4">
+                    <a href="developpement_informatique.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Développement Web</a>
+                    <a href="developpement_informatique.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Applications Mobiles</a>
+                    <a href="solutions_de_securite.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Sécurité Réseaux</a>
+                    <a href="communication_numerique.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Infographie Pro</a>
+                </nav>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="flex flex-col gap-6">
+                <h3 class="font-bold text-lg text-white">Abonnez-vous</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Recevez nos actualités et conseils technologiques directement dans votre boîte mail.
+                </p>
+                <form class="flex w-full" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Votre e-mail" class="flex-1 bg-[#1A1F2E] border-none rounded-l-lg px-4 py-3 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-[#FFD700] outline-none">
+                    <button type="submit" class="bg-[#FFD700] text-[#0B0F19] font-bold px-6 py-3 rounded-r-lg hover:bg-[#E5C100] transition-colors text-sm">
+                        OK
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 relative">
+            <p class="text-gray-500 text-xs text-center md:text-left">
+                © 2025 Melon-Soft Sarl. Tous droits réservés. Kinshasa, RDC.
+            </p>
+            <div class="flex gap-6">
+                <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Confidentialité</a>
+                <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Mentions Légales</a>
+            </div>
+            
+            <!-- Back to top button (positioned absolutely to the right on large screens) -->
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 z-50 md:absolute md:bottom-auto md:right-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 bg-[#FFD700] rounded-full flex items-center justify-center text-[#0B0F19] hover:bg-[#E5C100] transition-all shadow-lg" aria-label="Haut de page">
+                <span class="material-symbols-outlined">arrow_upward</span>
+            </button>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js?v=1"></script>
+</body>
+
+</html>

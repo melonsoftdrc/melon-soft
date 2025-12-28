@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "version": 1,
+    "updatedAt": "2025-12-27T01:40:47.245Z"
+  },
+  "blogPosts": [
+    {
+      "id": "post_1",
+      "slug": "bien-demarrer-avec-melon-soft",
+      "title": "Bien démarrer avec Melon-Soft",
+      "excerpt": "Découvrez notre approche produit, de l’idée au déploiement en RDC.",
+      "content": "Nous accompagnons les entreprises de la RDC dans la conception et la livraison de solutions web et mobiles. Notre méthodologie met l’accent sur la clarté des besoins, la qualité du code, et la sécurité.",
+      "coverImageUrl": "assets/images/graphique.jpg",
+      "tags": [
+        "Produit",
+        "Méthode"
+      ],
+      "publishedAt": "2025-12-01",
+      "author": "Équipe Melon-Soft"
+    },
+    {
+      "id": "post_2",
+      "slug": "securite-logicielle-bonnes-pratiques",
+      "title": "Sécurité logicielle : les bonnes pratiques",
+      "excerpt": "Quelques principes concrets pour réduire les risques dès la conception.",
+      "content": "La sécurité commence par une architecture simple, une gestion rigoureuse des accès, et des mises à jour régulières. Nous intégrons ces principes dans nos projets dès les premières itérations.",
+      "coverImageUrl": "assets/images/graphique.jpg",
+      "tags": [
+        "Sécurité",
+        "Architecture"
+      ],
+      "publishedAt": "2025-12-15",
+      "author": "Équipe Melon-Soft"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_1",
+      "title": "FinTech PayDRC",
+      "category": "Applications Mobiles",
+      "summary": "Application bancaire mobile sécurisée pour paiements et transferts.",
+      "imageUrl": "assets/images/graphique.jpg",
+      "tags": [
+        "Mobile",
+        "FinTech"
+      ],
+      "featured": true
+    },
+    {
+      "id": "proj_2",
+      "title": "E-Commerce KinSelect",
+      "category": "Sites Web",
+      "summary": "Boutique en ligne rapide avec catalogue, paiement et analytics.",
+      "imageUrl": "assets/images/graphique.jpg",
+      "tags": [
+        "Web",
+        "E-Commerce"
+      ],
+      "featured": false
+    },
+    {
+      "id": "proj_3",
+      "title": "ERP Logistique RDC",
+      "category": "Logiciels Sur-mesure",
+      "summary": "Gestion des stocks, livraisons et facturation multi-sites.",
+      "imageUrl": "assets/images/graphique.jpg",
+      "tags": [
+        "ERP",
+        "Back-office"
+      ],
+      "featured": false
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq_1",
+      "question": "Quels types de projets réalisez-vous ?",
+      "answer": "Sites web, applications mobiles, logiciels sur-mesure, intégrations et solutions de sécurité.",
+      "category": "Services"
+    },
+    {
+      "id": "faq_2",
+      "question": "Travaillez-vous avec des entreprises hors de Kinshasa ?",
+      "answer": "Oui. Nous accompagnons des clients partout en RDC et à l’international, en présentiel ou à distance.",
+      "category": "Général"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "job_1",
+      "title": "Développeur Full-Stack (Web)",
+      "location": "Kinshasa",
+      "type": "CDI",
+      "department": "Engineering",
+      "description": "Participation au développement de produits web, revue de code, qualité et performance.",
+      "applyEmail": "recrutement@melon-soft.cd",
+      "postedAt": "2025-12-10",
+      "isActive": true
+    }
+  ],
+  "contactMessages": [
+    {
+      "id": "msg_mjnmw4r1_gaignqoz",
+      "createdAt": "2025-12-27T01:40:47.245Z",
+      "name": "Test",
+      "phone": null,
+      "email": "test@example.com",
+      "subject": "Test",
+      "message": "Hello",
+      "status": "new"
+    },
+    {
+      "id": "msg_mjnm7dn8_8lo00bmd",
+      "createdAt": "2025-12-27T01:21:32.372Z",
+      "name": "Test",
+      "phone": null,
+      "email": "test@example.com",
+      "subject": "Hello",
+      "message": "Ping",
+      "status": "new"
+    },
+    {
+      "id": "msg_mjnliv8a_x6ujmz98",
+      "createdAt": "2025-12-27T01:02:28.762Z",
+      "name": "Test",
+      "phone": null,
+      "email": "test@example.com",
+      "subject": "Développement Web",
+      "message": "Bonjour",
+      "status": "new"
+    },
+    {
+      "id": "msg_mjnliaqj_6x93qpkb",
+      "createdAt": "2025-12-27T01:02:02.203Z",
+      "name": "Test",
+      "phone": null,
+      "email": "test@example.com",
+      "subject": "Développement Web",
+      "message": "Bonjour",
+      "status": "new"
+    }
+  ]
+}
