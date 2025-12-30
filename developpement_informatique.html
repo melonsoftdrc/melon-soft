@@ -32,7 +32,8 @@
             <div class="navbar-container">
                 <div class="flex items-center gap-4">
                     <!-- Logo -->
-                    <img src="assets/images/logo.png" alt="Melon-Soft Logo" class="navbar-logo" />
+                    <img src="assets/images/logo/logo_bleu.svg" alt="Melon-Soft Logo" class="navbar-logo dark:hidden" />
+                    <img src="assets/images/logo/logo_jaune.svg" alt="Melon-Soft Logo" class="navbar-logo hidden dark:block" />
                 </div>
 
                 <nav class="navbar-nav">
@@ -100,7 +101,8 @@
                                 class="block navbar-link py-1 text-sm">Développement Informatique</a>
                             <a href="formation_professionnelle.html" class="block navbar-link py-1 text-sm">Formation
                                 Professionnelle</a>
-                            <a href="communication_numerique.html" class="block navbar-link py-1 text-sm">Communication Numérique</a>
+                            <a href="communication_numerique.html" class="block navbar-link py-1 text-sm">Communication
+                                Numérique</a>
                             <a href="services_techniques.html" class="block navbar-link py-1 text-sm">Services
                                 Techniques</a>
                             <a href="solutions_de_securite.html" class="block navbar-link py-1 text-sm">Solutions de
@@ -118,389 +120,432 @@
 
 
 
-<!-- Main Content -->
-<main class="flex-1">
-    <!-- Hero Section -->
-    <section class="relative bg-white dark:bg-background-dark py-16 lg:py-24 overflow-hidden">
-        <!-- Background Elements -->
-        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-primary/5 blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-purple-500/5 blur-3xl"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-                <div class="flex-1 text-center lg:text-left">
-                    <div
-                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-primary dark:text-blue-200 text-sm font-semibold mb-6">
-                        <span class="w-2 h-2 rounded-full bg-primary"></span>
-                        Leader en RDC
-                    </div>
-                    <h1
-                        class="text-4xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
-                        Expertise en <br />
-                        <span class="text-primary">Développement Sur Mesure</span>
-                    </h1>
-                    <p
-                        class="text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                        Transformez vos idées en solutions numériques performantes avec Melon-Soft. Nous concevons des
-                        logiciels, sites web et applications mobiles adaptés à votre croissance en Afrique et à
-                        l'international.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <button
-                            class="inline-flex items-center justify-center px-6 py-3.5 text-base font-bold rounded-lg text-white bg-primary hover:bg-primary-dark transition-all shadow-lg shadow-primary/25">
-                            Démarrer votre projet
-                            <span class="material-symbols-outlined ml-2 text-[20px]">arrow_forward</span>
-                        </button>
-                        <button
-                            class="inline-flex items-center justify-center px-6 py-3.5 text-base font-bold rounded-lg text-slate-700 dark:text-white bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
-                            Voir nos réalisations
-                        </button>
+        <!-- Main Content -->
+        <main class="flex-1">
+            <!-- Hero Section -->
+            <section class="relative bg-white dark:bg-background-dark py-16 lg:py-24 overflow-hidden">
+                <!-- Background Elements -->
+                <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-primary/5 blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-purple-500/5 blur-3xl">
+                </div>
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                        <div class="flex-1 text-center lg:text-left">
+                            <div
+                                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-primary dark:text-blue-200 text-sm font-semibold mb-6">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                Leader en RDC
+                            </div>
+                            <h1
+                                class="text-4xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
+                                Expertise en <br />
+                                <span class="text-primary">Développement Sur Mesure</span>
+                            </h1>
+                            <p
+                                class="text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                                Transformez vos idées en solutions numériques performantes avec Melon-Soft. Nous
+                                concevons des
+                                logiciels, sites web et applications mobiles adaptés à votre croissance en Afrique et à
+                                l'international.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                                <button
+                                    class="inline-flex items-center justify-center px-6 py-3.5 text-base font-bold rounded-lg text-white bg-primary hover:bg-primary-dark transition-all shadow-lg shadow-primary/25">
+                                    Démarrer votre projet
+                                    <span class="material-symbols-outlined ml-2 text-[20px]">arrow_forward</span>
+                                </button>
+                                <button
+                                    class="inline-flex items-center justify-center px-6 py-3.5 text-base font-bold rounded-lg text-slate-700 dark:text-white bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
+                                    Voir nos réalisations
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex-1 w-full max-w-lg lg:max-w-none">
+                            <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-slate-100 aspect-[4/3]"
+                                data-alt="Illustration montrant du code sur plusieurs écrans (mobile, tablette, desktop) dans un style moderne et isométrique"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC7psmkeRlkZWH7HTdffSjlJXhCE9bARAIVsx_o0SgD10msLgm_zzJANxlkQJxeNc9CpZqTXNa8e_HQVP8iSVrQceJjrTqZAzwy4gwTKij4ThcMVJ6HN2XyRO63lO7qMhZX5xiNCQ6dOg35wMk6U2G_U9SrFjN4Q9ef4ZB1Str3Je1wqZsTw0eRdwJ8c7zdhMpHO5HI-IonQsTLv8zKLMB3KAwOofyWSVTmpxKLi4ssB_oN567YLOyoTQPjYTpipI-qaXISVcR9pdw'); background-size: cover; background-position: center;">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-tr from-primary/80 to-purple-600/40 mix-blend-multiply">
+                                </div>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span
+                                        class="material-symbols-outlined text-white/90 text-9xl drop-shadow-lg">code_blocks</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="flex-1 w-full max-w-lg lg:max-w-none">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-slate-100 aspect-[4/3]"
-                        data-alt="Illustration montrant du code sur plusieurs écrans (mobile, tablette, desktop) dans un style moderne et isométrique"
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC7psmkeRlkZWH7HTdffSjlJXhCE9bARAIVsx_o0SgD10msLgm_zzJANxlkQJxeNc9CpZqTXNa8e_HQVP8iSVrQceJjrTqZAzwy4gwTKij4ThcMVJ6HN2XyRO63lO7qMhZX5xiNCQ6dOg35wMk6U2G_U9SrFjN4Q9ef4ZB1Str3Je1wqZsTw0eRdwJ8c7zdhMpHO5HI-IonQsTLv8zKLMB3KAwOofyWSVTmpxKLi4ssB_oN567YLOyoTQPjYTpipI-qaXISVcR9pdw'); background-size: cover; background-position: center;">
+            </section>
+            <!-- Services Overview Grid -->
+            <section class="py-20 bg-background-light dark:bg-slate-900">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Nos Domaines
+                            d'Intervention</h2>
+                        <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Une approche 360° pour couvrir
+                            tous vos
+                            besoins technologiques.</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Service 1: Web -->
                         <div
-                            class="absolute inset-0 bg-gradient-to-tr from-primary/80 to-purple-600/40 mix-blend-multiply">
+                            class="group bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                            <div
+                                class="w-14 h-14 bg-blue-50 dark:bg-blue-900/20 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-3xl">language</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Développement Web</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed text-sm">
+                                Sites vitrines, plateformes e-commerce et applications web progressives (PWA) optimisés
+                                pour le
+                                SEO et la conversion.
+                            </p>
+                            <ul class="space-y-2 mb-6 text-sm text-slate-500 dark:text-slate-400">
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-primary text-sm">check_circle</span> Sites
+                                    Institutionnels</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                    Boutiques en
+                                    ligne</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                    Intranets
+                                    Sécurisés</li>
+                            </ul>
+                            <a class="inline-flex items-center text-primary font-semibold text-sm hover:text-primary-dark"
+                                href="#">
+                                En savoir plus <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                            </a>
                         </div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <span
-                                class="material-symbols-outlined text-white/90 text-9xl drop-shadow-lg">code_blocks</span>
+                        <!-- Service 2: Mobile -->
+                        <div
+                            class="group bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+                            <div
+                                class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150">
+                            </div>
+                            <div
+                                class="w-14 h-14 bg-blue-50 dark:bg-blue-900/20 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform relative z-10">
+                                <span class="material-symbols-outlined text-3xl">smartphone</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 relative z-10">Applications
+                                Mobiles
+                            </h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed text-sm relative z-10">
+                                Solutions natives iOS &amp; Android ou hybrides pour connecter votre entreprise à vos
+                                clients où
+                                qu'ils soient.
+                            </p>
+                            <ul class="space-y-2 mb-6 text-sm text-slate-500 dark:text-slate-400 relative z-10">
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-primary text-sm">check_circle</span> iOS
+                                    &amp;
+                                    Android Natif</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-primary text-sm">check_circle</span> React
+                                    Native
+                                    / Flutter</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-primary text-sm">check_circle</span> UX/UI
+                                    Mobile
+                                    First</li>
+                            </ul>
+                            <a class="inline-flex items-center text-primary font-semibold text-sm hover:text-primary-dark relative z-10"
+                                href="#">
+                                En savoir plus <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                            </a>
+                        </div>
+                        <!-- Service 3: Desktop -->
+                        <div
+                            class="group bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+                            <div
+                                class="w-14 h-14 bg-blue-50 dark:bg-blue-900/20 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-3xl">desktop_windows</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Logiciels de Bureau</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed text-sm">
+                                Outils de gestion robustes (ERP, CRM) pour automatiser vos processus métiers et gagner
+                                en
+                                productivité.
+                            </p>
+                            <ul class="space-y-2 mb-6 text-sm text-slate-500 dark:text-slate-400">
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                    Gestion
+                                    Commerciale (CRM)</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-primary text-sm">check_circle</span> ERP
+                                    sur
+                                    mesure</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                    Logiciels de
+                                    Caisse (POS)</li>
+                            </ul>
+                            <a class="inline-flex items-center text-primary font-semibold text-sm hover:text-primary-dark"
+                                href="#">
+                                En savoir plus <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services Overview Grid -->
-    <section class="py-20 bg-background-light dark:bg-slate-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Nos Domaines
-                    d'Intervention</h2>
-                <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Une approche 360° pour couvrir tous vos
-                    besoins technologiques.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1: Web -->
-                <div
-                    class="group bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
-                    <div
-                        class="w-14 h-14 bg-blue-50 dark:bg-blue-900/20 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-                        <span class="material-symbols-outlined text-3xl">language</span>
+            </section>
+            <!-- Detailed Feature Section (Alternating) -->
+            <section class="py-20 bg-white dark:bg-background-dark">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+                    <!-- Feature 1 -->
+                    <div class="flex flex-col lg:flex-row items-center gap-12">
+                        <div class="lg:w-1/2">
+                            <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-video"
+                                data-alt="Interface utilisateur moderne d'un tableau de bord de gestion (ERP) montrant des graphiques et des données"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCk3zH1xAAbVLJu55kZk1_bEVw1W7ApbBtAfTAbW2muGru2F3zYbcoltwjprbP7n5gfTuPlbQoza8yh6SOuxRuOB6XLFLL3Li2YO3EKA2u4e_dvTts8Kw2GdBczkyKSOg74YzD9iTaNQ1yAmKJwPBNFykA5wR6mU5baEAM44CAYN5_nZ0zSaRWN9uP9ZY9NrjA2EU7EkkG-uybcfuWxHSIYrGt70syZKKeW2WjUiK_3vAVHkk3-rQGKeBpAKJFMkZBH74yPWFDoCJk'); background-size: cover; background-position: center;">
+                                <div class="absolute inset-0 bg-slate-900/10"></div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2">
+                            <div class="flex items-center gap-2 text-primary font-bold mb-2">
+                                <span class="material-symbols-outlined">settings_suggest</span>
+                                <span>Logiciels Métiers</span>
+                            </div>
+                            <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Optimisez votre gestion
+                                avec des
+                                ERP &amp; CRM sur mesure</h2>
+                            <p class="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                                Chaque entreprise a des processus uniques. Nous développons des logiciels de gestion qui
+                                s'adaptent exactement à votre flux de travail, et non l'inverse. De la gestion de stock
+                                à la
+                                relation client, centralisez vos données pour une prise de décision éclairée.
+                            </p>
+                            <div class="flex gap-3 flex-wrap">
+                                <span
+                                    class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded text-sm font-medium">Automatisation</span>
+                                <span
+                                    class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded text-sm font-medium">Reporting</span>
+                                <span
+                                    class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded text-sm font-medium">Sécurité</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Développement Web</h3>
-                    <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed text-sm">
-                        Sites vitrines, plateformes e-commerce et applications web progressives (PWA) optimisés pour le
-                        SEO et la conversion.
+                    <!-- Feature 2 -->
+                    <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+                        <div class="lg:w-1/2">
+                            <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-video"
+                                data-alt="Smartphone affichant une application mobile e-commerce moderne et réactive"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6dHWN36VyvmsQTh3maP1twGsHq2RM5nLZIPO0u00n-NkdyVUA0OqDeyfOeVSDnz7S1O49h8lEa7QhQx18F9-VROMW4HOeBbVBQSKsQKi2_PJLrm_1eYbKFqfQPqn7UHbA0upb-MNf0f0rBUdXolHzCViXM1ihTYRrQRH8_z9ysIrkMDKPztP4gtQ6CsH215-omEbDfJqlyTDu6W4t2Z0oWKTAEEj1cY02-84jk1Bsa3hAY8ywmC8xI3fjDPjDS24hohatar8IRVo'); background-size: cover; background-position: center;">
+                                <div class="absolute inset-0 bg-slate-900/10"></div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2">
+                            <div class="flex items-center gap-2 text-primary font-bold mb-2">
+                                <span class="material-symbols-outlined">shopping_cart</span>
+                                <span>E-commerce &amp; Web</span>
+                            </div>
+                            <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Votre boutique ouverte
+                                24/7 au
+                                monde entier</h2>
+                            <p class="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                                Lancez votre activité en ligne avec des solutions e-commerce robustes. Nous intégrons
+                                les moyens
+                                de paiement locaux (Mobile Money, Cartes bancaires) pour faciliter les transactions en
+                                RDC et à
+                                l'international. Design attractif et parcours utilisateur fluide garantis.
+                            </p>
+                            <div class="flex gap-3 flex-wrap">
+                                <span
+                                    class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded text-sm font-medium">Mobile
+                                    Money</span>
+                                <span
+                                    class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded text-sm font-medium">SEO
+                                    Friendly</span>
+                                <span
+                                    class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded text-sm font-medium">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Technologies Section -->
+            <section
+                class="py-20 bg-background-light dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-12">Technologies Maîtrisées</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-70">
+                        <!-- Tech Logos (using text/icon representation for simplicity without external SVG assets) -->
+                        <div
+                            class="flex flex-col items-center gap-2 hover:opacity-100 hover:text-primary transition-all cursor-default">
+                            <span class="material-symbols-outlined text-4xl">javascript</span>
+                            <span class="font-bold text-sm">JavaScript</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-2 hover:opacity-100 hover:text-primary transition-all cursor-default">
+                            <span class="material-symbols-outlined text-4xl">php</span>
+                            <span class="font-bold text-sm">PHP / Laravel</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-2 hover:opacity-100 hover:text-primary transition-all cursor-default">
+                            <span class="material-symbols-outlined text-4xl">code</span>
+                            <span class="font-bold text-sm">React Native</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-2 hover:opacity-100 hover:text-primary transition-all cursor-default">
+                            <span class="material-symbols-outlined text-4xl">data_object</span>
+                            <span class="font-bold text-sm">Python</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-2 hover:opacity-100 hover:text-primary transition-all cursor-default">
+                            <span class="material-symbols-outlined text-4xl">database</span>
+                            <span class="font-bold text-sm">MySQL / PostgreSQL</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-2 hover:opacity-100 hover:text-primary transition-all cursor-default">
+                            <span class="material-symbols-outlined text-4xl">cloud</span>
+                            <span class="font-bold text-sm">AWS / Azure</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to Action Section -->
+            <section class="py-20 bg-primary relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10"
+                    style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;">
+                </div>
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">Prêt à digitaliser votre activité ?
+                    </h2>
+                    <p class="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
+                        Discutez avec nos experts de votre projet. Nous analysons vos besoins et vous proposons une
+                        solution
+                        technique adaptée à votre budget.
                     </p>
-                    <ul class="space-y-2 mb-6 text-sm text-slate-500 dark:text-slate-400">
-                        <li class="flex items-center gap-2"><span
-                                class="material-symbols-outlined text-primary text-sm">check_circle</span> Sites
-                            Institutionnels</li>
-                        <li class="flex items-center gap-2"><span
-                                class="material-symbols-outlined text-primary text-sm">check_circle</span> Boutiques en
-                            ligne</li>
-                        <li class="flex items-center gap-2"><span
-                                class="material-symbols-outlined text-primary text-sm">check_circle</span> Intranets
-                            Sécurisés</li>
-                    </ul>
-                    <a class="inline-flex items-center text-primary font-semibold text-sm hover:text-primary-dark"
-                        href="#">
-                        En savoir plus <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
-                    </a>
-                </div>
-                <!-- Service 2: Mobile -->
-                <div
-                    class="group bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden">
-                    <div
-                        class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150">
-                    </div>
-                    <div
-                        class="w-14 h-14 bg-blue-50 dark:bg-blue-900/20 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform relative z-10">
-                        <span class="material-symbols-outlined text-3xl">smartphone</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 relative z-10">Applications Mobiles
-                    </h3>
-                    <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed text-sm relative z-10">
-                        Solutions natives iOS &amp; Android ou hybrides pour connecter votre entreprise à vos clients où
-                        qu'ils soient.
-                    </p>
-                    <ul class="space-y-2 mb-6 text-sm text-slate-500 dark:text-slate-400 relative z-10">
-                        <li class="flex items-center gap-2"><span
-                                class="material-symbols-outlined text-primary text-sm">check_circle</span> iOS &amp;
-                            Android Natif</li>
-                        <li class="flex items-center gap-2"><span
-                                class="material-symbols-outlined text-primary text-sm">check_circle</span> React Native
-                            / Flutter</li>
-                        <li class="flex items-center gap-2"><span
-                                class="material-symbols-outlined text-primary text-sm">check_circle</span> UX/UI Mobile
-                            First</li>
-                    </ul>
-                    <a class="inline-flex items-center text-primary font-semibold text-sm hover:text-primary-dark relative z-10"
-                        href="#">
-                        En savoir plus <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
-                    </a>
-                </div>
-                <!-- Service 3: Desktop -->
-                <div
-                    class="group bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
-                    <div
-                        class="w-14 h-14 bg-blue-50 dark:bg-blue-900/20 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-                        <span class="material-symbols-outlined text-3xl">desktop_windows</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Logiciels de Bureau</h3>
-                    <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed text-sm">
-                        Outils de gestion robustes (ERP, CRM) pour automatiser vos processus métiers et gagner en
-                        productivité.
-                    </p>
-                    <ul class="space-y-2 mb-6 text-sm text-slate-500 dark:text-slate-400">
-                        <li class="flex items-center gap-2"><span
-                                class="material-symbols-outlined text-primary text-sm">check_circle</span> Gestion
-                            Commerciale (CRM)</li>
-                        <li class="flex items-center gap-2"><span
-                                class="material-symbols-outlined text-primary text-sm">check_circle</span> ERP sur
-                            mesure</li>
-                        <li class="flex items-center gap-2"><span
-                                class="material-symbols-outlined text-primary text-sm">check_circle</span> Logiciels de
-                            Caisse (POS)</li>
-                    </ul>
-                    <a class="inline-flex items-center text-primary font-semibold text-sm hover:text-primary-dark"
-                        href="#">
-                        En savoir plus <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Detailed Feature Section (Alternating) -->
-    <section class="py-20 bg-white dark:bg-background-dark">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
-            <!-- Feature 1 -->
-            <div class="flex flex-col lg:flex-row items-center gap-12">
-                <div class="lg:w-1/2">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-video"
-                        data-alt="Interface utilisateur moderne d'un tableau de bord de gestion (ERP) montrant des graphiques et des données"
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCk3zH1xAAbVLJu55kZk1_bEVw1W7ApbBtAfTAbW2muGru2F3zYbcoltwjprbP7n5gfTuPlbQoza8yh6SOuxRuOB6XLFLL3Li2YO3EKA2u4e_dvTts8Kw2GdBczkyKSOg74YzD9iTaNQ1yAmKJwPBNFykA5wR6mU5baEAM44CAYN5_nZ0zSaRWN9uP9ZY9NrjA2EU7EkkG-uybcfuWxHSIYrGt70syZKKeW2WjUiK_3vAVHkk3-rQGKeBpAKJFMkZBH74yPWFDoCJk'); background-size: cover; background-position: center;">
-                        <div class="absolute inset-0 bg-slate-900/10"></div>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button
+                            class="bg-white text-primary hover:bg-slate-100 font-bold py-4 px-8 rounded-lg shadow-lg transition-colors text-lg">
+                            Demander un devis gratuit
+                        </button>
+                        <button
+                            class="bg-transparent border-2 border-white text-white hover:bg-white/10 font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+                            Contacter notre équipe
+                        </button>
                     </div>
                 </div>
-                <div class="lg:w-1/2">
-                    <div class="flex items-center gap-2 text-primary font-bold mb-2">
-                        <span class="material-symbols-outlined">settings_suggest</span>
-                        <span>Logiciels Métiers</span>
-                    </div>
-                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Optimisez votre gestion avec des
-                        ERP &amp; CRM sur mesure</h2>
-                    <p class="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
-                        Chaque entreprise a des processus uniques. Nous développons des logiciels de gestion qui
-                        s'adaptent exactement à votre flux de travail, et non l'inverse. De la gestion de stock à la
-                        relation client, centralisez vos données pour une prise de décision éclairée.
-                    </p>
-                    <div class="flex gap-3 flex-wrap">
-                        <span
-                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded text-sm font-medium">Automatisation</span>
-                        <span
-                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded text-sm font-medium">Reporting</span>
-                        <span
-                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded text-sm font-medium">Sécurité</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Feature 2 -->
-            <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
-                <div class="lg:w-1/2">
-                    <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-video"
-                        data-alt="Smartphone affichant une application mobile e-commerce moderne et réactive"
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6dHWN36VyvmsQTh3maP1twGsHq2RM5nLZIPO0u00n-NkdyVUA0OqDeyfOeVSDnz7S1O49h8lEa7QhQx18F9-VROMW4HOeBbVBQSKsQKi2_PJLrm_1eYbKFqfQPqn7UHbA0upb-MNf0f0rBUdXolHzCViXM1ihTYRrQRH8_z9ysIrkMDKPztP4gtQ6CsH215-omEbDfJqlyTDu6W4t2Z0oWKTAEEj1cY02-84jk1Bsa3hAY8ywmC8xI3fjDPjDS24hohatar8IRVo'); background-size: cover; background-position: center;">
-                        <div class="absolute inset-0 bg-slate-900/10"></div>
-                    </div>
-                </div>
-                <div class="lg:w-1/2">
-                    <div class="flex items-center gap-2 text-primary font-bold mb-2">
-                        <span class="material-symbols-outlined">shopping_cart</span>
-                        <span>E-commerce &amp; Web</span>
-                    </div>
-                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Votre boutique ouverte 24/7 au
-                        monde entier</h2>
-                    <p class="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
-                        Lancez votre activité en ligne avec des solutions e-commerce robustes. Nous intégrons les moyens
-                        de paiement locaux (Mobile Money, Cartes bancaires) pour faciliter les transactions en RDC et à
-                        l'international. Design attractif et parcours utilisateur fluide garantis.
-                    </p>
-                    <div class="flex gap-3 flex-wrap">
-                        <span
-                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded text-sm font-medium">Mobile
-                            Money</span>
-                        <span
-                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded text-sm font-medium">SEO
-                            Friendly</span>
-                        <span
-                            class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded text-sm font-medium">Responsive</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Technologies Section -->
-    <section class="py-20 bg-background-light dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-12">Technologies Maîtrisées</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-70">
-                <!-- Tech Logos (using text/icon representation for simplicity without external SVG assets) -->
-                <div
-                    class="flex flex-col items-center gap-2 hover:opacity-100 hover:text-primary transition-all cursor-default">
-                    <span class="material-symbols-outlined text-4xl">javascript</span>
-                    <span class="font-bold text-sm">JavaScript</span>
-                </div>
-                <div
-                    class="flex flex-col items-center gap-2 hover:opacity-100 hover:text-primary transition-all cursor-default">
-                    <span class="material-symbols-outlined text-4xl">php</span>
-                    <span class="font-bold text-sm">PHP / Laravel</span>
-                </div>
-                <div
-                    class="flex flex-col items-center gap-2 hover:opacity-100 hover:text-primary transition-all cursor-default">
-                    <span class="material-symbols-outlined text-4xl">code</span>
-                    <span class="font-bold text-sm">React Native</span>
-                </div>
-                <div
-                    class="flex flex-col items-center gap-2 hover:opacity-100 hover:text-primary transition-all cursor-default">
-                    <span class="material-symbols-outlined text-4xl">data_object</span>
-                    <span class="font-bold text-sm">Python</span>
-                </div>
-                <div
-                    class="flex flex-col items-center gap-2 hover:opacity-100 hover:text-primary transition-all cursor-default">
-                    <span class="material-symbols-outlined text-4xl">database</span>
-                    <span class="font-bold text-sm">MySQL / PostgreSQL</span>
-                </div>
-                <div
-                    class="flex flex-col items-center gap-2 hover:opacity-100 hover:text-primary transition-all cursor-default">
-                    <span class="material-symbols-outlined text-4xl">cloud</span>
-                    <span class="font-bold text-sm">AWS / Azure</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Call to Action Section -->
-    <section class="py-20 bg-primary relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10"
-            style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">Prêt à digitaliser votre activité ?</h2>
-            <p class="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
-                Discutez avec nos experts de votre projet. Nous analysons vos besoins et vous proposons une solution
-                technique adaptée à votre budget.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button
-                    class="bg-white text-primary hover:bg-slate-100 font-bold py-4 px-8 rounded-lg shadow-lg transition-colors text-lg">
-                    Demander un devis gratuit
-                </button>
-                <button
-                    class="bg-transparent border-2 border-white text-white hover:bg-white/10 font-bold py-4 px-8 rounded-lg transition-colors text-lg">
-                    Contacter notre équipe
-                </button>
-            </div>
-        </div>
-    </section>
-</main>
+            </section>
+        </main>
 
-<!-- Footer -->
-        <footer class="footer">
-            <div class="footer-container">
-                <!-- Top footer -->
-                <div class="footer-grid">
-                    <!-- Logo & description -->
-                    <div class="flex flex-col gap-5">
-                        <div class="flex items-center">
-                            <img src="assets/images/logo.png" alt="Melon-Soft Logo" class="footer-logo" />
+        <!-- Footer -->
+        <footer class="bg-[#0B0F19] text-white py-16 px-4 md:px-10 lg:px-20 relative font-display">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                    <!-- Column 1 -->
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <img src="assets/images/logo/logo_jaune.svg" alt="Melon-Soft Logo"
+                                class="w-10 h-10 object-contain rounded" />
+                            <span class="font-black text-xl tracking-tight text-white uppercase">Melon-Soft</span>
                         </div>
-
-                        <p class="text-sm text-gray-400 leading-relaxed max-w-sm">
-                            Votre partenaire technologique de confiance en RDC. Conception de logiciels,
-                            sites web et applications mobiles de classe mondiale.
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Partenaire clé de la numérisation informatique en République Démocratique du Congo. Nous
+                            transformons vos idées en solutions technologiques d'excellence.
                         </p>
-
-                        <div class="flex gap-4">
-                            <a class="text-gray-400 hover:text-primary transition-colors" href="#"
-                                aria-label="Site web">
-                                <span class="material-symbols-outlined">public</span>
+                        <div class="flex gap-3">
+                            <!-- Facebook -->
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
+                                aria-label="Facebook">
+                                <span class="font-bold font-sans">f</span>
                             </a>
-                            <a class="text-gray-400 hover:text-primary transition-colors" href="#" aria-label="Email">
-                                <span class="material-symbols-outlined">alternate_email</span>
+                            <!-- X -->
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
+                                aria-label="X">
+                                <span class="font-bold font-sans">x</span>
                             </a>
-                            <a class="text-gray-400 hover:text-primary transition-colors" href="#"
+                            <!-- LinkedIn -->
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
                                 aria-label="LinkedIn">
-                                <span class="material-symbols-outlined">work</span>
+                                <span class="font-bold font-sans">in</span>
+                            </a>
+                            <!-- Instagram -->
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
+                                aria-label="Instagram">
+                                <span class="material-symbols-outlined text-lg">photo_camera</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Entreprise -->
-                    <div class="flex flex-col gap-4">
-                        <h4 class="footer-title">Entreprise</h4>
-                        <nav class="footer-links">
-                            <a class="footer-link" href="apropos.html">À propos</a>
-                            <a class="footer-link" href="carrieres.html">Carrières</a>
-                            <a class="footer-link" href="blog.html">Blog</a>
-                            <a class="footer-link" href="#">Presse</a>
+                    <!-- Column 2 -->
+                    <div class="flex flex-col gap-6">
+                        <h3 class="font-bold text-lg text-white">Liens Rapides</h3>
+                        <nav class="flex flex-col gap-4">
+                            <a href="nos_services.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Nos Services</a>
+                            <a href="apropos.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Notre Histoire</a>
+                            <a href="#"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Melon-Academia</a>
+                            <a href="apropos.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">L'Équipe</a>
                         </nav>
                     </div>
 
-                    <!-- Services -->
-                    <div class="flex flex-col gap-4">
-                        <h4 class="footer-title">Services</h4>
-                        <nav class="footer-links">
-                            <a class="footer-link" href="developpement_informatique.html">Développement Web</a>
-                            <a class="footer-link" href="developpement_informatique.html">Applications Mobiles</a>
-                            <a class="footer-link" href="#">Solutions ERP</a>
-                            <a class="footer-link" href="#">Consulting IT</a>
+                    <!-- Column 3 -->
+                    <div class="flex flex-col gap-6">
+                        <h3 class="font-bold text-lg text-white">Services</h3>
+                        <nav class="flex flex-col gap-4">
+                            <a href="developpement_informatique.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Développement
+                                Web</a>
+                            <a href="developpement_informatique.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Applications
+                                Mobiles</a>
+                            <a href="solutions_de_securite.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Sécurité
+                                Réseaux</a>
+                            <a href="communication_numerique.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Infographie Pro</a>
                         </nav>
                     </div>
 
-                    <!-- Contact -->
-                    <div class="flex flex-col gap-4">
-                        <h4 class="footer-title">Contact</h4>
-
-                        <div class="flex flex-col gap-3 text-sm text-gray-400">
-                            <div class="flex items-start gap-3">
-                                <span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
-                                <span>Av. de la Paix, Gombe<br>Kinshasa, RDC</span>
-                            </div>
-
-                            <div class="flex items-center gap-3">
-                                <span class="material-symbols-outlined text-primary text-[20px]">mail</span>
-                                <a href="mailto:info@melon-soft.cd" class="hover:text-white transition-colors">
-                                    info@melon-soft.cd
-                                </a>
-                            </div>
-
-                            <div class="flex items-center gap-3">
-                                <span class="material-symbols-outlined text-primary text-[20px]">call</span>
-                                <a href="tel:+243810000000" class="hover:text-white transition-colors">
-                                    +243 81 000 0000
-                                </a>
-                            </div>
-                        </div>
+                    <!-- Column 4 -->
+                    <div class="flex flex-col gap-6">
+                        <h3 class="font-bold text-lg text-white">Abonnez-vous</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Recevez nos actualités et conseils technologiques directement dans votre boîte mail.
+                        </p>
+                        <form class="flex w-full" onsubmit="event.preventDefault();">
+                            <input type="email" placeholder="Votre e-mail"
+                                class="flex-1 bg-[#1A1F2E] border-none rounded-l-lg px-4 py-3 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-[#FFD700] outline-none">
+                            <button type="submit"
+                                class="bg-[#FFD700] text-[#0B0F19] font-bold px-6 py-3 rounded-r-lg hover:bg-[#E5C100] transition-colors text-sm">
+                                OK
+                            </button>
+                        </form>
                     </div>
                 </div>
 
-                <!-- Bottom footer -->
-                <div class="footer-bottom">
-                    <p class="footer-copyright">
-                        © 2025 Melon-Soft. Tous droits réservés.
+                <!-- Bottom Bar -->
+                <div
+                    class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 relative">
+                    <p class="text-gray-500 text-xs text-center md:text-left">
+                        © 2025 Melon-Soft. Tous droits réservés. Kinshasa, RDC.
                     </p>
-
-                    <div class="footer-legal-links">
-                        <a class="footer-legal-link" href="#">Mentions légales</a>
-                        <a class="footer-legal-link" href="#">Politique de confidentialité</a>
+                    <div class="flex gap-6">
+                        <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Confidentialité</a>
+                        <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Mentions
+                            Légales</a>
                     </div>
+
+                    <!-- Back to top button (positioned absolutely to the right on large screens) -->
+                    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                        class="fixed bottom-8 right-8 z-50 md:absolute md:bottom-auto md:right-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 bg-[#FFD700] rounded-full flex items-center justify-center text-[#0B0F19] hover:bg-[#E5C100] transition-all shadow-lg"
+                        aria-label="Haut de page">
+                        <span class="material-symbols-outlined">arrow_upward</span>
+                    </button>
                 </div>
             </div>
         </footer>
-
     </div>
-
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
 </body>

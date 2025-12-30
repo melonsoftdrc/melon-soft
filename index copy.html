@@ -32,8 +32,7 @@
             <div class="navbar-container">
                 <div class="flex items-center gap-4">
                     <!-- Logo -->
-                    <img src="assets/images/logo/logo_bleu.svg" alt="Melon-Soft Logo" class="navbar-logo dark:hidden" />
-                    <img src="assets/images/logo/logo_jaune.svg" alt="Melon-Soft Logo" class="navbar-logo hidden dark:block" />
+                    <img src="assets/images/logo.png" alt="Melon-Soft Logo" class="navbar-logo" />
                 </div>
 
                 <nav class="navbar-nav">
@@ -130,16 +129,16 @@
                     <div class="flex flex-1 flex-col gap-8">
                         <div class="flex flex-col gap-4 text-left">
                             <div
-                                class="inline-flex w-fit items-center gap-2 rounded-full bg-background-dark px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent-yellow">
+                                class="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">
                                 <span class="h-2 w-2 rounded-full bg-accent-yellow"></span>
                                 Leader en innovation RDC
                             </div>
                             <h1
-                                class="font-display text-4xl font-black leading-[1.1] tracking-tight text-text-dark dark:text-accent-yellow sm:text-5xl lg:text-6xl">
-                                Transformez vos idées en <span class="text-accent-yellow">réalité numérique</span>
+                                class="font-display text-4xl font-black leading-[1.1] tracking-tight text-text-dark dark:text-white sm:text-5xl lg:text-6xl">
+                                Transformez vos idées en <span class="text-primary">réalité numérique</span>
                             </h1>
                             <p
-                                class="text-lg font-normal leading-relaxed text-text-grey dark:text-gray sm:text-xl max-w-2xl">
+                                class="text-lg font-normal leading-relaxed text-text-grey dark:text-gray-400 sm:text-xl max-w-2xl">
                                 Melon-Soft est votre partenaire stratégique pour des solutions logicielles, web et
                                 mobiles
                                 sur mesure, adaptées aux défis uniques de la République Démocratique du Congo.
@@ -147,70 +146,30 @@
                         </div>
                         <div class="flex flex-wrap gap-4">
                             <button
-                                onclick="window.location.href='nous_contacter.html'"
-                                class="flex h-12 cursor-pointer items-center justify-center rounded-lg bg-accent-yellow px-6 text-base font-bold text-primary-dark transition-all hover:bg-[#E5C100] hover:shadow-lg hover:shadow-accent-yellow/30">
+                                class="flex h-12 cursor-pointer items-center justify-center rounded-lg bg-yellow-400 px-6 text-base font-bold text-primary-dark transition-all hover:bg-primary hover:shadow-lg hover:shadow-primary/30">
                                 Commencer un projet
                             </button>
                             <button
-                                onclick="window.location.href='portfolio.html'"
                                 class="flex h-12 cursor-pointer items-center justify-center rounded-lg border border-[#e5e7eb] bg-white px-6 text-base font-bold text-text-dark transition-all hover:bg-[#f9fafb] hover:border-primary/50 dark:border-[#2a303c] dark:bg-[#1a2230] dark:text-white dark:hover:bg-[#252b3b]">
                                 Voir nos réalisations
                             </button>
                         </div>
                     </div>
-                    <div class="flex flex-1 justify-center lg:justify-end mt-8 lg:mt-0">
+                    <div class="flex flex-1 justify-center lg:justify-end">
                         <div class="relative w-full max-w-[600px] overflow-hidden rounded-2xl shadow-2xl shadow-primary/20 aspect-[4/3] bg-cover bg-center"
                             data-alt="Team of developers collaborating on code in a modern office"
-                            style='background-image: url("assets/images/digi.png");'>
+                            style='background-image: url("assets/images/graphique.jpg");'>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <!-- Section Statistiques -->
-            <section class="flex flex-col items-center justify-center bg-primary px-4 py-16 lg:px-20 lg:py-20 text-white relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
-                <div class="mx-auto flex w-full max-w-[1280px] flex-col gap-8 relative z-10">
-                    <div class="text-center mb-4">
-                        <h2 class="text-2xl font-black leading-tight sm:text-3xl mb-2">Nos Réalisations en Chiffres</h2>
-                        <p class="text-primary-light text-sm sm:text-base max-w-2xl mx-auto">Des années d'excellence au service de la transformation digitale en RDC</p>
-                    </div>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-                        <!-- Clients satisfaits -->
-                        <div class="flex flex-col items-center text-center gap-2 p-4 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
-                            <div class="text-4xl md:text-5xl font-black text-accent-yellow mb-2">98%</div>
-                            <div class="text-sm md:text-base font-semibold text-white">Clients Satisfaits</div>
-                            <div class="text-xs text-primary-light">Taux de satisfaction</div>
-                        </div>
-                        <!-- Années d'expérience -->
-                        <div class="flex flex-col items-center text-center gap-2 p-4 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
-                            <div class="text-4xl md:text-5xl font-black text-accent-yellow mb-2">10+</div>
-                            <div class="text-sm md:text-base font-semibold text-white">Années</div>
-                            <div class="text-xs text-primary-light">D'expérience</div>
-                        </div>
-                        <!-- Projets réalisés -->
-                        <div class="flex flex-col items-center text-center gap-2 p-4 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
-                            <div class="text-4xl md:text-5xl font-black text-accent-yellow mb-2">500+</div>
-                            <div class="text-sm md:text-base font-semibold text-white">Projets</div>
-                            <div class="text-xs text-primary-light">Livrés avec succès</div>
-                        </div>
-                        <!-- Support 24/7 -->
-                        <div class="flex flex-col items-center text-center gap-2 p-4 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
-                            <div class="text-4xl md:text-5xl font-black text-accent-yellow mb-2">24/7</div>
-                            <div class="text-sm md:text-base font-semibold text-white">Support</div>
-                            <div class="text-xs text-primary-light">Disponibilité totale</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
                 <div class="w-full pb-8">
                     <div class="layout-container flex flex-col items-center justify-center px-4 lg:px-40 pt-8 pb-8">
                         <div class="text-center">
                             <h2
-                                class="text-3xl font-black leading-tight text-text-dark dark:text-accent-yellow sm:text-4xl mb-4">
+                                class="text-3xl font-black leading-tight text-text-dark dark:text-white sm:text-4xl mb-4">
                                 Nos Services
                             </h2>
                             <p
@@ -224,7 +183,7 @@
                                     <span class="truncate">Explorer nos solutions</span>
                                 </button>
                                 <button onclick="window.location.href='nous_contacter.html'"
-                                    class="flex h-12 cursor-pointer items-center justify-center rounded-lg border border-[#e5e7eb] bg-white px-6 text-base font-bold text-text-dark transition-all hover:bg-[#f9fafb] hover:border-primary/50 dark:border-[#2a303c] dark:bg-primary dark:text-white dark:hover:bg-primary-dark">
+                                    class="flex h-12 cursor-pointer items-center justify-center rounded-lg border border-[#e5e7eb] bg-white px-6 text-base font-bold text-text-dark transition-all hover:bg-[#f9fafb] hover:border-primary/50 dark:border-[#2a303c] dark:bg-[#1a2230] dark:text-white dark:hover:bg-[#252b3b]">
                                     Contactez-nous
                                 </button>
                             </div>
@@ -234,23 +193,23 @@
                 <div class="w-full border-b border-[#dbdfe6] sticky top-0 z-10 backdrop-blur-md">
                     <div class="layout-container flex justify-center px-4 lg:px-40">
                         <div class="flex w-full max-w-[960px] overflow-x-auto gap-8 no-scrollbar">
-                            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-accent-yellow pb-[13px] pt-4 min-w-fit"
+                            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-primary pb-[13px] pt-4 min-w-fit"
                                 href="#dev">
                                 <p class="text-sm font-bold leading-normal tracking-[0.015em]">Développement</p>
                             </a>
-                            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#FACC15] hover:text-[#020325] pb-[13px] pt-4 min-w-fit transition-colors"
+                            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#616f89] hover:text-[#111318] pb-[13px] pt-4 min-w-fit transition-colors"
                                 href="#infra">
                                 <p class="text-sm font-bold leading-normal tracking-[0.015em]">Services Techniques</p>
                             </a>
-                            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#FACC15] hover:text-[#020325] pb-[13px] pt-4 min-w-fit transition-colors"
+                            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#616f89] hover:text-[#111318] pb-[13px] pt-4 min-w-fit transition-colors"
                                 href="#security">
                                 <p class="text-sm font-bold leading-normal tracking-[0.015em]">Sécurité</p>
                             </a>
-                            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#FACC15] hover:text-[#020325] pb-[13px] pt-4 min-w-fit transition-colors"
+                            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#616f89] hover:text-[#111318] pb-[13px] pt-4 min-w-fit transition-colors"
                                 href="#design">
                                 <p class="text-sm font-bold leading-normal tracking-[0.015em]">Communication</p>
                             </a>
-                            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#FACC15] hover:text-[#020325] pb-[13px] pt-4 min-w-fit transition-colors"
+                            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#616f89] hover:text-[#111318] pb-[13px] pt-4 min-w-fit transition-colors"
                                 href="#education">
                                 <p class="text-sm font-bold leading-normal tracking-[0.015em]">Formation</p>
                             </a>
@@ -264,10 +223,10 @@
                                 <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
                                     <div class="flex flex-col gap-3 max-w-[600px]">
                                         <h2
-                                            class="text-text-dark dark:text-accent-yellow text-3xl font-black leading-tight tracking-[-0.015em]">
+                                            class="text-[#111318] text-3xl font-black leading-tight tracking-[-0.015em]">
                                             Développement Informatique
                                         </h2>
-                                        <p class="text-text-grey dark:text-primary-light text-base font-normal leading-normal">
+                                        <p class="text-[#616f89] text-base font-normal leading-normal">
                                             Des solutions logicielles sur mesure pour moderniser vos opérations et
                                             atteindre vos objectifs commerciaux.
                                         </p>
@@ -275,15 +234,15 @@
                                 </div>
                                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                     <div
-                                        class="group flex flex-col gap-4 rounded-xl border border-accent-yellow p-6 hover:border-primary hover:shadow-lg transition-all duration-300">
+                                        class="group flex flex-col gap-4 rounded-xl border border-[#dbdfe6] p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
                                         <div
-                                            class="size-12 rounded-full bg-accent-yellow flex items-center justify-center text-primary-dark group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                            <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">code</span>
+                                            class="size-12 rounded-full bg-blue-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                            <span class="material-symbols-outlined">code</span>
                                         </div>
                                         <div class="flex flex-col gap-3 flex-1">
-                                            <h3 class="text-text-dark dark:text-accent-yellow text-lg font-bold leading-tight">Développement Web
+                                            <h3 class="text-[#111318] text-lg font-bold leading-tight">Développement Web
                                             </h3>
-                                            <p class="text-text-grey dark:text-primary-light text-sm leading-relaxed line-clamp-3">
+                                            <p class="text-[#616f89] text-sm leading-relaxed line-clamp-3">
                                                 Conception de sites vitrines, portails d'entreprise et plateformes
                                                 e-commerce performantes avec les dernières technologies (React, Vue,
                                                 Laravel).
@@ -296,15 +255,15 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group flex flex-col gap-4 rounded-xl border border-accent-yellow p-6 hover:border-primary hover:shadow-lg transition-all duration-300">
+                                        class="group flex flex-col gap-4 rounded-xl border border-[#dbdfe6] p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
                                         <div
-                                            class="size-12 rounded-full bg-primary-light flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                            <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">developer_mode</span>
+                                            class="size-12 rounded-full bg-blue-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                            <span class="material-symbols-outlined">developer_mode</span>
                                         </div>
                                         <div class="flex flex-col gap-3 flex-1">
-                                            <h3 class="text-text-dark dark:text-accent-yellow text-lg font-bold leading-tight">Applications
+                                            <h3 class="text-[#111318] text-lg font-bold leading-tight">Applications
                                                 Mobiles</h3>
-                                            <p class="text-text-grey dark:text-primary-light text-sm leading-relaxed line-clamp-3">
+                                            <p class="text-[#616f89] text-sm leading-relaxed line-clamp-3">
                                                 Création d'applications natives iOS et Android ou cross-platform pour
                                                 engager vos utilisateurs où qu'ils soient.
                                             </p>
@@ -316,15 +275,15 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group flex flex-col gap-4 rounded-xl border border-accent-yellow p-6 hover:border-primary hover:shadow-lg transition-all duration-300">
+                                        class="group flex flex-col gap-4 rounded-xl border border-[#dbdfe6] p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
                                         <div
-                                            class="size-12 rounded-full bg-primary-light flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                            <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">desktop_windows</span>
+                                            class="size-12 rounded-full bg-blue-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                            <span class="material-symbols-outlined">desktop_windows</span>
                                         </div>
                                         <div class="flex flex-col gap-3 flex-1">
-                                            <h3 class="text-text-dark dark:text-accent-yellow text-lg font-bold leading-tight">Logiciels de
+                                            <h3 class="text-[#111318] text-lg font-bold leading-tight">Logiciels de
                                                 Bureau</h3>
-                                            <p class="text-text-grey dark:text-primary-light text-sm leading-relaxed line-clamp-3">
+                                            <p class="text-[#616f89] text-sm leading-relaxed line-clamp-3">
                                                 Développement de logiciels de gestion personnalisés (ERP, CRM) optimisés
                                                 pour Windows, macOS et Linux.
                                             </p>
@@ -342,10 +301,10 @@
                                 <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
                                     <div class="flex flex-col gap-3 max-w-[600px]">
                                         <h2
-                                            class="text-text-dark dark:text-accent-yellow text-3xl font-black leading-tight tracking-[-0.015em]">
+                                            class="text-[#111318] text-3xl font-black leading-tight tracking-[-0.015em]">
                                             Services Techniques
                                         </h2>
-                                        <p class="text-text-grey dark:text-primary-light text-base font-normal leading-normal">
+                                        <p class="text-[#616f89] text-base font-normal leading-normal">
                                             Une infrastructure solide pour soutenir la croissance continue de votre
                                             activité.
                                         </p>
@@ -353,15 +312,15 @@
                                 </div>
                                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                                     <div
-                                        class="group flex flex-row gap-6 rounded-xl border border-accent-yellow p-6 hover:border-primary hover:shadow-lg transition-all duration-300">
+                                        class="group flex flex-row gap-6 rounded-xl border border-[#dbdfe6] p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
                                         <div
-                                            class="size-14 min-w-[3.5rem] rounded-full bg-primary-light flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                            <span class="material-symbols-outlined text-3xl transition-transform duration-300 group-hover:scale-110">dns</span>
+                                            class="size-14 min-w-[3.5rem] rounded-full bg-green-50 flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                                            <span class="material-symbols-outlined text-3xl">dns</span>
                                         </div>
                                         <div class="flex flex-col gap-3">
-                                            <h3 class="text-text-dark dark:text-accent-yellow text-lg font-bold leading-tight">Hébergement Web
+                                            <h3 class="text-[#111318] text-lg font-bold leading-tight">Hébergement Web
                                                 &amp; Domaine</h3>
-                                            <p class="text-text-grey dark:text-primary-light text-sm leading-relaxed">
+                                            <p class="text-[#616f89] text-sm leading-relaxed">
                                                 Solutions d'hébergement sécurisées, haute disponibilité et gestion
                                                 complète de vos noms de domaine (.cd, .com).
                                             </p>
@@ -373,15 +332,15 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group flex flex-row gap-6 rounded-xl border border-accent-yellow p-6 hover:border-primary hover:shadow-lg transition-all duration-300">
+                                        class="group flex flex-row gap-6 rounded-xl border border-[#dbdfe6] p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
                                         <div
-                                            class="size-14 min-w-[3.5rem] rounded-full bg-primary-light flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                            <span class="material-symbols-outlined text-3xl transition-transform duration-300 group-hover:scale-110">construction</span>
+                                            class="size-14 min-w-[3.5rem] rounded-full bg-green-50 flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                                            <span class="material-symbols-outlined text-3xl">construction</span>
                                         </div>
                                         <div class="flex flex-col gap-3">
-                                            <h3 class="text-text-dark dark:text-accent-yellow text-lg font-bold leading-tight">Maintenance
+                                            <h3 class="text-[#111318] text-lg font-bold leading-tight">Maintenance
                                                 Informatique</h3>
-                                            <p class="text-text-grey dark:text-primary-light text-sm leading-relaxed">
+                                            <p class="text-[#616f89] text-sm leading-relaxed">
                                                 Contrats de maintenance préventive et curative pour votre parc
                                                 informatique, assistance technique et mises à jour.
                                             </p>
@@ -399,10 +358,10 @@
                                 <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
                                     <div class="flex flex-col gap-3 max-w-[600px]">
                                         <h2
-                                            class="text-text-dark dark:text-accent-yellow text-3xl font-black leading-tight tracking-[-0.015em]">
+                                            class="text-[#111318] text-3xl font-black leading-tight tracking-[-0.015em]">
                                             Solutions Globales de Sécurité
                                         </h2>
-                                        <p class="text-text-grey dark:text-primary-light text-base font-normal leading-normal">
+                                        <p class="text-[#616f89] text-base font-normal leading-normal">
                                             Protégez vos actifs numériques et vos locaux contre toutes les menaces
                                             modernes.
                                         </p>
@@ -410,15 +369,15 @@
                                 </div>
                                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                     <div
-                                        class="group flex flex-col gap-4 rounded-xl border border-accent-yellow p-6 hover:border-primary hover:shadow-lg transition-all duration-300">
+                                        class="group flex flex-col gap-4 rounded-xl border border-[#dbdfe6] p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
                                         <div
-                                            class="size-12 rounded-full bg-primary-light flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                            <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">security</span>
+                                            class="size-12 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                                            <span class="material-symbols-outlined">security</span>
                                         </div>
                                         <div class="flex flex-col gap-3 flex-1">
-                                            <h3 class="text-text-dark dark:text-accent-yellow text-lg font-bold leading-tight">Cybersécurité
+                                            <h3 class="text-[#111318] text-lg font-bold leading-tight">Cybersécurité
                                             </h3>
-                                            <p class="text-text-grey dark:text-primary-light text-sm leading-relaxed line-clamp-3">
+                                            <p class="text-[#616f89] text-sm leading-relaxed line-clamp-3">
                                                 Audits de vulnérabilité, tests d'intrusion et mise en place de pare-feu
                                                 avancés pour sécuriser vos données sensibles.
                                             </p>
@@ -430,15 +389,15 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group flex flex-col gap-4 rounded-xl border border-accent-yellow p-6 hover:border-primary hover:shadow-lg transition-all duration-300">
+                                        class="group flex flex-col gap-4 rounded-xl border border-[#dbdfe6] p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
                                         <div
-                                            class="size-12 rounded-full bg-primary-light flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                            <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">videocam</span>
+                                            class="size-12 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                                            <span class="material-symbols-outlined">videocam</span>
                                         </div>
                                         <div class="flex flex-col gap-3 flex-1">
-                                            <h3 class="text-text-dark dark:text-accent-yellow text-lg font-bold leading-tight">Vidéosurveillance
+                                            <h3 class="text-[#111318] text-lg font-bold leading-tight">Vidéosurveillance
                                                 IP</h3>
-                                            <p class="text-text-grey dark:text-primary-light text-sm leading-relaxed line-clamp-3">
+                                            <p class="text-[#616f89] text-sm leading-relaxed line-clamp-3">
                                                 Installation de caméras connectées et systèmes de monitoring à distance
                                                 pour la sécurité physique de vos locaux.
                                             </p>
@@ -450,15 +409,15 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group flex flex-col gap-4 rounded-xl border border-accent-yellow p-6 hover:border-primary hover:shadow-lg transition-all duration-300">
+                                        class="group flex flex-col gap-4 rounded-xl border border-[#dbdfe6] p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
                                         <div
-                                            class="size-12 rounded-full bg-primary-light flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                            <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">badge</span>
+                                            class="size-12 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                                            <span class="material-symbols-outlined">badge</span>
                                         </div>
                                         <div class="flex flex-col gap-3 flex-1">
-                                            <h3 class="text-text-dark dark:text-accent-yellow text-lg font-bold leading-tight">Contrôle d'accès
+                                            <h3 class="text-[#111318] text-lg font-bold leading-tight">Contrôle d'accès
                                             </h3>
-                                            <p class="text-text-grey dark:text-primary-light text-sm leading-relaxed line-clamp-3">
+                                            <p class="text-[#616f89] text-sm leading-relaxed line-clamp-3">
                                                 Systèmes biométriques et cartes d'accès pour gérer les entrées et
                                                 sorties de votre personnel en toute sécurité.
                                             </p>
@@ -476,10 +435,10 @@
                                 <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
                                     <div class="flex flex-col gap-3 max-w-[600px]">
                                         <h2
-                                            class="text-text-dark dark:text-accent-yellow text-3xl font-black leading-tight tracking-[-0.015em]">
+                                            class="text-[#111318] text-3xl font-black leading-tight tracking-[-0.015em]">
                                             Communication Numérique
                                         </h2>
-                                        <p class="text-text-grey dark:text-primary-light text-base font-normal leading-normal">
+                                        <p class="text-[#616f89] text-base font-normal leading-normal">
                                             Stratégies créatives pour amplifier votre visibilité et engager votre
                                             audience.
                                         </p>
@@ -487,15 +446,15 @@
                                 </div>
                                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                     <div
-                                        class="group flex flex-col gap-4 rounded-xl border border-accent-yellow p-6 hover:border-primary hover:shadow-lg transition-all duration-300">
+                                        class="group flex flex-col gap-4 rounded-xl border border-[#dbdfe6] p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
                                         <div
-                                            class="size-12 rounded-full bg-primary-light flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                            <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">brush</span>
+                                            class="size-12 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                                            <span class="material-symbols-outlined">brush</span>
                                         </div>
                                         <div class="flex flex-col gap-3 flex-1">
-                                            <h3 class="text-text-dark dark:text-accent-yellow text-lg font-bold leading-tight">Infographie &amp;
+                                            <h3 class="text-[#111318] text-lg font-bold leading-tight">Infographie &amp;
                                                 Design</h3>
-                                            <p class="text-text-grey dark:text-primary-light text-sm leading-relaxed line-clamp-3">
+                                            <p class="text-[#616f89] text-sm leading-relaxed line-clamp-3">
                                                 Conception de logos, identités visuelles complètes, flyers et supports
                                                 marketing impactants.
                                             </p>
@@ -507,15 +466,15 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group flex flex-col gap-4 rounded-xl border border-accent-yellow p-6 hover:border-primary hover:shadow-lg transition-all duration-300">
+                                        class="group flex flex-col gap-4 rounded-xl border border-[#dbdfe6] p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
                                         <div
-                                            class="size-12 rounded-full bg-primary-light flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                            <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">campaign</span>
+                                            class="size-12 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                                            <span class="material-symbols-outlined">campaign</span>
                                         </div>
                                         <div class="flex flex-col gap-3 flex-1">
-                                            <h3 class="text-text-dark dark:text-accent-yellow text-lg font-bold leading-tight">Marketing Digital
+                                            <h3 class="text-[#111318] text-lg font-bold leading-tight">Marketing Digital
                                             </h3>
-                                            <p class="text-text-grey dark:text-primary-light text-sm leading-relaxed line-clamp-3">
+                                            <p class="text-[#616f89] text-sm leading-relaxed line-clamp-3">
                                                 Community management, campagnes publicitaires ciblées (Ads) et gestion
                                                 de votre e-réputation.
                                             </p>
@@ -527,15 +486,15 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group flex flex-col gap-4 rounded-xl border border-accent-yellow p-6 hover:border-primary hover:shadow-lg transition-all duration-300">
+                                        class="group flex flex-col gap-4 rounded-xl border border-[#dbdfe6] p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300">
                                         <div
-                                            class="size-12 rounded-full bg-primary-light flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                            <span class="material-symbols-outlined transition-transform duration-300 group-hover:scale-110">movie</span>
+                                            class="size-12 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                                            <span class="material-symbols-outlined">movie</span>
                                         </div>
                                         <div class="flex flex-col gap-3 flex-1">
-                                            <h3 class="text-text-dark dark:text-accent-yellow text-lg font-bold leading-tight">Production
+                                            <h3 class="text-[#111318] text-lg font-bold leading-tight">Production
                                                 Audiovisuelle</h3>
-                                            <p class="text-text-grey dark:text-primary-light text-sm leading-relaxed line-clamp-3">
+                                            <p class="text-[#616f89] text-sm leading-relaxed line-clamp-3">
                                                 Réalisation de spots publicitaires, vidéos institutionnelles et
                                                 couverture d'événements professionnels.
                                             </p>
@@ -553,10 +512,10 @@
                                 <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
                                     <div class="flex flex-col gap-3 max-w-[600px]">
                                         <h2
-                                            class="text-text-dark dark:text-accent-yellow text-3xl font-black leading-tight tracking-[-0.015em]">
+                                            class="text-[#111318] text-3xl font-black leading-tight tracking-[-0.015em]">
                                             Formation Professionnelle
                                         </h2>
-                                        <p class="text-text-grey dark:text-primary-light text-base font-normal leading-normal">
+                                        <p class="text-[#616f89] text-base font-normal leading-normal">
                                             Investissez dans le capital humain avec nos programmes de formation
                                             certifiants.
                                         </p>
@@ -564,15 +523,15 @@
                                 </div>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div
-                                        class="group flex flex-row gap-6 rounded-xl border border-accent-yellow p-6 hover:border-primary hover:shadow-lg transition-all duration-300 items-start">
+                                        class="group flex flex-row gap-6 rounded-xl border border-[#dbdfe6] p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300 items-start">
                                         <div
-                                            class="size-14 min-w-[3.5rem] rounded-full bg-primary-light flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                            <span class="material-symbols-outlined text-3xl transition-transform duration-300 group-hover:scale-110">school</span>
+                                            class="size-14 min-w-[3.5rem] rounded-full bg-orange-50 flex items-center justify-center text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                                            <span class="material-symbols-outlined text-3xl">school</span>
                                         </div>
                                         <div class="flex flex-col gap-3">
-                                            <h3 class="text-text-dark dark:text-accent-yellow text-lg font-bold leading-tight">Formations
+                                            <h3 class="text-[#111318] text-lg font-bold leading-tight">Formations
                                                 Techniques</h3>
-                                            <p class="text-text-grey dark:text-primary-light text-sm leading-relaxed">
+                                            <p class="text-[#616f89] text-sm leading-relaxed">
                                                 Modules intensifs en développement web, administration système,
                                                 cybersécurité et bureautique avancée.
                                             </p>
@@ -584,15 +543,15 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group flex flex-row gap-6 rounded-xl border border-accent-yellow p-6 hover:border-primary hover:shadow-lg transition-all duration-300 items-start">
+                                        class="group flex flex-row gap-6 rounded-xl border border-[#dbdfe6] p-6 hover:border-primary/50 hover:shadow-lg transition-all duration-300 items-start">
                                         <div
-                                            class="size-14 min-w-[3.5rem] rounded-full bg-primary-light flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                                            <span class="material-symbols-outlined text-3xl transition-transform duration-300 group-hover:scale-110">lightbulb</span>
+                                            class="size-14 min-w-[3.5rem] rounded-full bg-orange-50 flex items-center justify-center text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                                            <span class="material-symbols-outlined text-3xl">lightbulb</span>
                                         </div>
                                         <div class="flex flex-col gap-3">
-                                            <h3 class="text-text-dark dark:text-accent-yellow text-lg font-bold leading-tight">Coaching
+                                            <h3 class="text-[#111318] text-lg font-bold leading-tight">Coaching
                                                 Numérique</h3>
-                                            <p class="text-text-grey dark:text-primary-light text-sm leading-relaxed">
+                                            <p class="text-[#616f89] text-sm leading-relaxed">
                                                 Accompagnement personnalisé pour la transition digitale des entreprises
                                                 et coaching de dirigeants.
                                             </p>
@@ -605,68 +564,6 @@
                                     </div>
                                 </div>
                             </section>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section Logos Clients -->
-            <section class="flex flex-col items-center justify-center bg-background-light dark:bg-background-dark px-4 py-8 lg:px-20 lg:py-12 overflow-hidden">
-                <div class="mx-auto flex w-full max-w-[1280px] flex-col gap-4">
-                    <div class="text-center mb-4">
-                        <h2 class="text-2xl font-black leading-tight text-text-dark dark:text-accent-yellow sm:text-3xl mb-2">
-                            Ils Nous Font Confiance
-                        </h2>
-                        <p class="text-text-grey dark:text-primary-light text-sm sm:text-base max-w-2xl mx-auto">
-                            Des entreprises de renom qui nous font confiance pour leur transformation digitale
-                        </p>
-                    </div>
-                    
-                    <!-- Container pour le défilement -->
-                    <div class="relative w-full overflow-hidden py-4">
-                        <div class="flex animate-scroll-smooth gap-8 md:gap-12 items-center justify-start">
-                            <!-- Première série de logos -->
-                            <div class="flex gap-8 md:gap-12 items-center flex-shrink-0">
-                                <div class="flex items-center justify-center h-14 md:h-16 w-24 md:w-32 grayscale hover:grayscale-0 transition-all duration-500 ease-in-out opacity-70 hover:opacity-100 hover:scale-105 cursor-pointer">
-                                    <div class="text-lg md:text-xl font-bold text-primary dark:text-accent-yellow">CLIENT 1</div>
-                                </div>
-                                <div class="flex items-center justify-center h-14 md:h-16 w-24 md:w-32 grayscale hover:grayscale-0 transition-all duration-500 ease-in-out opacity-70 hover:opacity-100 hover:scale-105 cursor-pointer">
-                                    <div class="text-lg md:text-xl font-bold text-primary dark:text-accent-yellow">CLIENT 2</div>
-                                </div>
-                                <div class="flex items-center justify-center h-14 md:h-16 w-24 md:w-32 grayscale hover:grayscale-0 transition-all duration-500 ease-in-out opacity-70 hover:opacity-100 hover:scale-105 cursor-pointer">
-                                    <div class="text-lg md:text-xl font-bold text-primary dark:text-accent-yellow">CLIENT 3</div>
-                                </div>
-                                <div class="flex items-center justify-center h-14 md:h-16 w-24 md:w-32 grayscale hover:grayscale-0 transition-all duration-500 ease-in-out opacity-70 hover:opacity-100 hover:scale-105 cursor-pointer">
-                                    <div class="text-lg md:text-xl font-bold text-primary dark:text-accent-yellow">CLIENT 4</div>
-                                </div>
-                                <div class="flex items-center justify-center h-14 md:h-16 w-24 md:w-32 grayscale hover:grayscale-0 transition-all duration-500 ease-in-out opacity-70 hover:opacity-100 hover:scale-105 cursor-pointer">
-                                    <div class="text-lg md:text-xl font-bold text-primary dark:text-accent-yellow">CLIENT 5</div>
-                                </div>
-                                <div class="flex items-center justify-center h-14 md:h-16 w-24 md:w-32 grayscale hover:grayscale-0 transition-all duration-500 ease-in-out opacity-70 hover:opacity-100 hover:scale-105 cursor-pointer">
-                                    <div class="text-lg md:text-xl font-bold text-primary dark:text-accent-yellow">CLIENT 6</div>
-                                </div>
-                            </div>
-                            <!-- Duplication pour effet de boucle infinie -->
-                            <div class="flex gap-8 md:gap-12 items-center flex-shrink-0">
-                                <div class="flex items-center justify-center h-14 md:h-16 w-24 md:w-32 grayscale hover:grayscale-0 transition-all duration-500 ease-in-out opacity-70 hover:opacity-100 hover:scale-105 cursor-pointer">
-                                    <div class="text-lg md:text-xl font-bold text-primary dark:text-accent-yellow">CLIENT 1</div>
-                                </div>
-                                <div class="flex items-center justify-center h-14 md:h-16 w-24 md:w-32 grayscale hover:grayscale-0 transition-all duration-500 ease-in-out opacity-70 hover:opacity-100 hover:scale-105 cursor-pointer">
-                                    <div class="text-lg md:text-xl font-bold text-primary dark:text-accent-yellow">CLIENT 2</div>
-                                </div>
-                                <div class="flex items-center justify-center h-14 md:h-16 w-24 md:w-32 grayscale hover:grayscale-0 transition-all duration-500 ease-in-out opacity-70 hover:opacity-100 hover:scale-105 cursor-pointer">
-                                    <div class="text-lg md:text-xl font-bold text-primary dark:text-accent-yellow">CLIENT 3</div>
-                                </div>
-                                <div class="flex items-center justify-center h-14 md:h-16 w-24 md:w-32 grayscale hover:grayscale-0 transition-all duration-500 ease-in-out opacity-70 hover:opacity-100 hover:scale-105 cursor-pointer">
-                                    <div class="text-lg md:text-xl font-bold text-primary dark:text-accent-yellow">CLIENT 4</div>
-                                </div>
-                                <div class="flex items-center justify-center h-14 md:h-16 w-24 md:w-32 grayscale hover:grayscale-0 transition-all duration-500 ease-in-out opacity-70 hover:opacity-100 hover:scale-105 cursor-pointer">
-                                    <div class="text-lg md:text-xl font-bold text-primary dark:text-accent-yellow">CLIENT 5</div>
-                                </div>
-                                <div class="flex items-center justify-center h-14 md:h-16 w-24 md:w-32 grayscale hover:grayscale-0 transition-all duration-500 ease-in-out opacity-70 hover:opacity-100 hover:scale-105 cursor-pointer">
-                                    <div class="text-lg md:text-xl font-bold text-primary dark:text-accent-yellow">CLIENT 6</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -733,7 +630,7 @@
                             class="group flex flex-col overflow-hidden rounded-xl border border-[#e5e7eb] bg-white transition-all hover:shadow-xl hover:shadow-primary/5 dark:border-[#2a303c] dark:bg-[#1a2230]">
                             <div class="relative h-56 w-full overflow-hidden bg-gray-100 dark:bg-[#131924]">
                                 <div
-                                    class="absolute inset-0 bg-gradient-to-br from-accent-yellow/20 to-orange-500/20 group-hover:scale-105 transition-transform duration-500">
+                                    class="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-orange-500/20 group-hover:scale-105 transition-transform duration-500">
                                 </div>
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <span
@@ -850,7 +747,7 @@
                     <h2 class="max-w-3xl text-3xl font-black leading-tight sm:text-5xl">
                         Prêt à digitaliser votre entreprise ?
                     </h2>
-                    <p class="max-w-2xl text-lg font-medium text-primary-light sm:text-xl">
+                    <p class="max-w-2xl text-lg font-medium text-blue-100 sm:text-xl">
                         Discutons de votre projet. Nos experts sont prêts à concevoir la solution parfaite pour vos
                         besoins.
                     </p>
@@ -897,16 +794,16 @@
                                     <summary
                                         class="flex cursor-pointer items-center justify-between gap-6 py-3 list-none">
                                         <p
-                                            class="text-text-dark dark:text-accent-yellow text-base font-semibold leading-normal">
+                                            class="text-[#111318] dark:text-white text-base font-semibold leading-normal">
                                             Quels types de logiciels développez-vous ?
                                         </p>
                                         <div
-                                            class="text-text-dark dark:text-accent-yellow group-open:rotate-180 transition-transform duration-300">
+                                            class="text-[#111318] dark:text-white group-open:rotate-180 transition-transform duration-300">
                                             <span class="material-symbols-outlined">expand_more</span>
                                         </div>
                                     </summary>
                                     <div
-                                        class="text-text-grey dark:text-primary-light text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
+                                        class="text-[#616f89] dark:text-gray-300 text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
                                         Chez Melon-Soft, nous concevons des solutions numériques complètes :
                                         applications mobiles natives (iOS et Android), sites web vitrines et e-commerce,
                                         plateformes SaaS, et logiciels d'entreprise sur mesure (ERP, CRM) adaptés au
@@ -918,16 +815,16 @@
                                     <summary
                                         class="flex cursor-pointer items-center justify-between gap-6 py-3 list-none">
                                         <p
-                                            class="text-text-dark dark:text-accent-yellow text-base font-semibold leading-normal">
+                                            class="text-[#111318] dark:text-white text-base font-semibold leading-normal">
                                             Combien coûte la création d'un site web ?
                                         </p>
                                         <div
-                                            class="text-text-dark dark:text-accent-yellow group-open:rotate-180 transition-transform duration-300">
+                                            class="text-[#111318] dark:text-white group-open:rotate-180 transition-transform duration-300">
                                             <span class="material-symbols-outlined">expand_more</span>
                                         </div>
                                     </summary>
                                     <div
-                                        class="text-text-grey dark:text-primary-light text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
+                                        class="text-[#616f89] dark:text-gray-300 text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
                                         Le coût varie en fonction de la complexité du projet. Un site vitrine simple
                                         commence à partir de 500$, tandis que des applications web complexes nécessitent
                                         un devis personnalisé. Contactez-nous pour une estimation gratuite.
@@ -938,16 +835,16 @@
                                     <summary
                                         class="flex cursor-pointer items-center justify-between gap-6 py-3 list-none">
                                         <p
-                                            class="text-text-dark dark:text-accent-yellow text-base font-semibold leading-normal">
+                                            class="text-[#111318] dark:text-white text-base font-semibold leading-normal">
                                             Quelles technologies utilisez-vous ?
                                         </p>
                                         <div
-                                            class="text-text-dark dark:text-accent-yellow group-open:rotate-180 transition-transform duration-300">
+                                            class="text-[#111318] dark:text-white group-open:rotate-180 transition-transform duration-300">
                                             <span class="material-symbols-outlined">expand_more</span>
                                         </div>
                                     </summary>
                                     <div
-                                        class="text-text-grey dark:text-primary-light text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
+                                        class="text-[#616f89] dark:text-gray-300 text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
                                         Nous maîtrisons un large éventail de technologies modernes : React, Vue.js et
                                         Angular pour le front-end ; Node.js, Python (Django/Flask) et PHP (Laravel) pour
                                         le back-end. Pour le mobile, nous utilisons Flutter et React Native.
@@ -969,16 +866,16 @@
                                     <summary
                                         class="flex cursor-pointer items-center justify-between gap-6 py-3 list-none">
                                         <p
-                                            class="text-text-dark dark:text-accent-yellow text-base font-semibold leading-normal">
+                                            class="text-[#111318] dark:text-white text-base font-semibold leading-normal">
                                             Proposez-vous des services de maintenance ?
                                         </p>
                                         <div
-                                            class="text-text-dark dark:text-accent-yellow group-open:rotate-180 transition-transform duration-300">
+                                            class="text-[#111318] dark:text-white group-open:rotate-180 transition-transform duration-300">
                                             <span class="material-symbols-outlined">expand_more</span>
                                         </div>
                                     </summary>
                                     <div
-                                        class="text-text-grey dark:text-primary-light text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
+                                        class="text-[#616f89] dark:text-gray-300 text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
                                         Oui, nous proposons des forfaits de maintenance mensuels ou annuels pour
                                         garantir la sécurité, la rapidité et la mise à jour de vos logiciels. Cela
                                         inclut les correctifs de sécurité et les petites évolutions.
@@ -989,16 +886,16 @@
                                     <summary
                                         class="flex cursor-pointer items-center justify-between gap-6 py-3 list-none">
                                         <p
-                                            class="text-text-dark dark:text-accent-yellow text-base font-semibold leading-normal">
+                                            class="text-[#111318] dark:text-white text-base font-semibold leading-normal">
                                             Comment signaler un bug ou un problème technique ?
                                         </p>
                                         <div
-                                            class="text-text-dark dark:text-accent-yellow group-open:rotate-180 transition-transform duration-300">
+                                            class="text-[#111318] dark:text-white group-open:rotate-180 transition-transform duration-300">
                                             <span class="material-symbols-outlined">expand_more</span>
                                         </div>
                                     </summary>
                                     <div
-                                        class="text-text-grey dark:text-primary-light text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
+                                        class="text-[#616f89] dark:text-gray-300 text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
                                         Nos clients sous contrat ont accès à un portail de ticketing dédié. Sinon, vous
                                         pouvez envoyer un email direct à support@melon-soft.cd avec une description
                                         détaillée du problème.
@@ -1020,16 +917,16 @@
                                     <summary
                                         class="flex cursor-pointer items-center justify-between gap-6 py-3 list-none">
                                         <p
-                                            class="text-text-dark dark:text-accent-yellow text-base font-semibold leading-normal">
+                                            class="text-[#111318] dark:text-white text-base font-semibold leading-normal">
                                             Acceptez-vous les stagiaires ?
                                         </p>
                                         <div
-                                            class="text-text-dark dark:text-accent-yellow group-open:rotate-180 transition-transform duration-300">
+                                            class="text-[#111318] dark:text-white group-open:rotate-180 transition-transform duration-300">
                                             <span class="material-symbols-outlined">expand_more</span>
                                         </div>
                                     </summary>
                                     <div
-                                        class="text-text-grey dark:text-primary-light text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
+                                        class="text-[#616f89] dark:text-gray-300 text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
                                         Absolument. Melon-Soft s'engage à former la prochaine génération de développeurs
                                         en RDC. Nous offrons des stages académiques et professionnels tout au long de
                                         l'année.
@@ -1040,16 +937,16 @@
                                     <summary
                                         class="flex cursor-pointer items-center justify-between gap-6 py-3 list-none">
                                         <p
-                                            class="text-text-dark dark:text-accent-yellow text-base font-semibold leading-normal">
+                                            class="text-[#111318] dark:text-white text-base font-semibold leading-normal">
                                             Travaillez-vous en présentiel ou en télétravail ?
                                         </p>
                                         <div
-                                            class="text-text-dark dark:text-accent-yellow group-open:rotate-180 transition-transform duration-300">
+                                            class="text-[#111318] dark:text-white group-open:rotate-180 transition-transform duration-300">
                                             <span class="material-symbols-outlined">expand_more</span>
                                         </div>
                                     </summary>
                                     <div
-                                        class="text-text-grey dark:text-primary-light text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
+                                        class="text-[#616f89] dark:text-gray-300 text-sm font-normal leading-relaxed pb-4 pt-1 border-t border-transparent group-open:border-[#f0f2f4] dark:group-open:border-gray-700 transition-colors">
                                         Nous adoptons un modèle hybride. Notre équipe principale est basée à Kinshasa,
                                         mais nous collaborons avec des talents partout dans le monde et offrons une
                                         grande flexibilité.
@@ -1066,22 +963,22 @@
                     <div class="rounded-full bg-blue-50 dark:bg-blue-900/20 p-4">
                         <span class="material-symbols-outlined text-primary text-4xl">support_agent</span>
                     </div>
-                    <h2 class="text-text-dark dark:text-accent-yellow text-3xl font-bold leading-tight">
+                    <h2 class="text-[#111318] dark:text-white text-3xl font-bold leading-tight">
                         Vous ne trouvez pas votre réponse ?
                     </h2>
-                    <p class="text-text-grey dark:text-primary-light text-base font-normal leading-relaxed max-w-[600px]">
+                    <p class="text-[#616f89] dark:text-gray-400 text-base font-normal leading-relaxed max-w-[600px]">
                         Notre équipe est là pour vous aider. Que vous ayez une question technique complexe ou besoin
                         d'un devis personnalisé, contactez-nous directement.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 w-full justify-center pt-4">
                         <button
-                            class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal hover:bg-primary-dark transition-colors shadow-lg shadow-primary/20">
+                            class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/20">
                             Contacter le support
                         </button>
-                        <!-- <button
+                        <button
                             class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white dark:bg-transparent border border-[#dbdfe6] dark:border-gray-600 text-[#111318] dark:text-white text-base font-bold leading-normal hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
                             Appeler +243 99 710 20 12
-                        </button> -->
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1089,14 +986,14 @@
         </main>
 
         <!-- Footer -->
-        <footer class="bg-[#030435] text-white py-16 px-4 md:px-10 lg:px-20 relative font-display">
+        <footer class="bg-[#0B0F19] text-white py-16 px-4 md:px-10 lg:px-20 relative font-display">
             <div class="max-w-[1280px] mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
                     <!-- Column 1 -->
                     <div class="flex flex-col gap-6">
                         <div class="flex items-center gap-3">
-                            <img src="assets/images/logo/logo_jaune.svg" alt="Melon-Soft Logo"
-                                class="w-10 h-10 object-contain" />
+                            <img src="assets/images/logo1.png" alt="Melon-Soft Logo"
+                                class="w-10 h-10 object-contain rounded" />
                             <span class="font-black text-xl tracking-tight text-white uppercase">Melon-Soft</span>
                         </div>
                         <p class="text-gray-400 text-sm leading-relaxed">
@@ -1106,25 +1003,25 @@
                         <div class="flex gap-3">
                             <!-- Facebook -->
                             <a href="#"
-                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FACC15] hover:text-[#030435] transition-all group"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
                                 aria-label="Facebook">
                                 <span class="font-bold font-sans">f</span>
                             </a>
                             <!-- X -->
                             <a href="#"
-                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FACC15] hover:text-[#030435] transition-all group"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
                                 aria-label="X">
                                 <span class="font-bold font-sans">x</span>
                             </a>
                             <!-- LinkedIn -->
                             <a href="#"
-                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FACC15] hover:text-[#030435] transition-all group"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
                                 aria-label="LinkedIn">
                                 <span class="font-bold font-sans">in</span>
                             </a>
                             <!-- Instagram -->
                             <a href="#"
-                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FACC15] hover:text-[#030435] transition-all group"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
                                 aria-label="Instagram">
                                 <span class="material-symbols-outlined text-lg">photo_camera</span>
                             </a>
@@ -1136,13 +1033,13 @@
                         <h3 class="font-bold text-lg text-white">Liens Rapides</h3>
                         <nav class="flex flex-col gap-4">
                             <a href="nos_services.html"
-                                class="text-gray-400 hover:text-[#FACC15] transition-colors text-sm">Nos Services</a>
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Nos Services</a>
                             <a href="apropos.html"
-                                class="text-gray-400 hover:text-[#FACC15] transition-colors text-sm">Notre Histoire</a>
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Notre Histoire</a>
                             <a href="#"
-                                class="text-gray-400 hover:text-[#FACC15] transition-colors text-sm">Melon-Academia</a>
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Melon-Academia</a>
                             <a href="apropos.html"
-                                class="text-gray-400 hover:text-[#FACC15] transition-colors text-sm">L'Équipe</a>
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">L'Équipe</a>
                         </nav>
                     </div>
 
@@ -1151,16 +1048,16 @@
                         <h3 class="font-bold text-lg text-white">Services</h3>
                         <nav class="flex flex-col gap-4">
                             <a href="developpement_informatique.html"
-                                class="text-gray-400 hover:text-[#FACC15] transition-colors text-sm">Développement
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Développement
                                 Web</a>
                             <a href="developpement_informatique.html"
-                                class="text-gray-400 hover:text-[#FACC15] transition-colors text-sm">Applications
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Applications
                                 Mobiles</a>
                             <a href="solutions_de_securite.html"
-                                class="text-gray-400 hover:text-[#FACC15] transition-colors text-sm">Sécurité
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Sécurité
                                 Réseaux</a>
                             <a href="communication_numerique.html"
-                                class="text-gray-400 hover:text-[#FACC15] transition-colors text-sm">Infographie Pro</a>
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Infographie Pro</a>
                         </nav>
                     </div>
 
@@ -1172,9 +1069,9 @@
                         </p>
                         <form class="flex w-full" onsubmit="event.preventDefault();">
                             <input type="email" placeholder="Votre e-mail"
-                                class="flex-1 bg-[#1A1F2E] border-none rounded-l-lg px-4 py-3 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-[#FACC15] outline-none">
+                                class="flex-1 bg-[#1A1F2E] border-none rounded-l-lg px-4 py-3 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-[#FFD700] outline-none">
                             <button type="submit"
-                                class="bg-[#FACC15] text-[#030435] font-bold px-6 py-3 rounded-r-lg hover:bg-[#E5C100] transition-colors text-sm">
+                                class="bg-[#FFD700] text-[#0B0F19] font-bold px-6 py-3 rounded-r-lg hover:bg-[#E5C100] transition-colors text-sm">
                                 OK
                             </button>
                         </form>
@@ -1193,8 +1090,9 @@
                             Légales</a>
                     </div>
 
+                    <!-- Back to top button (positioned absolutely to the right on large screens) -->
                     <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-                        class="fixed bottom-8 right-8 z-50 md:absolute md:bottom-auto md:right-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 bg-[#FACC15] rounded-full flex items-center justify-center text-[#030435] hover:bg-[#E5C100] transition-all shadow-lg"
+                        class="fixed bottom-8 right-8 z-50 md:absolute md:bottom-auto md:right-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 bg-[#FFD700] rounded-full flex items-center justify-center text-[#0B0F19] hover:bg-[#E5C100] transition-all shadow-lg"
                         aria-label="Haut de page">
                         <span class="material-symbols-outlined">arrow_upward</span>
                     </button>
@@ -1202,6 +1100,7 @@
             </div>
         </footer>
     </div>
+
     <!-- JavaScript -->
     <script src="assets/js/main.js?v=1"></script>
 </body>

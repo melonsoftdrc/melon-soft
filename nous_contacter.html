@@ -5,259 +5,372 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Nous Contacter - Melon-Soft</title>
-    
-    <!-- Google Fonts -->
+
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
-    <!-- Material Symbols -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
-    <!-- Configuration Tailwind -->
+
     <script src="assets/js/tailwind-config.js"></script>
-    
-    <!-- CSS Custom -->
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="bg-background-light dark:bg-background-dark font-display text-text-dark antialiased">
     <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-        <!-- Navbar -->
         <header class="navbar">
-    <div class="navbar-container">
-        <div class="flex items-center gap-4">
-            <!-- Logo -->
-            <img src="assets/images/logo.png" alt="Melon-Soft Logo" class="navbar-logo" />
-        </div>
-        
-        <nav class="navbar-nav">
-            <a href="index.html" class="navbar-link">Accueil</a>
-            <div class="group relative flex h-full items-center">
-                <a href="#" class="navbar-link flex items-center gap-1">
-                    Nos Services
-                    <span class="material-symbols-outlined text-[20px] transition-transform group-hover:-rotate-180">expand_more</span>
-                </a>
-                <div class="absolute left-0 top-full pt-4 w-[280px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
-                    <div class="flex flex-col rounded-xl border border-gray-100 bg-white p-2 shadow-xl shadow-gray-200/50 dark:border-gray-700 dark:bg-surface-dark dark:shadow-black/50">
-                        <a href="developpement_informatique.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                            Développement Informatique
+            <div class="navbar-container">
+                <div class="flex items-center gap-4">
+                    <img src="assets/images/logo/logo_bleu.svg" alt="Melon-Soft Logo" class="navbar-logo dark:hidden" />
+                    <img src="assets/images/logo/logo_jaune.svg" alt="Melon-Soft Logo" class="navbar-logo hidden dark:block" />
+                </div>
+
+                <nav class="navbar-nav">
+                    <a href="index.html" class="navbar-link">Accueil</a>
+                    <div class="group relative flex h-full items-center">
+                        <a href="#" class="navbar-link flex items-center gap-1">
+                            Nos Services
+                            <span
+                                class="material-symbols-outlined text-[20px] transition-transform group-hover:-rotate-180">expand_more</span>
                         </a>
-                        <a href="formation_professionnelle.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                            Formation Professionnelle
-                        </a>
-                    <a href="communication_numerique.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                        Communication Numérique
-                    </a>
-                        <a href="services_techniques.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                            Services Techniques
-                        </a>
-                        <a href="solutions_de_securite.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                            Solutions de Sécurité
-                        </a>
+                        <div
+                            class="absolute left-0 top-full pt-4 w-[280px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
+                            <div
+                                class="flex flex-col rounded-xl border border-gray-100 bg-white p-2 shadow-xl shadow-gray-200/50 dark:border-gray-700 dark:bg-surface-dark dark:shadow-black/50">
+                                <a href="developpement_informatique.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Développement Informatique
+                                </a>
+                                <a href="formation_professionnelle.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Formation Professionnelle
+                                </a>
+                                <a href="communication_numerique.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Communication Numérique
+                                </a>
+                                <a href="services_techniques.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Services Techniques
+                                </a>
+                                <a href="solutions_de_securite.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Solutions de Sécurité
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="portfolio.html" class="navbar-link">Portfolio</a>
+                    <a href="apropos.html" class="navbar-link">À Propos</a>
+                    <a href="carrieres.html" class="navbar-link">Carrières</a>
+                </nav>
+
+                <div class="flex items-center gap-4">
+                    <button class="navbar-button" onclick="window.location.href='nous_contacter.html'">
+                        <span>Nous Contacter</span>
+                    </button>
+                    <button class="lg:hidden p-2 text-text-dark dark:text-white" onclick="toggleMobileMenu()">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu"
+                class="hidden lg:hidden bg-white dark:bg-surface-dark border-t border-gray-200 dark:border-gray-700">
+                <div class="px-4 py-3 space-y-3">
+                    <a href="index.html" class="block navbar-link py-2">Accueil</a>
+                    <div>
+                        <button class="navbar-link py-2 w-full text-left"
+                            onclick="toggleMobileSubmenu('services-submenu')">
+                            Nos Services
+                            <span class="material-symbols-outlined text-sm">expand_more</span>
+                        </button>
+                        <div id="services-submenu" class="hidden pl-4 space-y-2">
+                            <a href="developpement_informatique.html"
+                                class="block navbar-link py-1 text-sm">Développement Informatique</a>
+                            <a href="formation_professionnelle.html" class="block navbar-link py-1 text-sm">Formation
+                                Professionnelle</a>
+                            <a href="communication_numerique.html" class="block navbar-link py-1 text-sm">Communication
+                                Numérique</a>
+                            <a href="services_techniques.html" class="block navbar-link py-1 text-sm">Services
+                                Techniques</a>
+                            <a href="solutions_de_securite.html" class="block navbar-link py-1 text-sm">Solutions de
+                                Sécurité</a>
+                        </div>
+                    </div>
+                    <a href="portfolio.html" class="block navbar-link py-2">Portfolio</a>
+                    <a href="apropos.html" class="block navbar-link py-2">À Propos</a>
+                    <a href="carrieres.html" class="block navbar-link py-2">Carrières</a>
+                    <button class="navbar-button w-full" onclick="window.location.href='nous_contacter.html'">Nous
+                        Contacter</button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow">
+            <section class="relative bg-white dark:bg-background-dark py-16 lg:py-24 overflow-hidden">
+                <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div class="flex flex-col gap-6 text-center max-w-3xl mx-auto">
+                        <h1
+                            class="text-4xl font-black leading-tight tracking-tight text-text-main dark:text-white md:text-5xl lg:text-6xl">
+                            Contactez-<span class="text-[#FFD700]">Nous</span>
+                        </h1>
+                        <p class="text-lg text-text-sub dark:text-gray-400 md:text-xl leading-relaxed">
+                            Parlons de votre projet. Une idée ? Un projet d'application ou de site web ? Notre équipe à
+                            Kinshasa est prête à vous écouter et
+                            transformer vos ambitions en réalité numérique.
+                        </p>
                     </div>
                 </div>
-            </div>
-            <a href="portfolio.html" class="navbar-link">Portfolio</a>
-            <a href="apropos.html" class="navbar-link">À Propos</a>
-            <a href="carrieres.html" class="navbar-link">Carrières</a>
-        </nav>
-        
-        <div class="flex items-center gap-4">
-            <button class="navbar-button" onclick="window.location.href='nous_contacter.html'">
-                <span>Nous Contacter</span>
-            </button>
-            <button class="lg:hidden p-2 text-text-dark dark:text-white" onclick="toggleMobileMenu()">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-        </div>
-    </div>
-    
-    <!-- Menu Mobile (caché par défaut) -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-surface-dark border-t border-gray-200 dark:border-gray-700">
-        <div class="px-4 py-3 space-y-3">
-            <a href="index.html" class="block navbar-link py-2">Accueil</a>
-            <div>
-                <button class="navbar-link py-2 w-full text-left" onclick="toggleMobileSubmenu('services-submenu')">
-                    Nos Services
-                    <span class="material-symbols-outlined text-sm">expand_more</span>
-                </button>
-                <div id="services-submenu" class="hidden pl-4 space-y-2">
-                    <a href="developpement_informatique.html" class="block navbar-link py-1 text-sm">Développement Informatique</a>
-                    <a href="formation_professionnelle.html" class="block navbar-link py-1 text-sm">Formation Professionnelle</a>
-                    <a href="communication_numerique.html" class="block navbar-link py-1 text-sm">Communication Numérique</a>
-                    <a href="services_techniques.html" class="block navbar-link py-1 text-sm">Services Techniques</a>
-                    <a href="solutions_de_securite.html" class="block navbar-link py-1 text-sm">Solutions de Sécurité</a>
-                </div>
-            </div>
-            <a href="portfolio.html" class="block navbar-link py-2">Portfolio</a>
-            <a href="apropos.html" class="block navbar-link py-2">À Propos</a>
-            <a href="carrieres.html" class="block navbar-link py-2">Carrières</a>
-            <button class="navbar-button w-full" onclick="window.location.href='nous_contacter.html'">Nous Contacter</button>
-        </div>
-    </div>
-</header>
-
-        
-        <!-- Main Content -->
-        <main class="flex-1">
-            
-            <!-- Hero Section -->
-            <section class="flex flex-col items-center bg-white dark:bg-background-dark px-4 py-16 lg:px-20 lg:py-24">
-                <div class="flex w-full max-w-[1280px] flex-col gap-8 text-center">
-                    <h1 class="font-display text-4xl font-black leading-[1.1] tracking-tight text-text-dark dark:text-white sm:text-5xl lg:text-6xl">
-                        Contactez-<span class="text-primary">Nous</span>
-                    </h1>
-                    <p class="text-lg font-normal leading-relaxed text-text-grey dark:text-gray-400 sm:text-xl max-w-3xl">
-                        Parlons de votre projet. Notre équipe est prête à transformer vos idées en réalité numérique.
-                    </p>
-                </div>
             </section>
-            
-            <!-- Contact Form Section -->
-            <section class="flex flex-col justify-center bg-background-light px-4 py-20 dark:bg-[#0d121c] lg:px-20">
-                <div class="mx-auto flex w-full max-w-[1280px] flex-col gap-12">
-                    <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
-                        <div class="flex flex-col gap-6">
-                            <h2 class="text-3xl font-black leading-tight text-text-dark dark:text-white">
-                                Envoyez-nous un message
-                            </h2>
-                            <form class="flex flex-col gap-4" data-contact-form>
-                                <input type="text" placeholder="Votre nom" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-text-dark dark:text-white" data-contact-name>
-                                <input type="tel" placeholder="Votre téléphone (optionnel)" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-text-dark dark:text-white" data-contact-phone>
-                                <input type="email" placeholder="Votre email" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-text-dark dark:text-white" data-contact-email>
-                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-text-dark dark:text-white" data-contact-subject>
-                                    <option>Développement Web</option>
-                                    <option>Application Mobile</option>
-                                    <option>Logiciel Sur Mesure</option>
-                                    <option>Autre demande</option>
-                                </select>
-                                <textarea placeholder="Votre message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-text-dark dark:text-white" data-contact-message></textarea>
-                                <button type="button" class="w-full py-3 rounded-lg bg-primary text-white font-bold hover:bg-primary/90 transition-colors" data-contact-submit>
-                                    Envoyer le message
-                                </button>
-                                <div data-contact-status></div>
-                            </form>
+            <section class="bg-background-light dark:bg-background-dark py-12 lg:py-20">
+                <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+                        <div class="flex flex-col gap-10">
+                            <div class="flex flex-col gap-6">
+                                <h2 class="text-2xl font-bold text-text-main dark:text-white">Nos Coordonnées</h2>
+                                <p class="text-text-sub dark:text-gray-400">
+                                    Nous sommes basés au cœur de Kinshasa. N'hésitez pas à passer nous voir ou à nous
+                                    contacter
+                                    directement via les canaux suivants.
+                                </p>
+                                <div class="grid gap-6">
+                                    <div
+                                        class="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-gray-800 border border-border-color dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                                        <div
+                                            class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FFD700]/10 text-[#FFD700]">
+                                            <span class="material-symbols-outlined">call</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-bold text-text-main dark:text-white">Téléphone</h3>
+                                            <p class="mt-1 text-text-sub dark:text-gray-400">+243 99 710 2012</p>
+                                            <p class="text-xs text-text-sub/70 dark:text-gray-500 mt-1">Lun-Ven, 8h à
+                                                17h</p>
+                                        </div>
+                                    </div>
+                                    <a class="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-gray-800 border border-border-color dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow group"
+                                        href="mailto:contact@melon-soft.com">
+                                        <div
+                                            class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FFD700]/10 text-[#FFD700] group-hover:bg-[#FFD700] group-hover:text-black transition-colors">
+                                            <span class="material-symbols-outlined">mail</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-bold text-text-main dark:text-white">Email</h3>
+                                            <p
+                                                class="mt-1 text-text-sub dark:text-gray-400 group-hover:text-[#FFD700] transition-colors">
+                                                contact@melon-soft.com</p>
+                                            <p class="text-xs text-text-sub/70 dark:text-gray-500 mt-1">Réponse sous 24h
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <div
+                                        class="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-gray-800 border border-border-color dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                                        <div
+                                            class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FFD700]/10 text-[#FFD700]">
+                                            <span class="material-symbols-outlined">location_on</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-bold text-text-main dark:text-white">Adresse</h3>
+                                            <p class="mt-1 text-text-sub dark:text-gray-400">Avenue de la Paix,
+                                                Gombe<br />Kinshasa, RDC</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="relative h-64 w-full overflow-hidden rounded-xl border border-border-color dark:border-gray-700 shadow-sm">
+                                <div class="absolute inset-0 bg-cover bg-center"
+                                    data-alt="Map showing location in Kinshasa"
+                                    data-location="Kinshasa, Democratic Republic of the Congo"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDhlaNxr-gY9-x4N1LSBj6H2qx0ojAxuumENwfKl_Ria9G05sIfHJRCoqLB_PljWPnvGoh7rh5caH_5TOD6AzXa82EGPzLyEeWNFCq5Iru69r-3FsuoYEe0flkZu5HyvPnxA5FW9Z9zp6CRVQ-H6vBntsR_7wHu-Ke_faZFkM9g-mA7P8WWmFxtcdpQdiEUCpLpUD-7d5j0GwoobSFGpQOv2Vc7K5L2nUfwzVOK7op8wtW62M3TaTxvOzNiV8qf77uAxUr1x2NRy0");'>
+                                </div>
+                                <div class="absolute bottom-4 left-4">
+                                    <a class="inline-flex items-center gap-2 rounded-lg bg-white/90 px-4 py-2 text-sm font-bold text-text-main shadow-lg backdrop-blur hover:bg-white transition-colors"
+                                        href="#">
+                                        <span class="material-symbols-outlined text-[#FFD700] text-lg">directions</span>
+                                        Itinéraire
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex flex-col gap-6">
-                            <h2 class="text-3xl font-black leading-tight text-text-dark dark:text-white">
-                                Informations de contact
-                            </h2>
-                            <div class="flex flex-col gap-4">
-                                <div class="flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-primary">location_on</span>
-                                    <span class="text-text-grey dark:text-gray-400">Av. de la Paix, Gombe, Kinshasa, RDC</span>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-primary">mail</span>
-                                    <span class="text-text-grey dark:text-gray-400">info@melon-soft.cd</span>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <span class="material-symbols-outlined text-primary">call</span>
-                                    <span class="text-text-grey dark:text-gray-400">+243 81 000 0000</span>
-                                </div>
+                        <div class="flex flex-col">
+                            <div
+                                class="rounded-2xl border border-border-color bg-white p-6 shadow-lg dark:bg-gray-800 dark:border-gray-700 sm:p-8 lg:p-10">
+                                <h2 class="mb-2 text-2xl font-bold text-text-main dark:text-white">Envoyez-nous un
+                                    message</h2>
+                                <p class="mb-8 text-text-sub dark:text-gray-400">Remplissez le formulaire ci-dessous et
+                                    nous vous
+                                    répondrons dans les plus brefs délais.</p>
+                                <form class="flex flex-col gap-6">
+                                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                                        <label class="flex flex-col gap-2">
+                                            <span class="text-sm font-semibold text-text-main dark:text-gray-300">Nom
+                                                complet</span>
+                                            <input
+                                                class="h-12 rounded-lg border-border-color bg-background-light px-4 text-text-main placeholder-text-sub/50 focus:border-[#FFD700] focus:ring-1 focus:ring-[#FFD700] dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:placeholder-gray-500 transition-all"
+                                                placeholder="Miel KABULO" type="text" />
+                                        </label>
+                                        <label class="flex flex-col gap-2">
+                                            <span
+                                                class="text-sm font-semibold text-text-main dark:text-gray-300">Téléphone</span>
+                                            <input
+                                                class="h-12 rounded-lg border-border-color bg-background-light px-4 text-text-main placeholder-text-sub/50 focus:border-[#FFD700] focus:ring-1 focus:ring-[#FFD700] dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:placeholder-gray-500 transition-all"
+                                                placeholder="+243 ..." type="tel" />
+                                        </label>
+                                    </div>
+                                    <label class="flex flex-col gap-2">
+                                        <span class="text-sm font-semibold text-text-main dark:text-gray-300">Email
+                                            professionnel</span>
+                                        <input
+                                            class="h-12 rounded-lg border-border-color bg-background-light px-4 text-text-main placeholder-text-sub/50 focus:border-[#FFD700] focus:ring-1 focus:ring-[#FFD700] dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:placeholder-gray-500 transition-all"
+                                            placeholder="nom@entreprise.com" type="email" />
+                                    </label>
+                                    <label class="flex flex-col gap-2">
+                                        <span
+                                            class="text-sm font-semibold text-text-main dark:text-gray-300">Sujet</span>
+                                        <select
+                                            class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-text-dark dark:text-white focus:border-[#FFD700] focus:ring-1 focus:ring-[#FFD700]"
+                                            data-contact-subject>
+                                            <option>Développement Web</option>
+                                            <option>Application Mobile</option>
+                                            <option>Logiciel Sur Mesure</option>
+                                            <option>Autre demande</option>
+                                        </select>
+                                    </label>
+                                    <label class="flex flex-col gap-2">
+                                        <span
+                                            class="text-sm font-semibold text-text-main dark:text-gray-300">Message</span>
+                                        <textarea
+                                            class="resize-none rounded-lg border-border-color bg-background-light p-4 text-text-main placeholder-text-sub/50 focus:border-[#FFD700] focus:ring-1 focus:ring-[#FFD700] dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:placeholder-gray-500 transition-all"
+                                            placeholder="Décrivez brièvement votre projet..." rows="4"></textarea>
+                                    </label>
+                                    <button
+                                        class="mt-2 flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-[#FFD700] px-6 text-base font-bold text-[#0B0F19] shadow-md hover:bg-[#E5C100] focus:outline-none focus:ring-2 focus:ring-[#FFD700] focus:ring-offset-2 transition-all"
+                                        type="button">
+                                        <span class="material-symbols-outlined text-[20px]">send</span>
+                                        Envoyer le message
+                                    </button>
+                                    <p class="text-center text-xs text-text-sub dark:text-gray-500 mt-2">
+                                        En envoyant ce formulaire, vous acceptez notre <a
+                                            class="underline hover:text-[#FFD700]" href="#">politique de
+                                            confidentialité</a>.
+                                    </p>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-    
-        </main>
-        
-        <!-- Footer -->
+            </main>
+
         <footer class="bg-[#0B0F19] text-white py-16 px-4 md:px-10 lg:px-20 relative font-display">
-    <div class="max-w-[1280px] mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-            <!-- Column 1 -->
-            <div class="flex flex-col gap-6">
-                <div class="flex items-center gap-3">
-                    <img src="assets/images/logo1.png" alt="Melon-Soft Logo" class="w-10 h-10 object-contain rounded" />
-                    <span class="font-black text-xl tracking-tight text-white uppercase">Melon-Soft</span>
+            <div class="max-w-[1280px] mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <img src="assets/images/logo/logo_jaune.svg" alt="Melon-Soft Logo"
+                                class="w-10 h-10 object-contain rounded" />
+                            <span class="font-black text-xl tracking-tight text-white uppercase">Melon-Soft</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Partenaire clé de la numérisation informatique en République Démocratique du Congo. Nous
+                            transformons vos idées en solutions technologiques d'excellence.
+                        </p>
+                        <div class="flex gap-3">
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
+                                aria-label="Facebook">
+                                <span class="font-bold font-sans">f</span>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
+                                aria-label="X">
+                                <span class="font-bold font-sans">x</span>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
+                                aria-label="LinkedIn">
+                                <span class="font-bold font-sans">in</span>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
+                                aria-label="Instagram">
+                                <span class="material-symbols-outlined text-lg">photo_camera</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-6">
+                        <h3 class="font-bold text-lg text-white">Liens Rapides</h3>
+                        <nav class="flex flex-col gap-4">
+                            <a href="nos_services.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Nos Services</a>
+                            <a href="apropos.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Notre Histoire</a>
+                            <a href="#"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Melon-Academia</a>
+                            <a href="apropos.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">L'Équipe</a>
+                        </nav>
+                    </div>
+
+                    <div class="flex flex-col gap-6">
+                        <h3 class="font-bold text-lg text-white">Services</h3>
+                        <nav class="flex flex-col gap-4">
+                            <a href="developpement_informatique.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Développement
+                                Web</a>
+                            <a href="developpement_informatique.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Applications
+                                Mobiles</a>
+                            <a href="solutions_de_securite.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Sécurité
+                                Réseaux</a>
+                            <a href="communication_numerique.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Infographie
+                                Pro</a>
+                        </nav>
+                    </div>
+
+                    <div class="flex flex-col gap-6">
+                        <h3 class="font-bold text-lg text-white">Abonnez-vous</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Recevez nos actualités et conseils technologiques directement dans votre boîte mail.
+                        </p>
+                        <form class="flex w-full" onsubmit="event.preventDefault();">
+                            <input type="email" placeholder="Votre e-mail"
+                                class="flex-1 bg-[#1A1F2E] border-none rounded-l-lg px-4 py-3 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-[#FFD700] outline-none">
+                            <button type="submit"
+                                class="bg-[#FFD700] text-[#0B0F19] font-bold px-6 py-3 rounded-r-lg hover:bg-[#E5C100] transition-colors text-sm">
+                                OK
+                            </button>
+                        </form>
+                    </div>
                 </div>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Partenaire clé de la numérisation informatique en République Démocratique du Congo. Nous transformons vos idées en solutions technologiques d'excellence.
-                </p>
-                <div class="flex gap-3">
-                    <!-- Facebook -->
-                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="Facebook">
-                        <span class="font-bold font-sans">f</span>
-                    </a>
-                    <!-- X -->
-                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="X">
-                        <span class="font-bold font-sans">x</span>
-                    </a>
-                    <!-- LinkedIn -->
-                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="LinkedIn">
-                        <span class="font-bold font-sans">in</span>
-                    </a>
-                    <!-- Instagram -->
-                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="Instagram">
-                        <span class="material-symbols-outlined text-lg">photo_camera</span>
-                    </a>
-                </div>
-            </div>
 
-            <!-- Column 2 -->
-            <div class="flex flex-col gap-6">
-                <h3 class="font-bold text-lg text-white">Liens Rapides</h3>
-                <nav class="flex flex-col gap-4">
-                    <a href="nos_services.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Nos Services</a>
-                    <a href="apropos.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Notre Histoire</a>
-                    <a href="#" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Melon-Academia</a>
-                    <a href="apropos.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">L'Équipe</a>
-                </nav>
-            </div>
+                <div
+                    class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 relative">
+                    <p class="text-gray-500 text-xs text-center md:text-left">
+                        © 2025 Melon-Soft. Tous droits réservés. Kinshasa, RDC.
+                    </p>
+                    <div class="flex gap-6">
+                        <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Confidentialité</a>
+                        <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Mentions
+                            Légales</a>
+                    </div>
 
-            <!-- Column 3 -->
-            <div class="flex flex-col gap-6">
-                <h3 class="font-bold text-lg text-white">Services</h3>
-                <nav class="flex flex-col gap-4">
-                    <a href="developpement_informatique.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Développement Web</a>
-                    <a href="developpement_informatique.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Applications Mobiles</a>
-                    <a href="solutions_de_securite.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Sécurité Réseaux</a>
-                    <a href="communication_numerique.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Infographie Pro</a>
-                </nav>
-            </div>
-
-            <!-- Column 4 -->
-            <div class="flex flex-col gap-6">
-                <h3 class="font-bold text-lg text-white">Abonnez-vous</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Recevez nos actualités et conseils technologiques directement dans votre boîte mail.
-                </p>
-                <form class="flex w-full" onsubmit="event.preventDefault();">
-                    <input type="email" placeholder="Votre e-mail" class="flex-1 bg-[#1A1F2E] border-none rounded-l-lg px-4 py-3 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-[#FFD700] outline-none">
-                    <button type="submit" class="bg-[#FFD700] text-[#0B0F19] font-bold px-6 py-3 rounded-r-lg hover:bg-[#E5C100] transition-colors text-sm">
-                        OK
+                    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                        class="fixed bottom-8 right-8 z-50 md:absolute md:bottom-auto md:right-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 bg-[#FFD700] rounded-full flex items-center justify-center text-[#0B0F19] hover:bg-[#E5C100] transition-all shadow-lg"
+                        aria-label="Haut de page">
+                        <span class="material-symbols-outlined">arrow_upward</span>
                     </button>
-                </form>
+                </div>
             </div>
-        </div>
-
-        <!-- Bottom Bar -->
-        <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 relative">
-            <p class="text-gray-500 text-xs text-center md:text-left">
-                © 2025 Melon-Soft Sarl. Tous droits réservés. Kinshasa, RDC.
-            </p>
-            <div class="flex gap-6">
-                <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Confidentialité</a>
-                <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Mentions Légales</a>
-            </div>
-            
-            <!-- Back to top button (positioned absolutely to the right on large screens) -->
-            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 z-50 md:absolute md:bottom-auto md:right-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 bg-[#FFD700] rounded-full flex items-center justify-center text-[#0B0F19] hover:bg-[#E5C100] transition-all shadow-lg" aria-label="Haut de page">
-                <span class="material-symbols-outlined">arrow_upward</span>
-            </button>
-        </div>
+        </footer>
     </div>
-</footer>
-
-    </div>
-
-    <!-- JavaScript -->
     <script src="assets/js/main.js?v=1"></script>
 </body>
 

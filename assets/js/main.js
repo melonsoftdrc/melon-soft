@@ -679,28 +679,16 @@ window.addEventListener('error', function(e) {
     console.error('Erreur JavaScript:', e.error);
 });
 
-// Fonction pour mettre à jour le logo selon le thème
+// Fonction pour mettre à jour le logo selon le thème (maintenant géré par CSS avec dark: classes)
+// Les logos SVG changent automatiquement avec les classes Tailwind dark:hidden et hidden dark:block
 function updateLogoTheme(isDark) {
+    // Cette fonction est maintenant obsolète car les logos SVG changent automatiquement via CSS
+    // Conservée pour compatibilité avec le code existant
     const logoImages = document.querySelectorAll('.navbar-logo');
     const footerLogo = document.querySelector('.footer-logo');
     
-    // Chemins des logos
-    const lightLogo = 'assets/images/logo.png';
-    const darkLogo = 'assets/images/logo1.png';
-    
-    // Mettre à jour les logos de la navbar
-    logoImages.forEach(logo => {
-        if (isDark) {
-            logo.src = darkLogo;
-        } else {
-            logo.src = lightLogo;
-        }
-    });
-    
-    // Mettre à jour le logo du footer (toujours logo1.png comme dans le code actuel)
-    if (footerLogo) {
-        footerLogo.src = 'assets/images/logo1.png';
-    }
+    // Les logos SVG changent automatiquement avec les classes Tailwind
+    // Pas besoin de mise à jour JavaScript
 }
 
 // Fonction pour mettre à jour les couleurs de la charte graphique

@@ -5,21 +5,22 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>À Propos de Nous - Melon-Soft</title>
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
+
     <!-- Material Symbols -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
+
     <!-- Configuration Tailwind -->
     <script src="assets/js/tailwind-config.js"></script>
-    
+
     <!-- CSS Custom -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -28,141 +29,172 @@
     <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
         <!-- Navbar -->
         <header class="navbar">
-    <div class="navbar-container">
-        <div class="flex items-center gap-4">
-            <!-- Logo -->
-            <img src="assets/images/logo.png" alt="Melon-Soft Logo" class="navbar-logo" />
-        </div>
-        
-        <nav class="navbar-nav">
-            <a href="index.html" class="navbar-link">Accueil</a>
-            <div class="group relative flex h-full items-center">
-                <a href="#" class="navbar-link flex items-center gap-1">
-                    Nos Services
-                    <span class="material-symbols-outlined text-[20px] transition-transform group-hover:-rotate-180">expand_more</span>
-                </a>
-                <div class="absolute left-0 top-full pt-4 w-[280px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
-                    <div class="flex flex-col rounded-xl border border-gray-100 bg-white p-2 shadow-xl shadow-gray-200/50 dark:border-gray-700 dark:bg-surface-dark dark:shadow-black/50">
-                        <a href="developpement_informatique.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                            Développement Informatique
-                        </a>
-                        <a href="formation_professionnelle.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                            Formation Professionnelle
-                        </a>
-                    <a href="communication_numerique.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                        Communication Numérique
-                    </a>
-                        <a href="services_techniques.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                            Services Techniques
-                        </a>
-                        <a href="solutions_de_securite.html" class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
-                            Solutions de Sécurité
-                        </a>
-                    </div>
+            <div class="navbar-container">
+                <div class="flex items-center gap-4">
+                    <!-- Logo -->
+                    <img src="assets/images/logo/logo_bleu.svg" alt="Melon-Soft Logo" class="navbar-logo dark:hidden" />
+                    <img src="assets/images/logo/logo_jaune.svg" alt="Melon-Soft Logo" class="navbar-logo hidden dark:block" />
                 </div>
-            </div>
-            <a href="portfolio.html" class="navbar-link">Portfolio</a>
-            <a href="apropos.html" class="navbar-link">À Propos</a>
-            <a href="carrieres.html" class="navbar-link">Carrières</a>
-        </nav>
-        
-        <div class="flex items-center gap-4">
-            <button class="navbar-button" onclick="window.location.href='nous_contacter.html'">
-                <span>Nous Contacter</span>
-            </button>
-            <button class="lg:hidden p-2 text-text-dark dark:text-white" onclick="toggleMobileMenu()">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-        </div>
-    </div>
-    
-    <!-- Menu Mobile (caché par défaut) -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-surface-dark border-t border-gray-200 dark:border-gray-700">
-        <div class="px-4 py-3 space-y-3">
-            <a href="index.html" class="block navbar-link py-2">Accueil</a>
-            <div>
-                <button class="navbar-link py-2 w-full text-left" onclick="toggleMobileSubmenu('services-submenu')">
-                    Nos Services
-                    <span class="material-symbols-outlined text-sm">expand_more</span>
-                </button>
-                <div id="services-submenu" class="hidden pl-4 space-y-2">
-                    <a href="developpement_informatique.html" class="block navbar-link py-1 text-sm">Développement Informatique</a>
-                    <a href="formation_professionnelle.html" class="block navbar-link py-1 text-sm">Formation Professionnelle</a>
-                    <a href="communication_numerique.html" class="block navbar-link py-1 text-sm">Communication Numérique</a>
-                    <a href="services_techniques.html" class="block navbar-link py-1 text-sm">Services Techniques</a>
-                    <a href="solutions_de_securite.html" class="block navbar-link py-1 text-sm">Solutions de Sécurité</a>
-                </div>
-            </div>
-            <a href="portfolio.html" class="block navbar-link py-2">Portfolio</a>
-            <a href="apropos.html" class="block navbar-link py-2">À Propos</a>
-            <a href="carrieres.html" class="block navbar-link py-2">Carrières</a>
-            <button class="navbar-button w-full" onclick="window.location.href='nous_contacter.html'">Nous Contacter</button>
-        </div>
-    </div>
-</header>
 
-        
+                <nav class="navbar-nav">
+                    <a href="index.html" class="navbar-link">Accueil</a>
+                    <div class="group relative flex h-full items-center">
+                        <a href="#" class="navbar-link flex items-center gap-1">
+                            Nos Services
+                            <span
+                                class="material-symbols-outlined text-[20px] transition-transform group-hover:-rotate-180">expand_more</span>
+                        </a>
+                        <div
+                            class="absolute left-0 top-full pt-4 w-[280px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
+                            <div
+                                class="flex flex-col rounded-xl border border-gray-100 bg-white p-2 shadow-xl shadow-gray-200/50 dark:border-gray-700 dark:bg-surface-dark dark:shadow-black/50">
+                                <a href="developpement_informatique.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Développement Informatique
+                                </a>
+                                <a href="formation_professionnelle.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Formation Professionnelle
+                                </a>
+                                <a href="communication_numerique.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Communication Numérique
+                                </a>
+                                <a href="services_techniques.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Services Techniques
+                                </a>
+                                <a href="solutions_de_securite.html"
+                                    class="navbar-link rounded-lg px-4 py-3 hover:bg-gray-50 hover:text-primary dark:hover:bg-gray-800">
+                                    Solutions de Sécurité
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="portfolio.html" class="navbar-link">Portfolio</a>
+                    <a href="apropos.html" class="navbar-link">À Propos</a>
+                    <a href="carrieres.html" class="navbar-link">Carrières</a>
+                </nav>
+
+                <div class="flex items-center gap-4">
+                    <button class="navbar-button" onclick="window.location.href='nous_contacter.html'">
+                        <span>Nous Contacter</span>
+                    </button>
+                    <button class="lg:hidden p-2 text-text-dark dark:text-white" onclick="toggleMobileMenu()">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu Mobile (caché par défaut) -->
+            <div id="mobile-menu"
+                class="hidden lg:hidden bg-white dark:bg-surface-dark border-t border-gray-200 dark:border-gray-700">
+                <div class="px-4 py-3 space-y-3">
+                    <a href="index.html" class="block navbar-link py-2">Accueil</a>
+                    <div>
+                        <button class="navbar-link py-2 w-full text-left"
+                            onclick="toggleMobileSubmenu('services-submenu')">
+                            Nos Services
+                            <span class="material-symbols-outlined text-sm">expand_more</span>
+                        </button>
+                        <div id="services-submenu" class="hidden pl-4 space-y-2">
+                            <a href="developpement_informatique.html"
+                                class="block navbar-link py-1 text-sm">Développement Informatique</a>
+                            <a href="formation_professionnelle.html" class="block navbar-link py-1 text-sm">Formation
+                                Professionnelle</a>
+                            <a href="communication_numerique.html" class="block navbar-link py-1 text-sm">Communication
+                                Numérique</a>
+                            <a href="services_techniques.html" class="block navbar-link py-1 text-sm">Services
+                                Techniques</a>
+                            <a href="solutions_de_securite.html" class="block navbar-link py-1 text-sm">Solutions de
+                                Sécurité</a>
+                        </div>
+                    </div>
+                    <a href="portfolio.html" class="block navbar-link py-2">Portfolio</a>
+                    <a href="apropos.html" class="block navbar-link py-2">À Propos</a>
+                    <a href="carrieres.html" class="block navbar-link py-2">Carrières</a>
+                    <button class="navbar-button w-full" onclick="window.location.href='nous_contacter.html'">Nous
+                        Contacter</button>
+                </div>
+            </div>
+        </header>
+
+
         <!-- Main Content -->
         <main class="flex-1">
-            
-            <section class="flex flex-col items-center bg-white dark:bg-background-dark px-4 py-16 lg:px-20 lg:py-24" data-animate>
+            <section class="flex flex-col items-center bg-white dark:bg-background-dark px-4 py-8 lg:px-20 lg:py-12"
+                data-animate>
                 <div class="flex w-full max-w-[1280px] flex-col gap-10 text-center">
-                    <div class="mx-auto inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-xs font-black uppercase tracking-wider text-primary">
-                        <span class="h-2 w-2 rounded-full bg-accent-yellow"></span>
-                        À propos
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h1 class="font-display text-4xl font-black leading-[1.1] tracking-tight text-text-dark dark:text-white sm:text-5xl lg:text-6xl">
-                            Nous construisons des produits <span class="text-primary">utiles</span> et <span class="text-primary">fiables</span>
-                        </h1>
-                        <p class="mx-auto max-w-3xl text-lg font-normal leading-relaxed text-text-grey dark:text-gray-400 sm:text-xl">
-                            Basée à Kinshasa, Melon-Soft conçoit des solutions web, mobiles et logicielles adaptées aux réalités locales,
-                            avec un niveau d’exigence international.
-                        </p>
-                    </div>
-                    <div class="mx-auto mt-12 grid w-full max-w-[1280px] grid-cols-1 items-center gap-10 rounded-3xl bg-background-light p-6 text-left shadow-sm dark:bg-surface-dark sm:p-10 lg:grid-cols-2">
+                    <div
+                        class="mx-auto mt-4 grid w-full max-w-[1280px] grid-cols-1 items-center gap-10 rounded-3xl bg-background-light p-6 text-left shadow-sm dark:bg-surface-dark sm:p-10 lg:grid-cols-2">
                         <div class="flex flex-col gap-6">
-                            <div class="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-xs font-black uppercase tracking-wider text-primary">
+                            <div
+                                class="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-xs font-black uppercase tracking-wider text-primary">
                                 <span class="h-2 w-2 rounded-full bg-accent-yellow"></span>
                                 Depuis 2017
                             </div>
-                            <h2 class="text-3xl font-black leading-tight tracking-tight text-text-dark dark:text-white sm:text-4xl">
+                            <h2
+                                class="text-3xl font-black leading-tight tracking-tight text-text-dark dark:text-white sm:text-4xl">
                                 Notre histoire, votre futur numérique
                             </h2>
                             <p class="text-base font-normal leading-relaxed text-text-grey dark:text-gray-400">
-                                Melon-Soft est né d'une ambition simple : propulser la RDC dans l'ère du digital. De nos premiers projets à Kinshasa
+                                Melon-Soft est né d'une ambition simple : propulser la RDC dans l'ère du digital. De nos
+                                premiers projets à Kinshasa
                                 jusqu’à l’expansion, nous construisons des solutions fiables, pensées pour l’impact.
+                                                        <p
+                            class="mx-auto max-w-3xl text-lg font-normal leading-relaxed text-text-grey dark:text-gray-400 sm:text-xl">
+                            Basée à Kinshasa, Melon-Soft conçoit des solutions web, mobiles et logicielles adaptées aux
+                            réalités locales,
+                            avec un niveau d’exigence international.
+                        </p>
                             </p>
                             <div class="flex flex-wrap gap-3 pt-2">
-                                <a href="carrieres.html" class="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-6 text-base font-bold text-white hover:bg-primary-dark transition-colors">
+                                <a href="carrieres.html"
+                                    class="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-6 text-base font-bold text-white hover:bg-primary-dark transition-colors">
                                     Rejoindre l'équipe
                                 </a>
-                                <a href="portfolio.html" class="inline-flex h-12 items-center justify-center rounded-lg border border-gray-200 bg-white px-6 text-base font-bold text-text-dark hover:bg-gray-50 transition-colors dark:border-gray-700 dark:bg-transparent dark:text-white dark:hover:bg-gray-800">
+                                <a href="portfolio.html"
+                                    class="inline-flex h-12 items-center justify-center rounded-lg border border-gray-200 bg-white px-6 text-base font-bold text-text-dark hover:bg-gray-50 transition-colors dark:border-gray-700 dark:bg-transparent dark:text-white dark:hover:bg-gray-800">
                                     Voir nos projets
                                 </a>
                             </div>
                         </div>
-                        <div class="group relative w-full overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-2xl shadow-primary/10 aspect-[4/3] dark:border-gray-800 dark:bg-surface-dark">
-                            <img src="assets/images/unnamed.png" alt="Notre histoire chez Melon-Soft" class="h-full w-full object-cover transform transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                        <div
+                            class="group relative w-full overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-2xl shadow-primary/10 aspect-[4/3] dark:border-gray-800 dark:bg-surface-dark">
+                            <img src="assets/images/unnamed.png" alt="Notre histoire chez Melon-Soft"
+                                class="h-full w-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                                loading="lazy">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/0"></div>
                         </div>
                     </div>
                     <div class="mx-auto grid w-full max-w-[980px] grid-cols-2 gap-4 sm:grid-cols-4">
-                        <div class="rounded-2xl border border-gray-100 bg-white p-5 text-center shadow-sm dark:border-gray-800 dark:bg-surface-dark">
+                        <div
+                            class="rounded-2xl border border-gray-100 bg-white p-5 text-center shadow-sm dark:border-gray-800 dark:bg-surface-dark">
                             <div class="text-2xl font-black text-text-dark dark:text-white">+50</div>
-                            <div class="mt-1 text-xs font-bold uppercase tracking-wider text-text-grey dark:text-gray-400">Projets</div>
+                            <div
+                                class="mt-1 text-xs font-bold uppercase tracking-wider text-text-grey dark:text-gray-400">
+                                Projets</div>
                         </div>
-                        <div class="rounded-2xl border border-gray-100 bg-white p-5 text-center shadow-sm dark:border-gray-800 dark:bg-surface-dark">
+                        <div
+                            class="rounded-2xl border border-gray-100 bg-white p-5 text-center shadow-sm dark:border-gray-800 dark:bg-surface-dark">
                             <div class="text-2xl font-black text-text-dark dark:text-white">+30</div>
-                            <div class="mt-1 text-xs font-bold uppercase tracking-wider text-text-grey dark:text-gray-400">Clients</div>
+                            <div
+                                class="mt-1 text-xs font-bold uppercase tracking-wider text-text-grey dark:text-gray-400">
+                                Clients</div>
                         </div>
-                        <div class="rounded-2xl border border-gray-100 bg-white p-5 text-center shadow-sm dark:border-gray-800 dark:bg-surface-dark">
+                        <div
+                            class="rounded-2xl border border-gray-100 bg-white p-5 text-center shadow-sm dark:border-gray-800 dark:bg-surface-dark">
                             <div class="text-2xl font-black text-text-dark dark:text-white">RDC</div>
-                            <div class="mt-1 text-xs font-bold uppercase tracking-wider text-text-grey dark:text-gray-400">Ancrage local</div>
+                            <div
+                                class="mt-1 text-xs font-bold uppercase tracking-wider text-text-grey dark:text-gray-400">
+                                Ancrage local</div>
                         </div>
-                        <div class="rounded-2xl border border-gray-100 bg-white p-5 text-center shadow-sm dark:border-gray-800 dark:bg-surface-dark">
+                        <div
+                            class="rounded-2xl border border-gray-100 bg-white p-5 text-center shadow-sm dark:border-gray-800 dark:bg-surface-dark">
                             <div class="text-2xl font-black text-text-dark dark:text-white">24/7</div>
-                            <div class="mt-1 text-xs font-bold uppercase tracking-wider text-text-grey dark:text-gray-400">Support</div>
+                            <div
+                                class="mt-1 text-xs font-bold uppercase tracking-wider text-text-grey dark:text-gray-400">
+                                Support</div>
                         </div>
                     </div>
                 </div>
@@ -171,29 +203,34 @@
             <section class="bg-background-light dark:bg-background-dark px-4 py-16 lg:px-20 lg:py-20">
                 <div class="mx-auto w-full max-w-[1280px]">
                     <div class="grid grid-cols-1 gap-6 lg:grid-cols-3" data-animate>
-                        <div class="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm dark:border-gray-800 dark:bg-surface-dark">
+                        <div
+                            class="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm dark:border-gray-800 dark:bg-surface-dark">
                             <div class="flex items-center gap-3">
                                 <span class="material-symbols-outlined text-primary">target</span>
                                 <h2 class="text-xl font-black text-text-dark dark:text-white">Notre mission</h2>
                             </div>
                             <p class="mt-4 text-base leading-relaxed text-text-grey dark:text-gray-400">
-                                Accélérer la transformation numérique des organisations en livrant des produits robustes, simples à utiliser
+                                Accélérer la transformation numérique des organisations en livrant des produits
+                                robustes, simples à utiliser
                                 et pensés pour la croissance.
                             </p>
                         </div>
 
-                        <div class="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm dark:border-gray-800 dark:bg-surface-dark">
+                        <div
+                            class="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm dark:border-gray-800 dark:bg-surface-dark">
                             <div class="flex items-center gap-3">
                                 <span class="material-symbols-outlined text-primary">visibility</span>
                                 <h2 class="text-xl font-black text-text-dark dark:text-white">Notre vision</h2>
                             </div>
                             <p class="mt-4 text-base leading-relaxed text-text-grey dark:text-gray-400">
-                                Devenir une référence tech en RDC et en Afrique centrale, reconnue pour la qualité, la sécurité et
+                                Devenir une référence tech en RDC et en Afrique centrale, reconnue pour la qualité, la
+                                sécurité et
                                 la valeur business.
                             </p>
                         </div>
 
-                        <div class="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm dark:border-gray-800 dark:bg-surface-dark">
+                        <div
+                            class="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm dark:border-gray-800 dark:bg-surface-dark">
                             <div class="flex items-center gap-3">
                                 <span class="material-symbols-outlined text-primary">verified</span>
                                 <h2 class="text-xl font-black text-text-dark dark:text-white">Nos valeurs</h2>
@@ -220,7 +257,94 @@
                     </div>
                 </div>
             </section>
-
+            <!-- Timeline Section -->
+            <section class="bg-white dark:bg-[#1a202c] py-20">
+                <div class="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#111318] dark:text-white">Notre Évolution
+                        </h2>
+                        <p class="text-[#616f89] dark:text-gray-300 max-w-2xl mx-auto">De la genèse à notre
+                            restructuration
+                            majeure, chaque étape a forgé notre identité.</p>
+                    </div>
+                    <div class="grid grid-cols-[60px_1fr] gap-x-6 relative">
+                        <!-- Line connecting dots -->
+                        <div class="absolute left-[29px] top-4 bottom-4 w-[2px] bg-[#e5e7eb] dark:bg-gray-700"></div>
+                        <!-- Item 1 -->
+                        <div class="relative z-10 flex flex-col items-center pt-2">
+                            <div
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-[#2d3748] border-2 border-primary shadow-sm text-primary">
+                                <span class="material-symbols-outlined">lightbulb</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col py-2 pb-12">
+                            <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-4 mb-2">
+                                <h3 class="text-xl font-bold text-[#111318] dark:text-white">2017: La Fondation</h3>
+                                <span class="px-2 py-0.5 rounded bg-primary/10 text-primary text-xs font-bold">Le
+                                    début</span>
+                            </div>
+                            <p class="text-[#616f89] dark:text-gray-400 leading-relaxed">
+                                Trois passionnés, un garage, et une vision commune. Melon-Soft naît avec l'objectif de
+                                créer
+                                des solutions locales adaptées aux réalités de la RDC.
+                            </p>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="relative z-10 flex flex-col items-center pt-2">
+                            <div
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-[#2d3748] border-2 border-[#dbdfe6] dark:border-gray-600 shadow-sm text-[#616f89] dark:text-gray-400">
+                                <span class="material-symbols-outlined">rocket_launch</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col py-2 pb-12">
+                            <h3 class="text-xl font-bold text-[#111318] dark:text-white mb-2">2020: Premiers Grands
+                                Projets
+                            </h3>
+                            <p class="text-[#616f89] dark:text-gray-400 leading-relaxed">
+                                Malgré les défis mondiaux, nous lançons nos premières solutions logicielles majeures
+                                pour
+                                des entreprises à Kinshasa et Lubumbashi, prouvant notre résilience.
+                            </p>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="relative z-10 flex flex-col items-center pt-2">
+                            <div
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-[#2d3748] border-2 border-[#dbdfe6] dark:border-gray-600 shadow-sm text-[#616f89] dark:text-gray-400">
+                                <span class="material-symbols-outlined">groups</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col py-2 pb-12">
+                            <h3 class="text-xl font-bold text-[#111318] dark:text-white mb-2">2023: Expansion de
+                                l'Équipe
+                            </h3>
+                            <p class="text-[#616f89] dark:text-gray-400 leading-relaxed">
+                                Notre famille s'agrandit. Recrutement de talents diversifiés en design UX, développement
+                                mobile et cybersécurité pour répondre à une demande croissante.
+                            </p>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="relative z-10 flex flex-col items-center pt-2">
+                            <div
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-primary shadow-lg text-white">
+                                <span class="material-symbols-outlined">flag</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col py-2">
+                            <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-4 mb-2">
+                                <h3 class="text-xl font-bold text-[#111318] dark:text-white">2025: Restructuration &amp;
+                                    Vision Globale</h3>
+                                <span
+                                    class="px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-100 text-xs font-bold">Aujourd'hui</span>
+                            </div>
+                            <p class="text-[#616f89] dark:text-gray-400 leading-relaxed">
+                                Une nouvelle ère commence. Modernisation de nos processus, adoption de l'IA, et
+                                ambitions
+                                internationales pour porter l'excellence congolaise au-delà des frontières.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="bg-white dark:bg-background-dark px-4 py-16 lg:px-20 lg:py-24" data-animate>
                 <div class="mx-auto w-full max-w-[1280px]">
                     <div class="mx-auto flex max-w-3xl flex-col gap-4 text-center">
@@ -228,225 +352,212 @@
                             Notre équipe
                         </h2>
                         <p class="text-base leading-relaxed text-text-grey dark:text-gray-400">
-                            Une équipe pluridisciplinaire, centrée sur l’exécution, la qualité et l’expérience utilisateur.
+                            Une équipe pluridisciplinaire, centrée sur l’exécution, la qualité et l’expérience
+                            utilisateur.
                         </p>
                     </div>
 
-                    <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                        
-                                <div class="group flex flex-col items-center text-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-surface-dark" data-animate>
-                                    <img src="assets/images/profil/elvis.jpg" alt="Amina M." class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover shadow-sm" loading="lazy">
-                                    <div class="mt-3 text-lg font-black text-text-dark dark:text-white">Amina M.</div>
-                                    <div class="mt-1 text-sm font-bold text-text-grey dark:text-gray-400">CEO & Fondatrice</div>
-                                    <div class="mt-3 flex flex-wrap items-center justify-center gap-2">
-                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">work</span></a>
-                                        
-                                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">chat</span></a>
-                                    </div>
-                                    <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-primary px-3 text-xs font-black text-white hover:bg-primary-dark transition-colors"><span class="material-symbols-outlined text-[18px]">arrow_outward</span>Portfolio</a>
-                                </div>
-                            
-                                <div class="group flex flex-col items-center text-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-surface-dark" data-animate>
-                                    <img src="assets/images/profil/elvis.jpg" alt="Jean K." class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover shadow-sm" loading="lazy">
-                                    <div class="mt-3 text-lg font-black text-text-dark dark:text-white">Jean K.</div>
-                                    <div class="mt-1 text-sm font-bold text-text-grey dark:text-gray-400">CTO</div>
-                                    <div class="mt-3 flex flex-wrap items-center justify-center gap-2">
-                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">work</span></a>
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">code</span></a>
-                                        
-                                    </div>
-                                    <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-primary px-3 text-xs font-black text-white hover:bg-primary-dark transition-colors"><span class="material-symbols-outlined text-[18px]">arrow_outward</span>Portfolio</a>
-                                </div>
-                            
-                                <div class="group flex flex-col items-center text-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-surface-dark" data-animate>
-                                    <img src="assets/images/profil/elvis.jpg" alt="Samuel T." class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover shadow-sm" loading="lazy">
-                                    <div class="mt-3 text-lg font-black text-text-dark dark:text-white">Samuel T.</div>
-                                    <div class="mt-1 text-sm font-bold text-text-grey dark:text-gray-400">Lead Designer UI/UX</div>
-                                    <div class="mt-3 flex flex-wrap items-center justify-center gap-2">
-                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">work</span></a>
-                                        
-                                        
-                                    </div>
-                                    <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-primary px-3 text-xs font-black text-white hover:bg-primary-dark transition-colors"><span class="material-symbols-outlined text-[18px]">arrow_outward</span>Portfolio</a>
-                                </div>
-                            
-                                <div class="group flex flex-col items-center text-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-surface-dark" data-animate>
-                                    <img src="assets/images/profil/elvis.jpg" alt="Diane N." class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover shadow-sm" loading="lazy">
-                                    <div class="mt-3 text-lg font-black text-text-dark dark:text-white">Diane N.</div>
-                                    <div class="mt-1 text-sm font-bold text-text-grey dark:text-gray-400">Product Manager</div>
-                                    <div class="mt-3 flex flex-wrap items-center justify-center gap-2">
-                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">work</span></a>
-                                        
-                                        
-                                    </div>
-                                    <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-primary px-3 text-xs font-black text-white hover:bg-primary-dark transition-colors"><span class="material-symbols-outlined text-[18px]">arrow_outward</span>Portfolio</a>
-                                </div>
-                            
-                                <div class="group flex flex-col items-center text-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-surface-dark" data-animate>
-                                    <img src="assets/images/profil/elvis.jpg" alt="Patrick M." class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover shadow-sm" loading="lazy">
-                                    <div class="mt-3 text-lg font-black text-text-dark dark:text-white">Patrick M.</div>
-                                    <div class="mt-1 text-sm font-bold text-text-grey dark:text-gray-400">DevOps Engineer</div>
-                                    <div class="mt-3 flex flex-wrap items-center justify-center gap-2">
-                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">work</span></a>
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">code</span></a>
-                                        
-                                    </div>
-                                    <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-primary px-3 text-xs font-black text-white hover:bg-primary-dark transition-colors"><span class="material-symbols-outlined text-[18px]">arrow_outward</span>Portfolio</a>
-                                </div>
-                            
-                                <div class="group flex flex-col items-center text-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-surface-dark" data-animate>
-                                    <img src="assets/images/profil/elvis.jpg" alt="Ruth K." class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover shadow-sm" loading="lazy">
-                                    <div class="mt-3 text-lg font-black text-text-dark dark:text-white">Ruth K.</div>
-                                    <div class="mt-1 text-sm font-bold text-text-grey dark:text-gray-400">Développeuse Full‑Stack</div>
-                                    <div class="mt-3 flex flex-wrap items-center justify-center gap-2">
-                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">work</span></a>
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">code</span></a>
-                                        
-                                    </div>
-                                    <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-primary px-3 text-xs font-black text-white hover:bg-primary-dark transition-colors"><span class="material-symbols-outlined text-[18px]">arrow_outward</span>Portfolio</a>
-                                </div>
-                            
-                                <div class="group flex flex-col items-center text-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-surface-dark" data-animate>
-                                    <img src="assets/images/profil/elvis.jpg" alt="Eric M." class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover shadow-sm" loading="lazy">
-                                    <div class="mt-3 text-lg font-black text-text-dark dark:text-white">Eric M.</div>
-                                    <div class="mt-1 text-sm font-bold text-text-grey dark:text-gray-400">Développeur Mobile</div>
-                                    <div class="mt-3 flex flex-wrap items-center justify-center gap-2">
-                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">work</span></a>
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">code</span></a>
-                                        
-                                    </div>
-                                    <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-primary px-3 text-xs font-black text-white hover:bg-primary-dark transition-colors"><span class="material-symbols-outlined text-[18px]">arrow_outward</span>Portfolio</a>
-                                </div>
-                            
-                                <div class="group flex flex-col items-center text-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-surface-dark" data-animate>
-                                    <img src="assets/images/profil/elvis.jpg" alt="Chantal B." class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover shadow-sm" loading="lazy">
-                                    <div class="mt-3 text-lg font-black text-text-dark dark:text-white">Chantal B.</div>
-                                    <div class="mt-1 text-sm font-bold text-text-grey dark:text-gray-400">Analyste Cybersécurité</div>
-                                    <div class="mt-3 flex flex-wrap items-center justify-center gap-2">
-                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">work</span></a>
-                                        
-                                        
-                                    </div>
-                                    <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-primary px-3 text-xs font-black text-white hover:bg-primary-dark transition-colors"><span class="material-symbols-outlined text-[18px]">arrow_outward</span>Portfolio</a>
-                                </div>
-                            
-                                <div class="group flex flex-col items-center text-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-surface-dark" data-animate>
-                                    <img src="assets/images/profil/elvis.jpg" alt="Isaac L." class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover shadow-sm" loading="lazy">
-                                    <div class="mt-3 text-lg font-black text-text-dark dark:text-white">Isaac L.</div>
-                                    <div class="mt-1 text-sm font-bold text-text-grey dark:text-gray-400">Data Analyst</div>
-                                    <div class="mt-3 flex flex-wrap items-center justify-center gap-2">
-                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">work</span></a>
-                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">code</span></a>
-                                        
-                                    </div>
-                                    <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-primary px-3 text-xs font-black text-white hover:bg-primary-dark transition-colors"><span class="material-symbols-outlined text-[18px]">arrow_outward</span>Portfolio</a>
-                                </div>
-                            
-                                <div class="group flex flex-col items-center text-center rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-surface-dark" data-animate>
-                                    <img src="assets/images/profil/elvis.jpg" alt="Nadia S." class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover shadow-sm" loading="lazy">
-                                    <div class="mt-3 text-lg font-black text-text-dark dark:text-white">Nadia S.</div>
-                                    <div class="mt-1 text-sm font-bold text-text-grey dark:text-gray-400">Community Manager</div>
-                                    <div class="mt-3 flex flex-wrap items-center justify-center gap-2">
-                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">work</span></a>
-                                        
-                                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-text-grey hover:text-primary hover:border-primary/30 transition-colors dark:border-gray-700 dark:text-gray-300"><span class="material-symbols-outlined text-[18px]">chat</span></a>
-                                    </div>
-                                    <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-primary px-3 text-xs font-black text-white hover:bg-primary-dark transition-colors"><span class="material-symbols-outlined text-[18px]">arrow_outward</span>Portfolio</a>
-                                </div>
-                            
+                    <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+                        <div class="flex flex-col items-center text-center">
+                            <img src="assets/images/profil/elvis.jpg" alt="Elvis KABULO"
+                                class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover"
+                                loading="lazy">
+                            <div class="mt-4 text-xl font-black text-text-dark dark:text-white">Elvis KABULO</div>
+                            <div class="mt-2 text-base font-semibold text-text-grey dark:text-primary-light">CEO DE Melon-Soft</div>
+                        </div>
+
+                        <div class="flex flex-col items-center text-center">
+                            <img src="assets/images/profil/elvis.jpg" alt="Jean KABULO"
+                                class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover"
+                                loading="lazy">
+                            <div class="mt-4 text-xl font-black text-text-dark dark:text-white">Jean KABULO</div>
+                            <div class="mt-2 text-base font-semibold text-text-grey dark:text-primary-light">CTO DE Melon-Soft</div>
+                        </div>
+
+                        <div class="flex flex-col items-center text-center">
+                            <img src="assets/images/profil/elvis.jpg" alt="Samuel KABULO"
+                                class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover"
+                                loading="lazy">
+                            <div class="mt-4 text-xl font-black text-text-dark dark:text-white">Samuel KABULO</div>
+                            <div class="mt-2 text-base font-semibold text-text-grey dark:text-primary-light">Lead Designer UI/UX DE Melon-Soft</div>
+                        </div>
+
+                        <div class="flex flex-col items-center text-center">
+                            <img src="assets/images/profil/elvis.jpg" alt="Diane KABULO"
+                                class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover"
+                                loading="lazy">
+                            <div class="mt-4 text-xl font-black text-text-dark dark:text-white">Diane KABULO</div>
+                            <div class="mt-2 text-base font-semibold text-text-grey dark:text-primary-light">Product Manager DE Melon-Soft</div>
+                        </div>
+
+                        <div class="flex flex-col items-center text-center">
+                            <img src="assets/images/profil/elvis.jpg" alt="Patrick KABULO"
+                                class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover"
+                                loading="lazy">
+                            <div class="mt-4 text-xl font-black text-text-dark dark:text-white">Patrick KABULO</div>
+                            <div class="mt-2 text-base font-semibold text-text-grey dark:text-primary-light">DevOps Engineer DE Melon-Soft</div>
+                        </div>
+
+                        <div class="flex flex-col items-center text-center">
+                            <img src="assets/images/profil/elvis.jpg" alt="Ruth KABULO"
+                                class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover"
+                                loading="lazy">
+                            <div class="mt-4 text-xl font-black text-text-dark dark:text-white">Ruth KABULO</div>
+                            <div class="mt-2 text-base font-semibold text-text-grey dark:text-primary-light">Développeuse Full‑Stack DE Melon-Soft</div>
+                        </div>
+
+                        <div class="flex flex-col items-center text-center">
+                            <img src="assets/images/profil/elvis.jpg" alt="Eric KABULO"
+                                class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover"
+                                loading="lazy">
+                            <div class="mt-4 text-xl font-black text-text-dark dark:text-white">Eric KABULO</div>
+                            <div class="mt-2 text-base font-semibold text-text-grey dark:text-primary-light">Développeur Mobile DE Melon-Soft</div>
+                        </div>
+
+                        <div class="flex flex-col items-center text-center">
+                            <img src="assets/images/profil/elvis.jpg" alt="Chantal KABULO"
+                                class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover"
+                                loading="lazy">
+                            <div class="mt-4 text-xl font-black text-text-dark dark:text-white">Chantal KABULO</div>
+                            <div class="mt-2 text-base font-semibold text-text-grey dark:text-primary-light">Analyste Cybersécurité DE Melon-Soft</div>
+                        </div>
+
+                        <div class="flex flex-col items-center text-center">
+                            <img src="assets/images/profil/elvis.jpg" alt="Isaac KABULO"
+                                class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover"
+                                loading="lazy">
+                            <div class="mt-4 text-xl font-black text-text-dark dark:text-white">Isaac KABULO</div>
+                            <div class="mt-2 text-base font-semibold text-text-grey dark:text-primary-light">Data Analyst DE Melon-Soft</div>
+                        </div>
+
+                        <div class="flex flex-col items-center text-center">
+                            <img src="assets/images/profil/elvis.jpg" alt="Nadia KABULO"
+                                class="w-full max-w-[280px] aspect-[4/5] rounded-xl object-cover"
+                                loading="lazy">
+                            <div class="mt-4 text-xl font-black text-text-dark dark:text-white">Nadia KABULO</div>
+                            <div class="mt-2 text-base font-semibold text-text-grey dark:text-primary-light">Community Manager DE Melon-Soft</div>
+                        </div>
+
                     </div>
                 </div>
             </section>
-    
         </main>
-        
+
         <!-- Footer -->
         <footer class="bg-[#0B0F19] text-white py-16 px-4 md:px-10 lg:px-20 relative font-display">
-    <div class="max-w-[1280px] mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-            <!-- Column 1 -->
-            <div class="flex flex-col gap-6">
-                <div class="flex items-center gap-3">
-                    <img src="assets/images/logo1.png" alt="Melon-Soft Logo" class="w-10 h-10 object-contain rounded" />
-                    <span class="font-black text-xl tracking-tight text-white uppercase">Melon-Soft</span>
+            <div class="max-w-[1280px] mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                    <!-- Column 1 -->
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <img src="assets/images/logo/logo_jaune.svg" alt="Melon-Soft Logo"
+                                class="w-10 h-10 object-contain" />
+                            <span class="font-black text-xl tracking-tight text-white uppercase">Melon-Soft</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Partenaire clé de la numérisation informatique en République Démocratique du Congo. Nous
+                            transformons vos idées en solutions technologiques d'excellence.
+                        </p>
+                        <div class="flex gap-3">
+                            <!-- Facebook -->
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
+                                aria-label="Facebook">
+                                <span class="font-bold font-sans">f</span>
+                            </a>
+                            <!-- X -->
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
+                                aria-label="X">
+                                <span class="font-bold font-sans">x</span>
+                            </a>
+                            <!-- LinkedIn -->
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
+                                aria-label="LinkedIn">
+                                <span class="font-bold font-sans">in</span>
+                            </a>
+                            <!-- Instagram -->
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group"
+                                aria-label="Instagram">
+                                <span class="material-symbols-outlined text-lg">photo_camera</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="flex flex-col gap-6">
+                        <h3 class="font-bold text-lg text-white">Liens Rapides</h3>
+                        <nav class="flex flex-col gap-4">
+                            <a href="nos_services.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Nos Services</a>
+                            <a href="apropos.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Notre Histoire</a>
+                            <a href="#"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Melon-Academia</a>
+                            <a href="apropos.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">L'Équipe</a>
+                        </nav>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="flex flex-col gap-6">
+                        <h3 class="font-bold text-lg text-white">Services</h3>
+                        <nav class="flex flex-col gap-4">
+                            <a href="developpement_informatique.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Développement
+                                Web</a>
+                            <a href="developpement_informatique.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Applications
+                                Mobiles</a>
+                            <a href="solutions_de_securite.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Sécurité
+                                Réseaux</a>
+                            <a href="communication_numerique.html"
+                                class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Infographie Pro</a>
+                        </nav>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div class="flex flex-col gap-6">
+                        <h3 class="font-bold text-lg text-white">Abonnez-vous</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Recevez nos actualités et conseils technologiques directement dans votre boîte mail.
+                        </p>
+                        <form class="flex w-full" onsubmit="event.preventDefault();">
+                            <input type="email" placeholder="Votre e-mail"
+                                class="flex-1 bg-[#1A1F2E] border-none rounded-l-lg px-4 py-3 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-[#FFD700] outline-none">
+                            <button type="submit"
+                                class="bg-[#FFD700] text-[#0B0F19] font-bold px-6 py-3 rounded-r-lg hover:bg-[#E5C100] transition-colors text-sm">
+                                OK
+                            </button>
+                        </form>
+                    </div>
                 </div>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Partenaire clé de la numérisation informatique en République Démocratique du Congo. Nous transformons vos idées en solutions technologiques d'excellence.
-                </p>
-                <div class="flex gap-3">
-                    <!-- Facebook -->
-                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="Facebook">
-                        <span class="font-bold font-sans">f</span>
-                    </a>
-                    <!-- X -->
-                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="X">
-                        <span class="font-bold font-sans">x</span>
-                    </a>
-                    <!-- LinkedIn -->
-                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="LinkedIn">
-                        <span class="font-bold font-sans">in</span>
-                    </a>
-                    <!-- Instagram -->
-                    <a href="#" class="w-10 h-10 rounded-full bg-[#1A1F2E] flex items-center justify-center hover:bg-[#FFD700] hover:text-[#0B0F19] transition-all group" aria-label="Instagram">
-                        <span class="material-symbols-outlined text-lg">photo_camera</span>
-                    </a>
-                </div>
-            </div>
 
-            <!-- Column 2 -->
-            <div class="flex flex-col gap-6">
-                <h3 class="font-bold text-lg text-white">Liens Rapides</h3>
-                <nav class="flex flex-col gap-4">
-                    <a href="nos_services.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Nos Services</a>
-                    <a href="apropos.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Notre Histoire</a>
-                    <a href="#" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Melon-Academia</a>
-                    <a href="apropos.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">L'Équipe</a>
-                </nav>
-            </div>
+                <!-- Bottom Bar -->
+                <div
+                    class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 relative">
+                    <p class="text-gray-500 text-xs text-center md:text-left">
+                        © 2025 Melon-Soft Sarl. Tous droits réservés. Kinshasa, RDC.
+                    </p>
+                    <div class="flex gap-6">
+                        <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Confidentialité</a>
+                        <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Mentions
+                            Légales</a>
+                    </div>
 
-            <!-- Column 3 -->
-            <div class="flex flex-col gap-6">
-                <h3 class="font-bold text-lg text-white">Services</h3>
-                <nav class="flex flex-col gap-4">
-                    <a href="developpement_informatique.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Développement Web</a>
-                    <a href="developpement_informatique.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Applications Mobiles</a>
-                    <a href="solutions_de_securite.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Sécurité Réseaux</a>
-                    <a href="communication_numerique.html" class="text-gray-400 hover:text-[#FFD700] transition-colors text-sm">Infographie Pro</a>
-                </nav>
-            </div>
-
-            <!-- Column 4 -->
-            <div class="flex flex-col gap-6">
-                <h3 class="font-bold text-lg text-white">Abonnez-vous</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Recevez nos actualités et conseils technologiques directement dans votre boîte mail.
-                </p>
-                <form class="flex w-full" onsubmit="event.preventDefault();">
-                    <input type="email" placeholder="Votre e-mail" class="flex-1 bg-[#1A1F2E] border-none rounded-l-lg px-4 py-3 text-sm text-white placeholder-gray-500 focus:ring-1 focus:ring-[#FFD700] outline-none">
-                    <button type="submit" class="bg-[#FFD700] text-[#0B0F19] font-bold px-6 py-3 rounded-r-lg hover:bg-[#E5C100] transition-colors text-sm">
-                        OK
+                    <!-- Back to top button (positioned absolutely to the right on large screens) -->
+                    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                        class="fixed bottom-8 right-8 z-50 md:absolute md:bottom-auto md:right-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 bg-[#FFD700] rounded-full flex items-center justify-center text-[#0B0F19] hover:bg-[#E5C100] transition-all shadow-lg"
+                        aria-label="Haut de page">
+                        <span class="material-symbols-outlined">arrow_upward</span>
                     </button>
-                </form>
+                </div>
             </div>
-        </div>
-
-        <!-- Bottom Bar -->
-        <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 relative">
-            <p class="text-gray-500 text-xs text-center md:text-left">
-                © 2025 Melon-Soft Sarl. Tous droits réservés. Kinshasa, RDC.
-            </p>
-            <div class="flex gap-6">
-                <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Confidentialité</a>
-                <a href="#" class="text-gray-500 hover:text-white text-xs transition-colors">Mentions Légales</a>
-            </div>
-            
-            <!-- Back to top button (positioned absolutely to the right on large screens) -->
-            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 z-50 md:absolute md:bottom-auto md:right-0 md:top-1/2 md:-translate-y-1/2 w-10 h-10 bg-[#FFD700] rounded-full flex items-center justify-center text-[#0B0F19] hover:bg-[#E5C100] transition-all shadow-lg" aria-label="Haut de page">
-                <span class="material-symbols-outlined">arrow_upward</span>
-            </button>
-        </div>
-    </div>
-</footer>
+        </footer>
 
     </div>
 

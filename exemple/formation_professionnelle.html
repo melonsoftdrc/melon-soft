@@ -19,7 +19,41 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
     <!-- Configuration Tailwind -->
-    <script src="../assets/js/tailwind-config.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "primary-dark": "#0d3a94",
+                        "primary-light": "#e3f2fd",
+                        "accent-yellow": "#FFD700",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2230",
+                        "text-dark": "#030129",
+                        "text-grey": "#A2B5D7",
+                        "text-light": "#616f89",
+                        "text-white": "#ffffff",
+                        "border-light": "#e5e7eb",
+                        "border-dark": "#2a303c",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
 
     <!-- CSS Custom -->
     <link rel="stylesheet" href="assets/css/style.css">
